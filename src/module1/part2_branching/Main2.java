@@ -1,4 +1,5 @@
-package module1.part2;
+package module1.part2_branching;
+
 // Найти max{min(a, b), min(c, d)}
 public class Main2 {
     public static void main(String[] args) {
