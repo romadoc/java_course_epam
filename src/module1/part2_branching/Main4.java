@@ -1,4 +1,4 @@
-package module1.part2;
+package module1.part2_branching;
 
 import java.util.Scanner;
 
