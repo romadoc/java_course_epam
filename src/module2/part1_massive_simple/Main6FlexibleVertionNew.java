@@ -9,7 +9,7 @@ public class Main6FlexibleVertionNew {
         int[] array = massiveGenerator();
         int intTrue;
         int forCount;
-        forCount = -1;
+        forCount = 0;
 
         for (int i = 0; i < array.length; i++) {
             intTrue = checkIsPrime(i);
