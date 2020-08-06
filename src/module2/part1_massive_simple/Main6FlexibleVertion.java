@@ -10,7 +10,7 @@ public class Main6FlexibleVertion {
      primeCheck();
 
     }
-    public static int [] mass(){
+    public static int [] massiveGenerator(){
 
         int [] massive = new int[(int) (Math.random()*50)];
         for (int i = 0; i < massive.length; i++){
@@ -22,7 +22,7 @@ public class Main6FlexibleVertion {
     public static void primeCheck(){
         int sum;
         sum = 0;
-        int [] massiveOut = mass();
+        int [] massiveOut = massiveGenerator();
 
         for (int num = 0; num < massiveOut.length; num++) {
             int temp;

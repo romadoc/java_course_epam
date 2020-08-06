@@ -1,5 +1,8 @@
 package module2.part1_massive_simple;
 
+//Задана последовательность N вещественных чисел. Вычислить сумму чисел, порядковые номера которых
+//являются простыми числами.
+
 public class Main6FlexibleVertionNew {
     public static void main(String[] args) {
 
