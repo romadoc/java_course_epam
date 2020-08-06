@@ -6,7 +6,7 @@ package module2.part1_massive_simple;
 
 public class Main6FlexibleVertion {
     public static void main(String[] args) {
-     printMassiveIndex();
+
      primeCheck();
 
     }
@@ -18,21 +18,13 @@ public class Main6FlexibleVertion {
         }
         return massive;
     }
-    public static void printMassiveIndex(){
-        int [] generatedMassive;
-        generatedMassive = mass();
-        int indexOfElements;
-        indexOfElements = 0;
-        for (int i = 0; i < generatedMassive.length; i++){
-            indexOfElements = i;
 
-        }
-    }
     public static void primeCheck(){
         int sum;
         sum = 0;
+        int [] massiveOut = mass();
 
-        for (int num = 0; num < mass().length; num++) {
+        for (int num = 0; num < massiveOut.length; num++) {
             int temp;
             boolean isPrime = true;
             for (int i = 2; i <= num / 2; i++) {
@@ -43,19 +35,14 @@ public class Main6FlexibleVertion {
                 }
             }
             if (isPrime && num > 1) {
-                sum = mass()[num] + sum;
-               // System.out.println(num + "Simple");
+                sum = massiveOut[num] + sum;
 
             }
-          //  else {
-          //      System.out.println("Combined");
-          //  }
+
         }
         System.out.println("sum: " + sum);
 
     }
-
-
 
 
 }
