@@ -1,6 +1,7 @@
 package module2.part1_massive_simple;
 
 //Даны действительные числа a1, a2,...an найти мах суммы парных чисел. задача 7, модуль 2, раздел 1
+// макс из а0+а1 ; а2 + а3;...
 
 public class Main7 {
     public static void main(String[] args) {
@@ -11,8 +12,8 @@ public class Main7 {
             System.out.print(" " + elem + "; ");
         }
         System.out.println();
+        System.out.println(" max sum of presented pairs is: " + maxFinder(pairFinder(massive)));
 
-        maxFinder(pairFinder(massive));
 
     }
 
@@ -49,14 +50,14 @@ public class Main7 {
         return arrayForCount;
     }
 
-    private static void maxFinder(int [] sourseArray) {
+    private static int maxFinder(int [] sourseArray) {
         int max;
         max = sourseArray[0];
         for (int i = 0; i < sourseArray.length; i ++){
             if (max < sourseArray[i]) max = sourseArray[i];
         }
-        System.out.println();
-        System.out.print("max sum of presented pairs is: " + max);
+
+        return max;
     }
 }
 
