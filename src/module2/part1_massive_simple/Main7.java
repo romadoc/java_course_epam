@@ -6,7 +6,7 @@ public class Main7 {
     public static void main(String[] args) {
         int[] massive = arrayGenerator();
 
-        System.out.print("geberated array: ");
+        System.out.print("generated array: ");
         for (int elem: massive){
             System.out.print(" " + elem + "; ");
         }
