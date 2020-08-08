@@ -23,11 +23,11 @@ public class Main8 {
     }
     private static int[] arrayGenerator(){ //создание массива
         int n = (int) (Math.random()* 20);
-        int[]arreyFirst = new int[n];
-        for (int i = 0; i < arreyFirst.length; i++) {
-            arreyFirst[i] = (int) (Math.random() * 20 - 10);
+        int[] arrayFirst = new int[n];
+        for (int i = 0; i < arrayFirst.length; i++) {
+            arrayFirst[i] = (int) (Math.random() * 20 - 10);
         }
-        return arreyFirst;
+        return arrayFirst;
     }
     private static int minElement(int[] inputArray){ //получение мин элемента
         int min;
@@ -70,7 +70,7 @@ public class Main8 {
         }
         System.out.println();                       //test
         printData("Sorted Array: ", dirtyArray); // test
-        for (int i = minQuant; i < resultArray.length; i++){
+        for (int i = minQuant + 1; i < resultArray.length; i++){
             resultArray[i] = dirtyArray[i];
 
         }

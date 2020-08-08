@@ -14,7 +14,6 @@ public class Main7 {
         System.out.println();
         System.out.println(" max sum of presented pairs is: " + maxFinder(pairFinder(massive)));
 
-
     }
 
     private static int[] arrayGenerator() {
