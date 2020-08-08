@@ -7,6 +7,7 @@ package module2.part1_massive_simple;
 public class Main8 {
     public static void main(String[] args) {
         int[] workingArray = arrayGenerator();
+        //int[] workingArray = {3,  -5,  9,  -9,  8,  4,  1,  -5,  -2,  -3,  -6,  4};
         int minElement;
         minElement = minElement(workingArray);
         printData("workindArray - изначальный массив: ", workingArray);
@@ -70,8 +71,11 @@ public class Main8 {
         }
         System.out.println();                       //test
         printData("Sorted Array: ", dirtyArray); // test
-        for (int i = minQuant + 1; i < resultArray.length; i++){
-            resultArray[i] = dirtyArray[i];
+        int j = 0;
+        for (int i = minQuant; i < resultArray.length+1; i++){
+
+            resultArray[j] = dirtyArray[i];
+            j++;
 
         }
 
