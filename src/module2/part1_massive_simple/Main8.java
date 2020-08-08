@@ -7,7 +7,6 @@ package module2.part1_massive_simple;
 public class Main8 {
     public static void main(String[] args) {
         int[] workingArray = arrayGenerator();
-        //int[] workingArray = {3,  -5,  9,  -9,  8,  4,  1,  -5,  -2,  -3,  -6,  4};
         int minElement;
         minElement = minElement(workingArray);
         printData("workindArray - изначальный массив: ", workingArray);
@@ -19,10 +18,8 @@ public class Main8 {
         outArray = newArrayCreator(minQuantity, workingArray);
         printData("Output digits: ", outArray);
 
-
-
     }
-    private static int[] arrayGenerator(){ //создание массива
+    private static int[] arrayGenerator(){
         int n = (int) (Math.random()* 20);
         int[] arrayFirst = new int[n];
         for (int i = 0; i < arrayFirst.length; i++) {
@@ -30,7 +27,7 @@ public class Main8 {
         }
         return arrayFirst;
     }
-    private static int minElement(int[] inputArray){ //получение мин элемента
+    private static int minElement(int[] inputArray){
         int min;
 
         min = inputArray[0];
@@ -41,7 +38,7 @@ public class Main8 {
         }
          return min;
     }
-    private static int countOfMin(int[] inputArray, int minDigit){ // количество миним. элементов
+    private static int countOfMin(int[] inputArray, int minDigit){
         int count = 0;
         for (int i = 0; i < inputArray.length; i++){
             if (inputArray[i] == minDigit) count = count + 1;
@@ -49,7 +46,7 @@ public class Main8 {
 
         return count;
     }
-    private static int[] newArrayCreator(int minQuant, int []inputArray ) { //создание окончательного массива
+    private static int[] newArrayCreator(int minQuant, int []inputArray ) {
         int [] dirtyArray = new int[inputArray.length];
         int [] resultArray = new int[inputArray.length - minQuant];
         int temp;
@@ -69,18 +66,13 @@ public class Main8 {
                 }
             }
         }
-        System.out.println();                       //test
-        printData("Sorted Array: ", dirtyArray); // test
         int j = 0;
-        for (int i = minQuant; i < resultArray.length+1; i++){
-
+        for (int i = minQuant; i < resultArray.length + 1; i++){
             resultArray[j] = dirtyArray[i];
             j++;
-
         }
 
         return resultArray;
-
 
     }
     private static void printData(String s, int[] array){
