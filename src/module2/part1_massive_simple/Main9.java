@@ -6,7 +6,7 @@ package module2.part1_massive_simple;
 public class Main9 {
     public static void main(String[] args) {
         int[] generatedArray = arrayConstructor();
-        //int[] generatedArray = {4, 5, 2, 4, 7 };
+
         printData("generated array: ", generatedArray);
         digitCounter(generatedArray);
 
