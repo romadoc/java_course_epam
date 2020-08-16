@@ -38,7 +38,7 @@ public class Main9 {
     private static void digitCounter(int[] array) {
        int frquencyOfdigit;
            frquencyOfdigit = 0;
-       int index;
+
 
        int[] digits = new int[array.length];
        for (int i = 0; i < array.length; i++){
