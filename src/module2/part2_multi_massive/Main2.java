@@ -10,13 +10,11 @@ public class Main2 {
 
     private static int[][] matrixGenerator() {
         int x;
-
         x = (int) (Math.random()*10);
         int[][] array = new int[x][x];
 
-
-
         System.out.println("Generated Matrix: ");
+
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 int element = (int) (Math.random() * 20);
