@@ -14,7 +14,7 @@ public class Main5 {
     private static int[][] matrixConstructor(){
         int n;
         n = 6;
-        int n1 = 1;
+
         int [][] array = new int[n][n];
         for (int i = 0; i < array.length; i++){
             for (int j = 0; j < array[i].length-i; j++){
