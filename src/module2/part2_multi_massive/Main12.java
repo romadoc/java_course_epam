@@ -44,7 +44,7 @@ public class Main12 {
 
         }
         System.out.println();
-        System.out.println("sorted up array");
+        System.out.println("sorted up array:");
         return array;
     }
 
@@ -64,7 +64,7 @@ public class Main12 {
 
             }
         }
-        System.out.println("sorted down array ");
+        System.out.println("sorted down array:");
         return array;
     }
 
