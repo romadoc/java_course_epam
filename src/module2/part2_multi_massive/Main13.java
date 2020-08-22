@@ -1,6 +1,6 @@
 package module2.part2_multi_massive;
 /*
-   Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.
+   Отсотрировать столбцы матрицы по возрастанию и убыванию значений эементов.
  */
 public class Main13 {
     public static void main(String[] args) {
