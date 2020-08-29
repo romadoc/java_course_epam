@@ -29,6 +29,7 @@ public class Main4 {
         }
     }
     private static int[] arraySorter(int[]arrayIn){
+        int count = 0;
         for (int i = 0; i < arrayIn.length; i++){
 
             for (int j = i+1; j < arrayIn.length; j++){
@@ -37,11 +38,12 @@ public class Main4 {
                     temp = arrayIn[i];
                     arrayIn[i] = arrayIn[j];
                     arrayIn[j] = temp;
+                    count++;
 
                 }
             }
         }
-
+        System.out.print("count of changing: " + count);
         return arrayIn;
     }
 
