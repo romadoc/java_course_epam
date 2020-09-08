@@ -1,4 +1,4 @@
-package part3_sorting;
+package module2.part3_sorting;
 /*
 Даны две последовательности
 a1 <= a2 <=...<=an и b1 <= b2 <=...<= bm. Образовать из них новую последовательность
