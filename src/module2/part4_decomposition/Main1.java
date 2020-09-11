@@ -21,9 +21,9 @@ public class Main1 {
         int d = 0;
         while (a != 0 && b !=0){
             if(a>b) {
-                a %= b;
+                a = a % b;
             }else {
-                b %= a;
+                b = b % a;
             }
             d = a + b;
         }
