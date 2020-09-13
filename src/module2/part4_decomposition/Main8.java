@@ -39,14 +39,12 @@ public class Main8 {
     }
     private static int gapSummator(int[]arrayIn, int start, int end){
         int sum = 0;
-        try {
+
             for (int i = start; i <= end; i++) {
                 sum = sum + arrayIn[i];
             }
 
-        }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println(e.getMessage());
-        }
+
         return sum;
     }
 }
