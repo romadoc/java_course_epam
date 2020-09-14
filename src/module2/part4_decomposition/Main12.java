@@ -52,6 +52,7 @@ public class Main12 {
         return counterSum;
     }
     private static void printArray(List<Integer>listIn){
+        System.out.print("array A : ");
         for (int elem: listIn) {
             System.out.print(elem + "; ");
         }
