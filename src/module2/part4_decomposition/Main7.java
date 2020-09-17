@@ -28,7 +28,9 @@ public class Main7 {
     }private static void factorialSum(int[]arrayIn, String s){
         int sum = 0;
         for (int i = 0; i < arrayIn.length; i++){
-            sum = sum + factorialCounter(arrayIn[i]);
+            if(arrayIn[i]%2 > 0) {
+                sum = sum + factorialCounter(arrayIn[i]);
+            }
         }
         System.out.print(s + sum);
     }
