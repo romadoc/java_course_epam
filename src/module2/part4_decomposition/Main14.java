@@ -66,10 +66,11 @@ public class Main14 {
                 for (int j = 0; j < arraySubTemp.length; j++) { // перебор массива от 0 до i
 
                    sum =  (Math.pow(arraySubTemp[j], digitCouter(i))) + sum;
-                   if(sum == i){
-                       System.out.print(i + "; ");
-                   }
 
+
+                }
+                if(sum == i){
+                    System.out.print(i + "; ");
                 }
             }
 
