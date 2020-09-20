@@ -76,13 +76,6 @@ public class Main14 {
 
     }
 
-    private static void printArray(int[] array, String s) {
-        System.out.print(s);
-        for (int elem : array) {
-            System.out.print(elem + "; ");
-        }
-    }
-
 }
 
 
