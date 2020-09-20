@@ -1,6 +1,5 @@
 package module2.part4_decomposition;
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -14,7 +13,6 @@ public class Main15 {
     public static void main(String[] args) {
         int[] array = arrayRundomGenerator(20);
         printArray(array, "start array");
-
         solver(array);
     }
 
