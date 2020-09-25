@@ -38,6 +38,7 @@ public class Main5 {
 
         System.out.println(answer + ": >>" + stringIn);
     }
+
     private static void solver(String s){
         String[]arrayString = s.split(" ");
         String string = "";
