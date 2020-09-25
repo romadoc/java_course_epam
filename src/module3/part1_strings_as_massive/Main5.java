@@ -1,7 +1,7 @@
 package module3.part1_strings_as_massive;
 /*
 Удалить в строке все лишние пробелы, то есть серии подряд идущих пробелов заменить на одиночные пробелы.
-Крайние пробелы в строке удалить.
+Крайние пробелы в строке удалить. Использовать массив char-ов.
  */
 
 public class Main5 {
@@ -15,20 +15,13 @@ public class Main5 {
     }
 
     private static String trimmer(char[]charsIn) {
-        //String[] arrayStr = s.split(" ");
         String s1 = "";
 
         for (int i = 0; i < charsIn.length; i++) {
             if (!isCharSpace(charsIn[i])) {
                 s1 = s1 + charsIn[i];
             }
-            /*
-            char[] chars = arrayStr[i].toCharArray();
-            for (int j = 0; j < chars.length; j++) {
 
-            }
-
-             */
         }
       return s1;
     }
