@@ -53,14 +53,18 @@ public class Main5 {
     private static void solver(String s){
         String[]arrayString = s.split(" ");
         String string = "";
-        List<Character>characterList = new ArrayList<>();
+        String result = "";
+        List<String>characterList = new ArrayList<>();
 
 
         for(int i = 0; i < arrayString.length; i++){
            if(trimmer(arrayString[i].toCharArray()).size() > 0) {
-               string = string + trimmer(arrayString[i].toCharArray());
+               //result = result + trimmer(arrayString[i].toCharArray());
+               characterList.add(trimmer(arrayString[i].toCharArray()).toString());
+
            }
         }
+        string = String.join(" ", characterList);
         System.out.print(string);
     }
 }
