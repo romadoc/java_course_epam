@@ -18,22 +18,13 @@ public class Main5 {
     }
 
     private static List<Character> trimmer(char[]charsIn) {
-
         List<Character>list = new ArrayList<>();
-
-
             for (int i = 0; i < charsIn.length; i++) {
-
                 if (!isCharSpace(charsIn[i])) {
-
                     list.add(charsIn[i]);
-                    //s1 = s1 + charsIn[i];
 
                 }
-
-
             }
-
       return list;
     }
 
@@ -46,7 +37,6 @@ public class Main5 {
     }
 
     private static void printString(String answer, String stringIn) {
-
         System.out.println(answer + ": >>" + stringIn);
     }
 
@@ -55,16 +45,21 @@ public class Main5 {
         String string = "";
         String result = "";
         List<String>characterList = new ArrayList<>();
+        //List<List<String>>joinList = Arrays.<String>asList(characterList);
 
 
         for(int i = 0; i < arrayString.length; i++){
            if(trimmer(arrayString[i].toCharArray()).size() > 0) {
-               //result = result + trimmer(arrayString[i].toCharArray());
-               characterList.add(trimmer(arrayString[i].toCharArray()).toString());
+              result = result + trimmer(arrayString[i].toCharArray());
+
+              // characterList.add(trimmer(arrayString[i].toCharArray()).toString());
 
            }
         }
-        string = String.join(" ", characterList);
-        System.out.print(string);
+        //string = String.join(" ", result);
+
+
+
+        System.out.print(result);
     }
 }
