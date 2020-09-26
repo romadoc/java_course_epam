@@ -44,20 +44,31 @@ public class Main5 {
         String[]arrayString = s.split(" ");
         String string = "";
         String result = "";
-        List<String>characterList = new ArrayList<>();
+
         //List<List<String>>joinList = Arrays.<String>asList(characterList);
+        List<List> listOfList = new ArrayList<>();
 
 
         for(int i = 0; i < arrayString.length; i++){
            if(trimmer(arrayString[i].toCharArray()).size() > 0) {
-              result = result + trimmer(arrayString[i].toCharArray());
+              //result = result + trimmer(arrayString[i].toCharArray());
+              listOfList.add(trimmer(arrayString[i].toCharArray()));
 
-              // characterList.add(trimmer(arrayString[i].toCharArray()).toString());
+
 
            }
         }
-        //string = String.join(" ", result);
 
+        listOfList.removeAll(Arrays.asList(null, " "));
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < listOfList.size(); i++){
+
+                stringBuilder.append(listOfList.get(i)).append(" ") ;
+               // result = result + listOfList.get(i).toString();
+
+        }
+       // result = stringBuilder.toString();
+        result = String.valueOf(stringBuilder);
 
 
         System.out.print(result);
