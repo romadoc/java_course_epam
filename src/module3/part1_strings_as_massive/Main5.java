@@ -42,35 +42,24 @@ public class Main5 {
 
     private static void solver(String s){
         String[]arrayString = s.split(" ");
-        String string = "";
-        String result = "";
-
-        //List<List<String>>joinList = Arrays.<String>asList(characterList);
+        StringBuilder result = new StringBuilder();
         ArrayList<ArrayList>listOfList = new ArrayList<>();
-
 
         for(int i = 0; i < arrayString.length; i++){
            if(trimmer(arrayString[i].toCharArray()).size() > 0) {
-              //result = result + trimmer(arrayString[i].toCharArray());
-              listOfList.add((ArrayList) trimmer(arrayString[i].toCharArray()));
+             listOfList.add((ArrayList) trimmer(arrayString[i].toCharArray()));
            }
         }
 
         listOfList.removeAll(Arrays.asList(null, " "));
-        StringBuilder stringBuilder = new StringBuilder();
+
         for (int i = 0; i < listOfList.size(); i++){
-            for(int j = 0; j <= listOfList.get(i).size(); j++ )
-
-               // stringBuilder.append(listOfList.get(i)).append(" ") ;
-                result = result + String.valueOf(listOfList.get(j).toString());
-
-
-
+             for(int j = 0; j < listOfList.get(i).size(); j++) {
+                 result.append(listOfList.get(i).get(j).toString());
+             }
+             result.append(" ");
         }
-       // result = stringBuilder.toString();
-      //  result = String.valueOf(stringBuilder);
-
-
-        System.out.print(result);
+        result.deleteCharAt(result.length()-1);
+        System.out.print("result: >>" + result);
     }
 }
