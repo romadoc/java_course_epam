@@ -60,6 +60,6 @@ public class Main5 {
              result.append(" ");
         }
         result.deleteCharAt(result.length()-1);
-        System.out.print("result: >>" + result);
+        System.out.print("" + result);
     }
 }
