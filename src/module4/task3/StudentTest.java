@@ -36,12 +36,13 @@ public class StudentTest {
 
         for (int i = 0; i < students.length; i++) {
             int count = 0;
-            for (int y = 0; y < students[i].getGrades().length; y++) {
-                if (students[i].getGrades()[y] > 8) {
+            int[] grades = students[i].getGrades();
+            for (int y = 0; y < grades.length; y++) {
+                if (grades[y] > 8) {
                     count++;
                 }
             }
-            if (count == students[i].getGrades().length) {
+            if (count == grades.length) {
                 System.out.println(students[i].getName() + "; group # " + students[i].getGroupNumber());
             }
         }
