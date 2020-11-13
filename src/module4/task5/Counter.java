@@ -14,17 +14,12 @@ public class Counter {
         this.lowValue = lowValue;
     }
 
-    public int getLowValue() {
-        return lowValue;
-    }
 
     public void setUpValue(int upValue) {
         this.upValue = upValue;
     }
 
-    public int getUpValue() {
-        return upValue;
-    }
+
 
     public void countUp() throws InterruptedException { //счетчик со значениями по умолчанию
 
