@@ -1,4 +1,4 @@
-package module1.part2_branching;
+package com.epam.module1.part2_branching;
 
 import java.util.Scanner;
 

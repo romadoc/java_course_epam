@@ -1,4 +1,4 @@
-package module1.part1_linear;
+package com.epam.module1.part1_linear;
 
 public class Main3 {
     /* Задача номер 3. 1 модуль, 1 раздел. Синус, косинус, тангенс.

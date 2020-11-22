@@ -1,4 +1,4 @@
-package module1.part1_linear;
+package com.epam.module1.part1_linear;
 
 import java.util.Scanner;
 

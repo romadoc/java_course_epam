@@ -1,4 +1,4 @@
-package module1.part2_branching;
+package com.epam.module1.part2_branching;
 
 // Найти max{min(a, b), min(c, d)}
 public class Main2 {

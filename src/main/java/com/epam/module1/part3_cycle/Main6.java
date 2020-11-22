@@ -1,4 +1,4 @@
-package module1.part3_cycle;
+package com.epam.module1.part3_cycle;
 
 //Вывести на экран соответствия между символами и их численными обозначениями в памяти компьютера
 public class Main6 {

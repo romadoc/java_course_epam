@@ -1,4 +1,4 @@
-package module1.part1_linear;
+package com.epam.module1.part1_linear;
 
 import java.util.Scanner;
 
@@ -16,9 +16,15 @@ public class Main5 {
         int seconds1 = seconds - hours * 3600 - minutes * 60;
         StringBuilder outputDates = new StringBuilder();
         outputDates.append(hours).append("ч ").append(minutes).append("мин ").append(seconds1).append("с.");
-        if (hours < 10) outputDates.insert(0, "0");
-        if (minutes < 10) outputDates.insert(4, "0");
-        if (seconds1 < 10) outputDates.insert(10, "0");
+        if (hours < 10) {
+            outputDates.insert(0, "0");
+        }
+        if (minutes < 10) {
+            outputDates.insert(4, "0");
+        }
+        if (seconds1 < 10) {
+            outputDates.insert(10, "0");
+        }
         System.out.println(outputDates);
 
     }

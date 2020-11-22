@@ -1,4 +1,4 @@
-package module1.part2_branching;
+package com.epam.module1.part2_branching;
 
 // вычислить значение функции x digr2 - 3x + 9 при x <= 3;
 // 1/x digr3 + 6 if x > 3;

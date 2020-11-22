@@ -1,4 +1,4 @@
-package module1.part1_linear;
+package com.epam.module1.part1_linear;
 
 public class Main2 {
     /*Задача номер 2, 1й модуль, 1 раздел. На решение квадратного корня.
