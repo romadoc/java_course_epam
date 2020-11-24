@@ -1,8 +1,11 @@
-package com.epam.module1.part2_branching;
+package com.epam.moduleone.parttwobranching;
 
-// вычислить значение функции x digr2 - 3x + 9 при x <= 3;
-// 1/x digr3 + 6 if x > 3;
-// вариант решения с использованием цикла
+/* вычислить значение функции
+                                 |  x^2 - 3x + 9 при x <= 3;
+                        f(x) =   |
+                                 |  1/(x^3 + 6)  if x > 3;
+note from mentor - please fix expression, you implemented wrong sequence of the operations here
+*/
 public class Main5 {
 
     public static void main(String[] args) {
@@ -20,7 +23,7 @@ public class Main5 {
         System.out.println();
 
         while (z > 3 && z < 14) {
-            y = 1 / Math.pow(z, 3) + 6;
+            y = 1 / (Math.pow(z, 3) + 6);
             z++;
             System.out.print(" x = " + z + " " + " y = " + y + ";");
 
