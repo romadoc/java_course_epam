@@ -1,4 +1,4 @@
-package com.epam.module1.part1_linear;
+package com.epam.moduleone.partonelinear;
 
 public class Main4 {
     // Дано действительное число R вида nnn.ddd (три цифровых разряда в дробной и целой частях). Поменять местами
