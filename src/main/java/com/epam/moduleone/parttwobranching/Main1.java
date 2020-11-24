@@ -30,7 +30,7 @@ public class Main1 {
         if(z<=0){
             System.out.println("triangle is not exist.");
         }
-        if(z==90.0 || x==90.0 || y== 90.0){
+        else if(z==90.0 || x==90.0 || y== 90.0){
             System.out.println("triangle exists. it is right triangle");
         }
         else System.out.println("triangle exists.");
