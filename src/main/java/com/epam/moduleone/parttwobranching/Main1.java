@@ -27,10 +27,10 @@ public class Main1 {
     }
     private static void chackingMethod(float x, float y){
         float z = 180 - (x+y);
-        if(z<=0){
+        if(z <= 0){
             System.out.println("triangle is not exist.");
         }
-        else if(z==90.0 || x==90.0 || y== 90.0){
+        else if(z == 90.0 || x == 90.0 || y == 90.0){
             System.out.println("triangle exists. it is right triangle");
         }
         else System.out.println("triangle exists.");
