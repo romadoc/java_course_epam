@@ -13,10 +13,11 @@ public class Main5 {
         double y;
         double z = 4;
 
-        while (x <= 3 && x >= -6) {
+        while (x <=3  && x >= -6) {
             y = Math.pow(x, 2) - 3 * x + 9;
+            System.out.print(" x = " + x + " ");
             x--;
-            System.out.print(" x = " + x + " " + " y = " + y + "; ");
+            System.out.println("; f(x) = " + y + "; ");
 
         }
 
@@ -24,8 +25,9 @@ public class Main5 {
 
         while (z > 3 && z < 14) {
             y = 1 / (Math.pow(z, 3) + 6);
+            System.out.print(" x = " + z + " ");
             z++;
-            System.out.print(" x = " + z + " " + " y = " + y + ";");
+            System.out.println(" f(x) = " + y + ";");
 
         }
 
