@@ -13,6 +13,5 @@ public class Main1 {
         double z = ((a - 3) * b / 2) + c;
         System.out.println(z);
         byte d = 1;
-        
     }
 }

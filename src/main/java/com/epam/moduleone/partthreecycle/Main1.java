@@ -6,8 +6,9 @@ import java.util.Scanner;
 //все числа от 1 до введенного пользователем числа.
 
 public class Main1 {
+    private final static String WARNING = "this digit is out of Integer range!";
     public static void main(String[] args) {
-        final String WARNING = "this digit is out of Integer range!";
+
         String s = "Type any digit (integer, less then 2147483647) >>";
         Scanner scanner = new Scanner(System.in);
         System.out.print(s);

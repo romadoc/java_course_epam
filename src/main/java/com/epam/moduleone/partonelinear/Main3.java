@@ -1,7 +1,8 @@
 package com.epam.moduleone.partonelinear;
 
 public class Main3 {
-    /* Задача номер 3. 1 модуль, 1 раздел. Синус, косинус, тангенс.
+    /**
+     * Задача номер 3. 1 модуль, 1 раздел. Синус, косинус, тангенс.
     (sin x+cos y/cos x - sin y) * tg xy
     */
     public static void main(String[] args) {

@@ -16,7 +16,12 @@ public class Main5 {
         int minutes = (seconds - hours * 3600) / 60;
         int seconds1 = seconds - hours * 3600 - minutes * 60;
         StringBuilder outputDates = new StringBuilder();
-        outputDates.append(hours).append("ч ").append(minutes).append("мин ").append(seconds1).append("с.");
+        outputDates.append(hours)
+                .append("ч ")
+                .append(minutes)
+                .append("мин ")
+                .append(seconds1)
+                .append("с.");
 
         if (hours < 10) {
             outputDates.insert(0, "0");
