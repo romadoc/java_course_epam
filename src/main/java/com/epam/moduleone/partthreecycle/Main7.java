@@ -1,4 +1,4 @@
-package com.epam.module1.part3_cycle;
+package com.epam.moduleone.partthreecycle;
 
 import java.util.Scanner;
 

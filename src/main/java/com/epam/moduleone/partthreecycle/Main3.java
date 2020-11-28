@@ -1,4 +1,4 @@
-package com.epam.module1.part3_cycle;
+package com.epam.moduleone.partthreecycle;
 
 //найти сумму квадратов первых ста чисел
 public class Main3 {

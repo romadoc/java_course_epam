@@ -1,4 +1,4 @@
-package com.epam.module1.part3_cycle;
+package com.epam.moduleone.partthreecycle;
 
 //Даны два числа. Определить цифры, входящие в запись как первого так и второго числа.
 

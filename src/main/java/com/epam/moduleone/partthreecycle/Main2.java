@@ -1,4 +1,4 @@
-package com.epam.module1.part3_cycle;
+package com.epam.moduleone.partthreecycle;
 
 //вычислить значения функции y = x, x > 2; y = -x, x <=2, с шагом h(шаг принимаем за 1)
 public class Main2 {
