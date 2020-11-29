@@ -3,16 +3,13 @@ package com.epam.moduleone.partthreecycle;
 //Даны числовой ряд и некоторое число е. Найти сумму тех членов ряда,
 //модуль которых больше или равен заданному е. Общий член ряда имеет вид a = 1/2(степени n)+1/3(степени n)
 
-import java.util.Scanner;
+import validator.Validator;
 
 public class Main5 {
 
-
     public static void main(String[] args) {
 
-        float e;
-        e = inputDigit("type e >>");
-
+        float e = Validator.floatIn("type float ");
         float a;
         float sum;
         sum = 0;
@@ -29,20 +26,6 @@ public class Main5 {
         }
         System.out.println("сумма модулей чисел >= "+e+": "+sum);
 
-
     }
-
-    public static float inputDigit(String str) {
-        Scanner scanner = new Scanner(System.in);
-        float typedE;
-        while (!scanner.hasNextFloat()) {
-            scanner.nextLine();
-            System.out.print(str);
-        }
-        typedE = scanner.nextFloat();
-        return typedE;
-    }
-
-
 
 }
