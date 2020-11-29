@@ -2,12 +2,12 @@ package com.epam.moduleone.parttwobranching;
 
 // Найти max{min(a, b), min(c, d)}
 public class Main2 {
+    private final static int A = 2;
+    private final static int B = 1;
+    private final static int C = 4;
+    private final static int D = 3;
     public static void main(String[] args) {
-        int a = 2;
-        int b = 1;
-        int c = 4;
-        int d = 3;
-        System.out.println(Math.max(Math.min(a, b), Math.min(c, d)));
+        System.out.println(Math.max(Math.min(A, B), Math.min(C, D)));
     }
 
 }

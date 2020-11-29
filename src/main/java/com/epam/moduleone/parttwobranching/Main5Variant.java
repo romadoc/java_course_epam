@@ -5,11 +5,11 @@ package com.epam.moduleone.parttwobranching;
                                  |  1/(x^3 + 6)  if x > 3;
 */
 public class Main5Variant {
+    private static final double X = -9.0;
+    private static final double X1 = 16.0;
     public static void main(String[] args) {
-       double x = -9.0;
-       double x1 = 16.0;
-       decision(x);
-       decision1(x1);
+       decision(X);
+       decision1(X1);
 
     }
     private static void decision(double x){

@@ -28,9 +28,6 @@ public class Main5 {
             System.out.print(" x = " + z + " ");
             z++;
             System.out.println(" f(x) = " + y + ";");
-
         }
-
-
     }
 }
