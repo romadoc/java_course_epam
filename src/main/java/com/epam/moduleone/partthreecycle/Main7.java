@@ -1,5 +1,7 @@
 package com.epam.moduleone.partthreecycle;
 
+import validator.Validator;
+
 import java.util.Scanner;
 
 //Для каждого натурального числа в промежутке от
@@ -7,24 +9,10 @@ import java.util.Scanner;
 
 public class Main7 {
     public static void main(String[] args) {
-        int m;
-        m = input("введите m >>");
-        int n;
-        n = input("введите n >>");
+        int m = Validator.intIn("type m");
+        int n = Validator.intIn("type n");
         rezultOut(m, n);
 
-    }
-
-    public static int input(String message) {
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print(message);
-        while (!scanner.hasNextInt()) {
-            scanner.nextLine();
-            System.out.print(message);
-        }
-        int a = scanner.nextInt();
-        return a;
     }
 
     public static void rezultOut(int m, int n) {
