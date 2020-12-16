@@ -1,14 +1,14 @@
 package com.epam.moduleone.parttwobranching;
 
-import validator.Validator;
+import utils.ScannerUtil;
 
 public class Main1 {
     //  Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли
     //  он прямоугольным.
 
     public static void main(String[] args) {
-        float angleX = Validator.floatIn("enter the first angle (in degrees)");
-        float angleY = Validator.floatIn("enter the second angle (in degrees)");
+        float angleX = ScannerUtil.floatIn("enter the first angle (in degrees)");
+        float angleY = ScannerUtil.floatIn("enter the second angle (in degrees)");
         chackingMethod(angleX, angleY);
 
     }

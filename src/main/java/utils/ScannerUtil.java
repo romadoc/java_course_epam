@@ -1,13 +1,18 @@
-package validator;
-/**
- * class for entering dates and theirs validation
- * int; long; float; double; string
- * using: youVariable = Validator.nesesaryMethod("text of invitation")
- */
+package utils;
 
 import java.util.Scanner;
 
-public class Validator {
+/**
+ * class for entering dates
+ * int; long; float; double; string
+ * using: youVariable = ScannerUtil.necessaryMethod("text of invitation")
+ */
+public final class ScannerUtil {
+
+    private ScannerUtil(){
+        //preventing instance creation
+    }
+
     public static int intIn(String s){
         s = getString(s);
         int x = 0;
