@@ -25,7 +25,7 @@ public class Main8 {
             scanner.nextLine();
             System.out.print(message);
         }
-        long digit = scanner.nextInt();
+        long digit = scanner.nextLong();
         return digit;
     }
 
