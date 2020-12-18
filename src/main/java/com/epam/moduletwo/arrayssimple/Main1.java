@@ -8,6 +8,7 @@ public class Main1 {
     public static void main(String[] args) {
       fillingArray();
     }
+
     static void fillingArray() {
         int a = (int)(1+Math.random()*51);
         int[] arrayOfInteger = new int[a];
@@ -16,6 +17,7 @@ public class Main1 {
         }
         printResult(arrayOfInteger, ScannerUtil.integerIn("Type K (integer)"));
     }
+
     private static void printResult(int[] array, int a) {
         System.out.println("числа, кратные К (при К = "+a+"): ");
         for (int j = 0; j < array.length; j++) {
