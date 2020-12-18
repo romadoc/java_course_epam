@@ -11,12 +11,24 @@ public class Main3 {
     static int countZeroNumbers = 0;
 
     public static void main(String[] args) {
-        int[] array = arrayGenerator();
+        anwerGenerator(arrayGenerator());
+    }
 
+    private static double[] arrayGenerator() {
+        int n = ScannerUtil.integerIn("Enter the dimension of the array");
+        double[] array = new double[n];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == 0) {
+            array[i] = (int) (Math.random() * 200 - 100);
+            System.out.print(" " + array[i] + "; ");
+        }
+        System.out.println();
+        return array;
+    }
+    private static void anwerGenerator(double[]arrayIn){
+        for (int i = 0; i < arrayIn.length; i++) {
+            if (arrayIn[i] == 0) {
                 countZeroNumbers = countZeroNumbers + 1;
-            } else if (array[i] > 0) {
+            } else if (arrayIn[i] > 0) {
                 countPositiveNumbers = countPositiveNumbers + 1;
             } else countNegativeNumbers = countNegativeNumbers + 1;
 
@@ -24,16 +36,5 @@ public class Main3 {
         System.out.println("положительных элементов: " + countPositiveNumbers);
         System.out.println("нулевых элементов: " + countZeroNumbers);
         System.out.println("отрицательных элементов: " + countNegativeNumbers);
-    }
-
-    private static int[] arrayGenerator() {
-        int n = ScannerUtil.integerIn("Enter the dimension of the array");
-        int[] array = new int[n];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 200 - 100);
-            System.out.print(" " + array[i] + "; ");
-        }
-        System.out.println();
-        return array;
     }
 }
