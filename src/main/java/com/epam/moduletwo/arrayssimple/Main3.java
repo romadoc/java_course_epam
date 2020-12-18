@@ -11,7 +11,7 @@ public class Main3 {
     static int countZeroNumbers = 0;
 
     public static void main(String[] args) {
-        anwerGenerator(arrayGenerator());
+        answerGenerator(arrayGenerator());
     }
 
     private static double[] arrayGenerator() {
@@ -24,7 +24,7 @@ public class Main3 {
         System.out.println();
         return array;
     }
-    private static void anwerGenerator(double[]arrayIn){
+    private static void answerGenerator(double[]arrayIn){
         for (int i = 0; i < arrayIn.length; i++) {
             if (arrayIn[i] == 0) {
                 countZeroNumbers = countZeroNumbers + 1;
