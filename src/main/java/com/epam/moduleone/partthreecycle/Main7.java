@@ -1,6 +1,6 @@
 package com.epam.moduleone.partthreecycle;
 
-import utils.ScannerUtil;
+import com.epam.moduleone.utils.ScannerUtil;
 
 //Для каждого натурального числа в промежутке от
 // m до n вывести все делители, кроме единицы и самого числа. m и n вводятся с клавиатуры
