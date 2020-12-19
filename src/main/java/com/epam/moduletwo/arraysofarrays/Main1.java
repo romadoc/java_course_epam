@@ -4,10 +4,9 @@ package com.epam.moduletwo.arraysofarrays;
 
 public class Main1 {
     public static void main(String[] args) {
-        //arrayConstructor();
-        decideTask(arrayCration());
+        decideTask(arrayCreation());
     }
-    private static int[][] arrayCration(){
+    private static int[][] arrayCreation(){
         int[][] array = {
                 {9, 2, 3, 4, 5},
                 {3, 4, 6, 7, 8 },
