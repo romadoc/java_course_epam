@@ -49,6 +49,5 @@ public class Main4 {
         for (int i = 0; i < massive.length; i++){
             System.out.print(" " + massive[i] + "; ");
         }
-
     }
 }
