@@ -68,7 +68,6 @@ public final class ScannerUtil {
         string = scanner.nextLine();
         return string;
     }
-
     private static String getString(String s) {
         s = s + " >>";
         System.out.print(s);
