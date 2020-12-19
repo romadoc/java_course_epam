@@ -6,16 +6,16 @@ public class Main5 {
         a = (int)(Math.random()*19);
         System.out.println("i = " + a);
 
-        int[] massive = new int[20];
-        System.out.println("original massive (the lengh of massive - "+massive.length+"): ");
-        for (int i = 0; i < massive.length; i++) {
-            massive[i] = (int) (Math.random() * 200 - 100);
-            System.out.print(" " + massive[i] + "; ");
+        int[] array = new int[20];
+        System.out.println("original array (the lengh of massive - " + array.length+"): ");
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * 200 - 100);
+            System.out.print(" " + array[i] + "; ");
         }
         System.out.println();
         System.out.println("list of elements ai > i (" + a + "): ");
-        for (int i = a; i < massive.length; i++){
-            System.out.print(" " + massive[i] + "; ");
+        for (int i = a; i < array.length; i++){
+            System.out.print(" " + array[i] + "; ");
         }
     }
 }
