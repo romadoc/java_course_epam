@@ -10,9 +10,7 @@ public class Main5 {
         System.out.println("original massive (the lengh of massive - "+massive.length+"): ");
         for (int i = 0; i < massive.length; i++) {
             massive[i] = (int) (Math.random() * 200 - 100);
-
             System.out.print(" " + massive[i] + "; ");
-
         }
         System.out.println();
         System.out.println("list of elements ai > i (" + a + "): ");
