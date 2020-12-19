@@ -7,8 +7,8 @@ public class Main3 {
     public static void main(String[] args) {
         int [][] array;
         array = createMatrix();
-        int lineNumber = ScannerUtil.integerIn("line number (positive integer)");
-        int columnNumber = ScannerUtil.integerIn("Column number(positive integer)");
+        int lineNumber = ScannerUtil.integerIn("Enter line number (positive integer)");
+        int columnNumber = ScannerUtil.integerIn("Enter column number(positive integer)");
         printOutLine(lineNumber, columnNumber, array);
     }
 
