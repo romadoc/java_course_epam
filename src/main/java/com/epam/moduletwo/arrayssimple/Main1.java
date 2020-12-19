@@ -6,7 +6,8 @@ import com.epam.moduletwo.utils.ScannerUtil;
 
 public class Main1 {
     public static void main(String[] args) {
-      fillingArray();
+
+        fillingArray();
     }
 
     static void fillingArray() {
