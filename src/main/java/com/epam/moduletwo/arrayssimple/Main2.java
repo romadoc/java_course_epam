@@ -1,9 +1,9 @@
 package com.epam.moduletwo.arrayssimple;
 
+import com.epam.moduletwo.utils.ScannerUtil;
+
 //Дана последовательность действительных чисел а1 ,а2 ,..., ап.
 // Заменить все ее члены, большие данного Z, этим числом. Подсчи­тать количество замен.
-
-import com.epam.moduletwo.utils.ScannerUtil;
 
 public class Main2 {
         static int countOfChanges = 0;
