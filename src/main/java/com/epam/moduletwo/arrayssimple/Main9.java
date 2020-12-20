@@ -4,7 +4,6 @@ package com.epam.moduletwo.arrayssimple;
 public class Main9 {
     public static void main(String[] args) {
         int[] generatedArray = arrayConstruct();
-
         printData("generated array: ", generatedArray);
         digitCount(generatedArray);
 
