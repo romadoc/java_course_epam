@@ -3,7 +3,7 @@ package com.epam.moduletwo.arrayssimple;
 // Дан массив действительных чисел, размерность которого N. Подсчитать, сколько в нем отрицательных,
 //положительных и нулевых элементов.
 
-import com.epam.moduletwo.utils.ScannerUtil;
+import com.epam.utils.ScannerUtil;
 
 public class Main3 {
     static int countNegativeNumbers = 0;
@@ -11,10 +11,11 @@ public class Main3 {
     static int countZeroNumbers = 0;
 
     public static void main(String[] args) {
-        answerGenerator(arrayGenerator());
+
+        answerHowMany(createArray());
     }
 
-    private static double[] arrayGenerator() {
+    private static double[] createArray() {
 
         int n = ScannerUtil.integerIn("Enter the dimension of the array");
         double[] array = new double[n];
@@ -26,7 +27,7 @@ public class Main3 {
         System.out.println();
         return array;
     }
-    private static void answerGenerator(double[]arrayIn){
+    private static void answerHowMany(double[]arrayIn){
 
         for (int i = 0; i < arrayIn.length; i++) {
             if (arrayIn[i] == 0) {
