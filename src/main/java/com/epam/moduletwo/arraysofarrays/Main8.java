@@ -1,6 +1,6 @@
 package com.epam.moduletwo.arraysofarrays;
 
-import com.epam.moduletwo.utils.ScannerUtil;
+import com.epam.utils.ScannerUtil;
 
 /**
  * В числовой матрице поменять местами два столбца любых столбца, т. е. все элементы одного столбца поставить на
