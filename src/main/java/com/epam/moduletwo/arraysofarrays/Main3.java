@@ -2,7 +2,7 @@ package com.epam.moduletwo.arraysofarrays;
 
 //Дана матрица. Вывести k-ю строку и p-й столбец матрицы
 
-import com.epam.moduletwo.utils.ScannerUtil;
+import com.epam.utils.ScannerUtil;
 public class Main3 {
     public static void main(String[] args) {
         int [][] array;
