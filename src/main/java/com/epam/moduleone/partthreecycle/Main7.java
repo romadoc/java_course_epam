@@ -1,14 +1,14 @@
 package com.epam.moduleone.partthreecycle;
 
-import com.epam.moduleone.utils.ScannerUtil;
+import com.epam.utils.ScannerUtil;
 
 //Для каждого натурального числа в промежутке от
 // m до n вывести все делители, кроме единицы и самого числа. m и n вводятся с клавиатуры
 
 public class Main7 {
     public static void main(String[] args) {
-        int m = ScannerUtil.intIn("type m");
-        int n = ScannerUtil.intIn("type n");
+        int m = ScannerUtil.integerIn("type m");
+        int n = ScannerUtil.integerIn("type n");
         rezultOut(m, n);
 
     }
