@@ -3,7 +3,7 @@ package com.epam.moduleone.partthreecycle;
 //Даны числовой ряд и некоторое число е. Найти сумму тех членов ряда,
 //модуль которых больше или равен заданному е. Общий член ряда имеет вид a = 1/2(степени n)+1/3(степени n)
 
-import com.epam.moduleone.utils.ScannerUtil;
+import com.epam.utils.ScannerUtil;
 
 public class Main5 {
 
