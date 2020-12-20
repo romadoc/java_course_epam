@@ -12,14 +12,14 @@ public class Main1 {
         int b;
         b = 9;
         int greatCommonDivider;
-        greatCommonDivider = greatCommonDev(a, b);
+        greatCommonDivider = countGreatCommonDev(a, b);
         printResult("checked digits", a, b);
         printResult("great common divider", greatCommonDivider);
         int leastCommonMultiple;
-        leastCommonMultiple = leastCommonMultiple(a, b, greatCommonDivider);
+        leastCommonMultiple = countLeastCommonMultiple(a, b, greatCommonDivider);
         printResult("least common multiple", leastCommonMultiple);
     }
-    private static int greatCommonDev(int a, int b){
+    private static int countGreatCommonDev(int a, int b){
         int d = 0;
         while (a != 0 && b !=0){
             if(a>b) {
@@ -32,7 +32,7 @@ public class Main1 {
 
         return d;
     }
-    private static int leastCommonMultiple(int a, int b, int grComDiv){
+    private static int countLeastCommonMultiple(int a, int b, int grComDiv){
         int x;
         x = (a*b)/grComDiv;
         return x;
