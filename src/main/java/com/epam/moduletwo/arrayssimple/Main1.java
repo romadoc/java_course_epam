@@ -1,6 +1,6 @@
 package com.epam.moduletwo.arrayssimple;
 
-import com.epam.moduletwo.utils.ScannerUtil;
+import com.epam.utils.ScannerUtil;
 
 //В массив A [N] занесены натуральные числа. Найти сумму тех элементов, которые кратны данному К.
 
