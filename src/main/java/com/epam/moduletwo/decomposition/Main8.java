@@ -24,16 +24,17 @@ public class Main8 {
         int[]array = new int[10];
         for (int i = 0; i < array.length; i++){
             array[i] = (int)(Math.random()*10);
-
         }
         return array;
     }
+
     private static void printData(int[]arrayIn, String s){
         System.out.print(s + ": ");
         for (int elem: arrayIn) {
             System.out.print(elem + "; ");
         }
     }
+
     private static void printData(int sum, String s){
         System.out.println();
         System.out.print("sum of elements at indexes [" + s + "]: " + sum);
