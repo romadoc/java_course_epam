@@ -1,4 +1,4 @@
-package com.epam.moduletwo.utils;
+package com.epam.utils;
 
 import java.util.Scanner;
 
