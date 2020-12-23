@@ -4,6 +4,7 @@ package com.epam.modulethree.arrayofchars;
  * Дан массив названий переменных в camelCase. Преобразовать названия в snake_case.
  * task 1 https://learn.epam.com/myLearning/program?groupGuid=df7fb55b-0efc-452b-9509-aa8160990adb
  */
+
 public class Main1 {
     public static void main(String[] args) {
         String[]array = {"introOne", "introTwo", "camelStyle", "myBike"};
