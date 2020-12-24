@@ -11,7 +11,6 @@ public class Main10 {
     public static void main(String[] args) {
         String s = ScannerUtil.stringIn("Type string");
         solveTask(s);
-
     }
 
     private static void solveTask(String s){
