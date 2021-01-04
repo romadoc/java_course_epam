@@ -1,8 +1,6 @@
 package textanalyzer;
 
 import textanalyzer.textfortest.TextFileReader;
-
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class StartAnalyser {
