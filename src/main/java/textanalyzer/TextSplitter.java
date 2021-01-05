@@ -9,7 +9,7 @@ public class TextSplitter {
         String[]strings = string.split("[^a-zA-Zа-яА-Я0-9_]");
 
         for (int i = 0; i < strings.length; i++){
-            if(strings[i].length()>0){
+            if(strings[i].length()>3){
                 list.add(strings[i].toLowerCase());
             }
         }
