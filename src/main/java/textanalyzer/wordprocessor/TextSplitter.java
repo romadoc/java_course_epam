@@ -1,4 +1,4 @@
-package textanalyzer;
+package textanalyzer.wordprocessor;
 
 import java.util.ArrayList;
 
