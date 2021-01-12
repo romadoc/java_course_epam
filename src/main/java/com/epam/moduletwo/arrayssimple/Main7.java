@@ -1,7 +1,6 @@
 package com.epam.moduletwo.arrayssimple;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 //Даны действительные числа a1, a2,...an найти мах суммы парных чисел.
 // макс из а0+а1 ; а2 + а3;...
