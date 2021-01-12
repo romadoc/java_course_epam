@@ -20,10 +20,14 @@ public class Main1 {
 
     private static void printResult(int[] array, int a) {
         System.out.println("числа, кратные К (при К = "+a+"): ");
+        int sum = 0;
         for (int j = 0; j < array.length; j++) {
             if (array[j] % a == 0) {
                 System.out.print(" " + array[j] + "; ");
+                sum = sum + array[j];
             }
         }
+        System.out.println();
+        System.out.println("sum is "+sum);
     }
 }
