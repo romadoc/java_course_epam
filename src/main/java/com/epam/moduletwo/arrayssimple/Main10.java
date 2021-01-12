@@ -12,7 +12,7 @@ public class Main10 {
     }
     private static int[] createArray(){
         int[] array = new int[10];
-        System.out.print("generated array: ");
+        System.out.print("created array: ");
         for (int i = 0; i < array.length; i++){
             int elem;
             elem = (int)(Math.random()*20);
