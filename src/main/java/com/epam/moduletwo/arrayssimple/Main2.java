@@ -6,7 +6,7 @@ import com.epam.utils.ScannerUtil;
 // Заменить все ее члены, большие данного Z, этим числом. Подсчи­тать количество замен.
 
 public class Main2 {
-        static int countOfChanges = 0;
+
     public static void main(String[] args) {
     arrayGeneratorAndAnswerIniciation();
     }
@@ -22,6 +22,7 @@ public class Main2 {
     }
     private static void answerGeneration(float[]array, float a){
         System.out.println("output array: ");
+        int countOfChanges = 0;
         for (int i = 0; i < array.length; i ++){
             if (array[i] > a) {
                 array[i] = a;
