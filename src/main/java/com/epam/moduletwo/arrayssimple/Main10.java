@@ -7,11 +7,10 @@ import java.util.Arrays;
 
 public class Main10 {
     public static void main(String[] args) {
-        int [] testArray = arrayGeneration();
+        int [] testArray = createArray();
         System.out.print("output array: " + Arrays.toString(compressOfArray(testArray)));
     }
-    private static int[] arrayGeneration(){
-
+    private static int[] createArray(){
         int[] array = new int[10];
         System.out.print("generated array: ");
         for (int i = 0; i < array.length; i++){
@@ -24,11 +23,12 @@ public class Main10 {
         return array;
     }
     private static int [] compressOfArray(int[]inputArray){
-        int[]outputArray = inputArray;
-        for (int i = 1; i < outputArray.length; i = i+2){
-            outputArray[i] = 0;
-
+        for(int i = 0; i <inputArray.length/2; i++){
+            inputArray[i] = inputArray[i*2];
         }
-        return outputArray;
+        for (int i = inputArray.length/2; i<inputArray.length; i++ ){
+            inputArray[i] = 0;
+        }
+        return inputArray;
     }
 }
