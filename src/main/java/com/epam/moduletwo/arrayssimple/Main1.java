@@ -11,8 +11,7 @@ public class Main1 {
     }
 
     static void fillingArray() {
-        int a = (int)(1+Math.random()*51);
-        int[] arrayOfInteger = new int[a];
+        int[] arrayOfInteger = new int[ScannerUtil.integerIn("Type length of array (positive integer)")];
         for (int i = 0; i < arrayOfInteger.length; i++) {
             arrayOfInteger[i] = i + 1;
         }
