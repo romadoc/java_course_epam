@@ -7,7 +7,7 @@ import java.util.Arrays;
 //исходной те члены, которые равны min (a1, a2, ..., a_n)
 public class Main8 {
     public static void main(String[] args) {
-        int[]workingArray =  {3, -5, -8, 6, -8, 10}; // working test
+        int[] workingArray = createArray();
         int minElement;
         minElement = minElement(workingArray);
         printData("workindArray - изначальный массив: ", workingArray);
@@ -18,7 +18,6 @@ public class Main8 {
         ArrayList<Integer> outArray;
         outArray = newArrayCreator(workingArray, minElement);
         printData("Output digits: ", outArray);
-
     }
 
     private static int[] createArray(){
