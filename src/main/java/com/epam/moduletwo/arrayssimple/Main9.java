@@ -1,68 +1,61 @@
 package com.epam.moduletwo.arrayssimple;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
 //В массиве целых чисел с количеством элементов n найти наиболее часто встречающееся число. Если таких
 //чисел несколько, то определить наименьшее из них.
 public class Main9 {
     public static void main(String[] args) {
-        int[] generatedArray = arrayConstruct();
+        int[] generatedArray = createArray();
         printData("generated array: ", generatedArray);
-        digitCount(generatedArray);
-
+        getAnswer(generatedArray);
     }
 
-    private static int[] arrayConstruct() {
+    private static int[] createArray() {
         int n;
         n = (int) (Math.random() * 20);
-
-        int[] madeArray = new int[n];
-        for (int i = 0; i < madeArray.length; i++) {
-            madeArray[i] = (int) (Math.random() * 10);
+        int[] createdArray = new int[n];
+        for (int i = 0; i < createdArray.length; i++) {
+            createdArray[i] = (int) (Math.random() * 20-10);
         }
-        return madeArray;
+        return createdArray;
     }
 
-    private static void printData(String s, int[] printedArray) {
-        System.out.println();
-        System.out.print(" " + s + " ");
+    private static void printData(String s, int[] arrayIn) {
+        System.out.println(s);
 
-        for (int i = 0; i < printedArray.length; i++) {
-            System.out.print(" " + printedArray[i] + "; ");
+        for (int i = 0; i < arrayIn.length; i++) {
+            System.out.print(" " + arrayIn[i] + "; ");
         }
         System.out.println();
     }
 
-    private static void digitCount(int[] array) {
-        int frquencyOfdigit;
-        frquencyOfdigit = 0;
+    private static void getAnswer(int[] array) {
+        int theMostCommonNumber = 0;
+        int[] arrayOfAnyElemFrequency = new int[array.length];
+        ArrayList<Integer>arrayFoundNumbers = new ArrayList<>();
+        int foundDigitOfAnswer;
 
-        int[] digits = new int[array.length];
         for (int i = 0; i < array.length; i++){
+            int checkedElementOfOriginalArray = array[i];
+            int counter = 0;
 
-            int elem;
-            elem = array[i];
-
-            int counter;
-            counter = 0;
-
-            for ( int j = 0; j < array.length; j++){
-                if (array[j] == elem){
-                    counter++;
+                for ( int j = i; j < array.length; j++){
+                    if (array[j] == checkedElementOfOriginalArray){
+                        counter++;
+                    }
                 }
+
+            arrayOfAnyElemFrequency[i] = counter;
+            if (counter >= theMostCommonNumber && arrayOfAnyElemFrequency[i] == counter){
+                theMostCommonNumber = counter;
+                arrayFoundNumbers.add(array[i]);
             }
-            digits[i] = counter;
-            if (counter > frquencyOfdigit){
-                frquencyOfdigit = counter;
-            }
-            System.out.print(digits[i] + "; ");
 
         }
+        foundDigitOfAnswer = Collections.min(arrayFoundNumbers);
         System.out.println();
-        int rezult = Integer.MAX_VALUE;
-        for (int i = 0; i < digits.length; i++){
-            if(digits[i] == frquencyOfdigit && array[i] < rezult){
-                rezult = array[i];
-            }
-        }
-        System.out.println("the greatest digit is " + rezult);
-
+        System.out.println("most common and min number is " + foundDigitOfAnswer);
     }
 }
