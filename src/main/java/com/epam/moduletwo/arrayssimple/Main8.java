@@ -1,9 +1,11 @@
 package com.epam.moduletwo.arrayssimple;
+import java.util.ArrayList;
+
 //Дана последовательность целых чисел а1, а2,...а_n  Образовать новую последовательность, выбросив из
 //исходной те члены, которые равны min (a1, a2, ..., a_n)
 public class Main8 {
     public static void main(String[] args) {
-        int[] workingArray = arrayGenerator();
+        int[] workingArray = createArray();
         int minElement;
         minElement = minElement(workingArray);
         printData("workindArray - изначальный массив: ", workingArray);
@@ -11,12 +13,12 @@ public class Main8 {
         int minQuantity;
         minQuantity = countOfMin(workingArray, minElement);
         printData("count - количество мин. элементов: ", minQuantity);
-        int [] outArray;
-        outArray = newArrayCreator(minQuantity, workingArray);
+        ArrayList<Integer> outArray;
+        outArray = newArrayCreator(workingArray, minElement);
         printData("Output digits: ", outArray);
-
     }
-    private static int[] arrayGenerator(){
+
+    private static int[] createArray(){
         int n = (int) (Math.random()* 20);
         int[] arrayFirst = new int[n];
         for (int i = 0; i < arrayFirst.length; i++) {
@@ -24,9 +26,9 @@ public class Main8 {
         }
         return arrayFirst;
     }
+
     private static int minElement(int[] inputArray){
         int min;
-
         min = inputArray[0];
         for (int elem = 0; elem < inputArray.length; elem++){
             if (min > inputArray[elem]) {
@@ -35,49 +37,37 @@ public class Main8 {
         }
         return min;
     }
+
     private static int countOfMin(int[] inputArray, int minDigit){
-        int count = 0;
+        int countOfMinDigit = 0;
         for (int i = 0; i < inputArray.length; i++){
-            if (inputArray[i] == minDigit) count = count + 1;
+            if (inputArray[i] == minDigit) countOfMinDigit = countOfMinDigit + 1;
         }
-
-        return count;
+        return countOfMinDigit;
     }
-    private static int[] newArrayCreator(int minQuant, int []inputArray ) {
-        int [] dirtyArray = new int[inputArray.length];
-        int [] resultArray = new int[inputArray.length - minQuant];
-        int temp;
-        for (int i =0; i < dirtyArray.length; i++){
-            dirtyArray[i] = inputArray[i];
-        }
-        boolean needSort = true;
-        while (needSort) {
-            needSort = false;
 
-            for (int i = 1; i < dirtyArray.length; i++) {
-                if (dirtyArray[i] < dirtyArray[i - 1]) {
-                    temp = dirtyArray[i];
-                    dirtyArray[i] = dirtyArray[i - 1];
-                    dirtyArray[i - 1] = temp;
-                    needSort = true;
-                }
+    private static ArrayList<Integer> newArrayCreator(int []inputArray, int minDigit ) {
+        ArrayList<Integer>resultArray=new ArrayList<>();
+        for (int i = 0; i < inputArray.length; i++){
+            if(inputArray[i]!=minDigit){
+                resultArray.add(inputArray[i]);
             }
         }
-        int j = 0;
-        for (int i = minQuant; i < resultArray.length + 1; i++){
-            resultArray[j] = dirtyArray[i];
-            j++;
-        }
-
         return resultArray;
-
     }
+
     private static void printData(String s, int[] array){
         System.out.print(s);
         for (int i = 0; i<array.length; i++){
             System.out.print(" " + array[i] + "; ");
         }
     }
+
+    private static void printData(String s, ArrayList<Integer>list){
+        System.out.println(s);
+        System.out.println(list);
+    }
+
     private static void printData(String s, int x){
         System.out.println();
         System.out.println(s +" "+ x +" ");
