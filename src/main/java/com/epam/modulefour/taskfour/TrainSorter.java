@@ -84,7 +84,6 @@ public class TrainSorter {
 
     }
 
-
     public void print(){
         for (Train s: trains ) {
             System.out.println("number: "+ s.getNumberOfTrain() + " destination: " +
