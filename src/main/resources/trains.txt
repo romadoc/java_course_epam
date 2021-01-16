@@ -1,0 +1,5 @@
+4, Moskow, 12, 10
+2, Minsk, 2, 15
+16, Berlin, 20, 20
+9, Moskow, 15, 0
+1, Brest, 4, 30
