@@ -44,20 +44,4 @@ public class Train {
         return  localTime.getMinute();
     }
 
-    public static Comparator<Train> TrainDestComporator = new Comparator<Train>() {
-        @Override
-        public int compare(Train train1, Train train2) {
-            String destin1 = train1.getDestination().toLowerCase();
-            int departHours1 = train1.getHour();
-            String destin2 = train2.getDestination().toLowerCase();
-            int departHours2 = train2.getHour();
-            if(departHours1 < departHours2){
-                return -1;
-            }
-            if(departHours2 > departHours1){
-                return 1;
-            }
-            return destin1.compareTo(destin2);
-        }
-    };
 }
