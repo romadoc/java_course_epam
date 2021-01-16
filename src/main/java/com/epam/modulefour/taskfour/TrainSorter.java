@@ -4,20 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-/**
- возможность сортировки элементов массива по номерам поездов. +
- возможность вывода информации о поезде, номер которого введен пользователем.
- возможность сортировки массив по пункту назначения, +
- причем поезда с одинаковыми пунктами назначения должны быть упорядочены по времени отправления.
-*/
-
 public class TrainSorter {
     ArrayList<Train>trains;
     public TrainSorter(ArrayList<Train>trains) {
         this.trains = trains;
     }
-
-
 
     public void sortByNumberUpToLow(){
         System.out.println();
@@ -95,7 +86,6 @@ public class TrainSorter {
 
 
     public void print(){
-
         for (Train s: trains ) {
             System.out.println("number: "+ s.getNumberOfTrain() + " destination: " +
                                            s.getDestination() + " " +
@@ -103,5 +93,4 @@ public class TrainSorter {
                                            s.getMinute()+"mm");
         }
     }
-
 }

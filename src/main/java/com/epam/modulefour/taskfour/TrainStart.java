@@ -7,12 +7,6 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Создайте данные в массив из пяти элементов типа Train, добавьте возможность сортировки элементов массива
- * по номерам поездов. Добавьте возможность вывода информации о поезде, номер которого введен пользователем.
- * Добавьте возможность сортировки массив по пункту назначения, причем поезда с одинаковыми
- * пунктами назначения должны быть упорядочены по времени отправления.
- */
 public class TrainStart {
     public static void main(String[] args) throws FileNotFoundException {
         ArrayList<Train>trains = new ArrayList<>();
@@ -29,9 +23,12 @@ public class TrainStart {
         TrainSorter trainSorter = new TrainSorter(trains);
         trainSorter.print();
         trainSorter.sortByNumberUpToLow();
+        trainSorter.print();
         trainSorter.sortByNumberLowToLarge();
+        trainSorter.print();
         trainSorter.sortByDestination();
         trainSorter.print();
+        System.out.println();
         trainSorter.getInfoOfChoosenTrainByNumber(ScannerUtil.integerIn("enter train number"));
 
 
