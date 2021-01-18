@@ -41,9 +41,8 @@ public class Main1 {
                         "Since it has been around for so long, some of the biggest organisations in the world are " +
                         "built using the language. \n" +
                         "\u2029  Many banks, retailers, insurance companies, utilities, and manufacturers all use Java.");
-        String s1 = stringBuilder.toString();
 
-        return s1;
+        return stringBuilder.toString();
     }
 
     private static String[] splitByParagraphs(String text) {
@@ -114,14 +113,12 @@ public class Main1 {
         System.out.print("Type a char:>>");
         Scanner scanner = new Scanner(System.in);
         String tIn = scanner.next();
-        char a = tIn.charAt(tIn.length() - 1);
-        return a;
+        return tIn.charAt(tIn.length() - 1);
     }
 
     private static String[] makeArrayOfSentences(String stringIn) {
         Pattern patternSentence = Pattern.compile("([.!?])([A-Z]*)");
-        String[] stringsOfSentence = patternSentence.split(stringIn);
-        return stringsOfSentence;
+        return patternSentence.split(stringIn);
     }
     private static void arrayOfSentenceWordsSorter(String sentence, char ch){
 
