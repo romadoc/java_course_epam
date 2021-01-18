@@ -8,14 +8,13 @@ public class Main3 {
     public static void main(String[] args) {
         String s = "in this 22 string there are 4 digits 33 ";
         char[]chars = createArray(s);
-        findDigit(chars);
+        findAndCountDigitsInString(chars);
 
     }
     private static char[] createArray(String s){
-        char[]chars = s.toCharArray();
-        return chars;
+        return s.toCharArray();
     }
-    private static void findDigit(char[]chars){
+    private static void findAndCountDigitsInString(char[]chars){
         int counter = 0;
         for (int i = 0; i < chars.length; i++){
             if(chars[i] >= '0' && chars[i] <= '9'){
