@@ -22,11 +22,11 @@ public class Main10 {
         System.out.println();
         return array;
     }
-    private static int [] compressOfArray(int[]inputArray){
-        for(int i = 0; i <inputArray.length/2; i++){
+    private static int [] compressOfArray(int[] inputArray){
+        for(int i = 0; i < inputArray.length/2; i++){
             inputArray[i] = inputArray[i*2];
         }
-        for (int i = inputArray.length/2; i<inputArray.length; i++ ){
+        for (int i = inputArray.length/2; i< inputArray.length; i++ ){
             inputArray[i] = 0;
         }
         return inputArray;
