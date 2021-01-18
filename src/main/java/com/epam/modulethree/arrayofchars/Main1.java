@@ -22,7 +22,7 @@ public class Main1 {
         System.out.println();
     }
 
-    private static int seachCharsInUpperCasePosition(String s){
+    private static int searchPositionOfUpperCaseChar(String s){
         char[]ch = s.toCharArray();
         int postion = 0;
         for (int i = 0; i < ch.length; i++){
@@ -33,11 +33,11 @@ public class Main1 {
         return postion;
     }
 
-    private static String changeChars(String s){
+    private static String changeChars(String originalString){
 
-        int position = seachCharsInUpperCasePosition(s);
-        char[]chars = s.toCharArray();
-        char[]chars1 = new char[s.length()+1];
+        int position = searchPositionOfUpperCaseChar(originalString);
+        char[]chars = originalString.toCharArray();
+        char[]chars1 = new char[originalString.length()+1];
         for (int i = 0; i < position; i++){
             chars1[i] = chars[i];
         }
@@ -48,16 +48,16 @@ public class Main1 {
             chars1[i] = chars[i-1];
         }
 
-        s = "";
+        originalString = "";
 
         for (int i = 0; i<chars1.length; i++){
-            s = s + chars1[i];
+            originalString = originalString + chars1[i];
 
         }
 
-        s = s.toLowerCase();
+        originalString = originalString.toLowerCase();
 
-        return s;
+        return originalString;
     }
 
     private static String[] makeFinishedArray(String[]strings){
