@@ -6,22 +6,21 @@ package com.epam.modulethree.arrayofchars;
  */
 public class Main4 {
     public static void main(String[] args) {
-        String s = "in this 22 string 5 there 88 are 4 digits 33";
-        String[]creator = createArray(s);
-        System.out.println("string for counting: " + s);
-        findDigit(creator);
+        String testString = "in this 22 string 5 there 88 are 4 digits 33";
+        String[]creator = createArray(testString);
+        System.out.println("string for counting: " + testString);
+        findAndCountNumbers(creator);
     }
 
     private static String[] createArray(String s) {
-        String[]array = s.split(" ");
-        return array;
+        return s.split(" ");
     }
 
-    private static void findDigit(String[]arrayIn) {
+    private static void findAndCountNumbers(String[]arrayIn) {
         int counter = 0;
-        for(int i = 0; i < arrayIn.length; i++){
-            char[]chars = arrayIn[i].toCharArray();
-            if(isCharDigit(chars[0])){
+        for (String s : arrayIn) {
+            char[] chars = s.toCharArray();
+            if (isCharDigit(chars[0])) {
                 counter++;
             }
         }
