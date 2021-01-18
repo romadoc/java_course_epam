@@ -13,7 +13,7 @@ public class Main1 {
     static void fillingArray() {
         int[] arrayOfInteger = new int[ScannerUtil.integerIn("Type length of array (positive integer)")];
         for (int i = 0; i < arrayOfInteger.length; i++) {
-            arrayOfInteger[i] = i + 1;
+            arrayOfInteger[i] = i;
         }
         printResult(arrayOfInteger, ScannerUtil.integerIn("Type K (integer)"));
     }
