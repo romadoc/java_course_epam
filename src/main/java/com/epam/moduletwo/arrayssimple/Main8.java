@@ -49,9 +49,9 @@ public class Main8 {
     }
 
     private static ArrayList<Integer> newArrayCreator(int []inputArray, int minDigit ) {
-        ArrayList<Integer>resultArray=new ArrayList<>();
+        ArrayList<Integer>resultArray = new ArrayList<>();
         for (int i = 0; i < inputArray.length; i++){
-            if(inputArray[i]!=minDigit){
+            if(inputArray[i] != minDigit){
                 resultArray.add(inputArray[i]);
             }
         }
