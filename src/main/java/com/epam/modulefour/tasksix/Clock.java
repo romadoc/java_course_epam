@@ -20,7 +20,6 @@ import java.time.LocalTime;
         System.out.println(localTime);
     }
 
-
     public void setHour(int hour) {
         if (hour >= 0 && hour <= 24) {
             this.hour = hour;
@@ -30,7 +29,6 @@ import java.time.LocalTime;
         }
     }
 
-
     public void setMin(int min) {
         if (min >= 0 && min <= 60) {
             this.min = min;
@@ -39,7 +37,6 @@ import java.time.LocalTime;
             this.min = 0;
         }
     }
-
 
     public void setSec(int sec) {
         if (sec >= 0 && sec <= 60) {
