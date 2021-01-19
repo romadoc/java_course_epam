@@ -11,7 +11,7 @@ public class WordCounter {
        Map<String, Integer>treeMap = new TreeMap<String, Integer>();
        for (String temp : stringsOfInputText){
            Integer count = treeMap.get(temp);
-           treeMap.put(temp,(count==null)?1:count+1);
+           treeMap.put(temp,(count == null)?1:count+1);
        }
        printMap(treeMap, stringsOfInputText.size());
    }
@@ -19,8 +19,12 @@ public class WordCounter {
 
         System.out.println("total word count: " + textSize);
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            System.out.println("\"" + entry.getKey() +"\"" + " quantity : "
-                    + entry.getValue() + " - " + roundAvoid((((double)entry.getValue()*100)/textSize), 3) + " %");
+            System.out.println("\"" + entry.getKey() +
+                               "\"" + " quantity : " +
+                               entry.getValue() +
+                               " - " +
+                               roundAvoid((((double)entry.getValue()*100)/textSize), 3) + " %");
+
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append(entry.getKey())
                          .append(", ")

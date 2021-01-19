@@ -9,14 +9,11 @@ public class WriteToRezultFile {
         String pathToRezultFile = separator + "E:" + separator + "java_course" + separator + "src" + separator
                 + "main" + separator + "java" + separator + "textanalyzer" + separator + "outputfile"
                 + separator + "result.csv";
-        File file = new File(pathToRezultFile);
-        FileWriter fileWriter = new FileWriter(file,true);
+        File fileDestination = new File(pathToRezultFile);
+        FileWriter fileWriter = new FileWriter(fileDestination,true);
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
         bufferedWriter.write(stringIn);
         bufferedWriter.close();
-
-
-
     }
 
 }

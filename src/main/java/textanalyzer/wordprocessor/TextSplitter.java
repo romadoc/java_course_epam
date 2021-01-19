@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TextSplitter {
 
-    public ArrayList<String> splitTextToWords(String string){
+    public ArrayList<String> createArrayOfWordsFromText(String string){
         ArrayList<String> list = new ArrayList<>();
         String[]strings = string.split("[^a-zA-Zа-яА-Я0-9_]");
 
