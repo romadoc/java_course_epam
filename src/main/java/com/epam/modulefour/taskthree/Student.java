@@ -24,15 +24,15 @@ public class Student {
                 ", номер группы " + groupNumber +
                 ", оценки" + Arrays.toString(score);
     }
-    public boolean isExcellent(){
+    public boolean isScoreExcellent() {
         int excellentScore = 0;
         boolean isOk = false;
-        for (int i = 0; i< score.length; i++){
+        for (int i = 0; i< score.length; i++) {
             if(score[i]>=9){
                 excellentScore++;
             }
         }
-        if (excellentScore>=4){
+        if (excellentScore>=4) {
             isOk = true;
         }
         return isOk;

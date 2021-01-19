@@ -29,7 +29,7 @@ public class TaskThreeStart {
     private static void printExcellentStudents(ArrayList<Student> list){
         System.out.println("студенты, имеющие оценки 9 и 10:");
         for (int i = 0; i <list.size(); i++){
-            if(list.get(i).isExcellent()==true){
+            if(list.get(i).isScoreExcellent()==true) {
                 System.out.println(list.get(i).toString());
             }
         }
@@ -40,19 +40,19 @@ public class TaskThreeStart {
         File file = new File("E:\\java_course\\src\\main\\java\\com\\epam\\modulefour" +
                 "\\taskthree\\students.txt");
         Scanner scanner = new Scanner(file);
-        while (scanner.hasNextLine()){
+        while (scanner.hasNextLine()) {
           listOfNames.add(scanner.nextLine());
         }
         return listOfNames;
     }
-    private static int[] getScores(){
+    private static int[] getScores() {
         int[]studentScores = new int[4];
-        for (int i = 0; i<studentScores.length; i++){
+        for (int i = 0; i<studentScores.length; i++) {
             studentScores[i] = 8+(int)(Math.random()*3);
         }
         return studentScores;
     }
-    private static int getGroupNumber(){
+    private static int getGroupNumber() {
         return 1+(int)(Math.random()*5);
     }
 
