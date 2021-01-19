@@ -31,9 +31,6 @@ public class TrainStart {
         System.out.println();
         trainSorter.getInfoOfChoosenTrainByNumber(ScannerUtil.integerIn("enter train number"));
 
-
-
-
     }
 
      static ArrayList<String> loadTrainInfoFromFileToList() throws FileNotFoundException {
@@ -41,25 +38,25 @@ public class TrainStart {
         File trainFile = new File(filePath);
         ArrayList<String>list = new ArrayList<>();
         Scanner scanner = new Scanner(trainFile);
-        while (scanner.hasNextLine()){
+        while (scanner.hasNextLine()) {
            list.add(scanner.nextLine());
         }
         return list;
     }
 
-    static String[] makeArrayFromString(String stringIn){
+    static String[] makeArrayFromString(String stringIn) {
         stringIn = stringIn.trim();
         stringIn = stringIn.replaceAll("\\s+","");
         String[] strings = stringIn.split(",");
         return strings;
     }
 
-    static int getTrainNumer(String[]strings){
+    static int getTrainNumer(String[]strings) {
         int trainNumber = Integer.parseInt(strings[0]);
         return trainNumber;
     }
 
-    static String getDestination(String[] strings){
+    static String getDestination(String[] strings) {
         String destination = strings[1];
         return destination;
     }

@@ -15,7 +15,7 @@ public class Train {
     private int numberOfTrain;
     private LocalTime localTime;
 
-    public Train (int numberOfTrain, String destination, int hour, int min){
+    public Train (int numberOfTrain, String destination, int hour, int min) {
         this.destination = destination;
         this.numberOfTrain = numberOfTrain;
         this.localTime = LocalTime.of(hour, min);

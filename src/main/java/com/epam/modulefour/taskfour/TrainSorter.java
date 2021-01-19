@@ -10,7 +10,7 @@ public class TrainSorter {
         this.trains = trains;
     }
 
-    public void sortByNumberUpToLow(){
+    public void sortByNumberUpToLow() {
         System.out.println();
         System.out.println("Sorted by number (from higher number to lower number):");
         Collections.sort(trains, new Comparator<Train>() {
@@ -20,10 +20,10 @@ public class TrainSorter {
                 String dest1 = train2.getDestination();
                 int trainNumber1 = train1.getNumberOfTrain();
                 int trainNumber2 = train2.getNumberOfTrain();
-                if (trainNumber1>trainNumber2){
+                if (trainNumber1>trainNumber2) {
                     return -1;
                 }
-                if (trainNumber1<trainNumber2){
+                if (trainNumber1<trainNumber2) {
                     return 1;
                 }
                 return dest.compareTo(dest1);
@@ -63,7 +63,7 @@ public class TrainSorter {
         });
     }
 
-    public void getInfoOfChoosenTrainByNumber(int trainNumber){
+    public void getInfoOfChoosenTrainByNumber(int trainNumber) {
         System.out.println();
         System.out.println("found result (by number " + trainNumber + "):");
         int foundCount = 0;
@@ -78,13 +78,13 @@ public class TrainSorter {
             }
 
         }
-        if (foundCount<1){
+        if (foundCount<1) {
             System.out.println("no this train");
         }
 
     }
 
-    public void print(){
+    public void print() {
         for (Train s: trains ) {
             System.out.println("number: "+ s.getNumberOfTrain() + " destination: " +
                                            s.getDestination() + " " +
