@@ -67,36 +67,6 @@ public class Counter {
         }
     }
 
-
-
-
-
-
-    public void countUp(int x) throws InterruptedException { //счетчик со значениями
-        int returnValue = x-1;
-        for (int i = x; i <= maxValue; i++){
-            returnValue++;
-            getPrintln(returnValue);
-            Thread.sleep(1000);
-        }
-    }
-    public void countDown() throws InterruptedException { //счетчик down со значениями по умолчанию
-        int returnValue = maxValue +1;
-        for (int i = maxValue; i >= minValue; i--){
-            returnValue--;
-            getPrintln(returnValue);
-            Thread.sleep(1000);
-        }
-    }
-    public void countDown(int x) throws InterruptedException { //счетчик down со значениями
-        int returnValue = x+1;
-        for (int i = x; i >= minValue; i--){
-            returnValue--;
-            getPrintln(returnValue);
-            Thread.sleep(1000);
-        }
-    }
-
     private void getPrintln(int returnValue) {
         System.out.println(returnValue);
     }
