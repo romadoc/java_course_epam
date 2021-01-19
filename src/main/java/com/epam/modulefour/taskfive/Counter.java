@@ -45,9 +45,7 @@ public class Counter {
         System.out.println("min Value: " + minValue + " max Value: " + maxValue);
         if (minValue >= maxValue){
             System.out.println("incorrect values! try again!");
-        }
-        else
-            {
+        } else {
             if (direction.equals("+")) {
                 System.out.println("param mode counter is started! " + "\"" + direction + "\"");
                 for (int i = minValue; i <= maxValue; i++) {
