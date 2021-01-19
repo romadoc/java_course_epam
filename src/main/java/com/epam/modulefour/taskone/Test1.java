@@ -23,12 +23,12 @@ public class Test1 {
         System.out.println("sum: " + sumAandB(a,b));
         System.out.println("max digit is: " + dеfineMaxDigit(a,b));
     }
-    private int sumAandB(int a, int b){
+    private int sumAandB(int a, int b) {
         this.a = a;
         this.b = b;
         return a+b;
     }
-    private int dеfineMaxDigit(int a, int b){
+    private int dеfineMaxDigit(int a, int b) {
         this.a = a;
         this.b = b;
         return a>b?a:b;
