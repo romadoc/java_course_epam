@@ -8,9 +8,18 @@ public class TextStart {
 
         Text text = new Text();
         text.setTitleText("TITLE");
+        System.out.println("вывод в консоль заголовка текста: ");
         text.printTitle();
+        System.out.println("вывод в консоль оригинального текста класса \"Text\": ");
+        text.printText();
+        System.out.println("вывод в консоль дополненного текста №1: ");
         text.addTextWithNewSentence(testString);
+        text.printText();
+        System.out.println("вывод в консоль дополненного текста №2: ");
         text.addTextWithNewSentence(testString1);
+        text.printText();
+        System.out.println("вывод в консоль заголовка и изменного текста: ");
+        text.printTitle();
         text.printText();
     }
 }
