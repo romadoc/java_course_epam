@@ -27,4 +27,8 @@ public class Sentence {
             }
         }
     }
+
+    public String getSentence() {
+        return sentence;
+    }
 }
