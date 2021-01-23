@@ -13,11 +13,12 @@ public class Text {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(text).append("\n");
         Sentence sentence = new Sentence();
+        sentence.makeWordClass(stringBuilder.toString());
+        sentence.makeSentance();
         for (String s:strings) {
             stringBuilder.append(s).append(" ");
         }
-        sentence.makeWordClass(stringBuilder.toString());
-        sentence.makeSentance();
+
         text = stringBuilder.toString();
     }
 
