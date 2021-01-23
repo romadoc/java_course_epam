@@ -27,7 +27,6 @@ public class Text {
 
     public void printText() {
         System.out.println(this.text);
-
     }
 
     public String getTitleText() {
