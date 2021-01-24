@@ -7,8 +7,6 @@ public class TestdriveCar {
 
         Car bmw = new Car("BMW");
         carInfo(bmw);
-
-
     }
 
     private static void carInfo(Car carModel) {
