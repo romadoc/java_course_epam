@@ -2,7 +2,7 @@ package com.epam.modulefour.taskeleven;
 
 public class TextStart {
     public static void main(String[] args) {
-        String[] testString = {"We", "will", "continue", "our", "work", "on", "JUnit", "regardless", "of", "how",
+        String[] testString = {"We", "should", "continue", "our", "work", "on", "JUnit", "regardless", "of", "how",
                 "many", "donations", "we", "receive", "-this", "text", "is", "added"};
         String[] testString1 = {"next-", "this", "sentence", "is", "added", "to", "text"};
 
@@ -13,7 +13,11 @@ public class TextStart {
         System.out.println("вывод в консоль оригинального текста класса \"Text\": ");
         text.printText();
         System.out.println("вывод в консоль дополненного текста №1: ");
-        text.addTextWithNewSentence(testString);
+        try {
+            text.addTextWithNewSentence(testString);
+        } catch (NullPointerException e) {
+            System.err.println("chack list o words! no voids!");;
+        }
         text.printText();
         System.out.println("вывод в консоль дополненного текста №2: ");
         text.addTextWithNewSentence(testString1);

@@ -21,10 +21,11 @@ public class Sentence {
         List<Word>words = new ArrayList<>();
         words.add(word);
         for (Word w: words) {
+
             if(!w.getStringWord().isEmpty()) {
                 sentence = sentence + w.getStringWord() + " ";
-
             }
+
         }
     }
 

@@ -8,7 +8,10 @@ public class Word {
     }
 
     public void setStringWord(String stringWord) {
-        if (!stringWord.isEmpty()) {
+        if (stringWord.isEmpty()) {
+            System.err.println("empty spaces in list detected!");
+        }
+        else {
             this.stringWord = stringWord;
         }
     }
