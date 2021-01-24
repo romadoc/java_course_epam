@@ -10,6 +10,7 @@ public class Word {
     public void setStringWord(String stringWord) {
         if (stringWord.isEmpty()) {
             System.err.println("empty spaces in list detected!");
+            return;
         }
         else {
             this.stringWord = stringWord;
