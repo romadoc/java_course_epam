@@ -16,7 +16,7 @@ public class TextStart {
         try {
             text.addTextWithNewSentence(testString);
         } catch (NullPointerException e) {
-            System.err.println("chack list o words! no voids!");;
+            System.err.println("check list o words! no voids!");;
         }
         text.printText();
         System.out.println("вывод в консоль дополненного текста №2: ");
