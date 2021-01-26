@@ -1,6 +1,5 @@
 package com.epam.modulefour.taskthirteenth;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,7 +14,6 @@ public class State {
     private int idState;
     private String stateName;
     private String capital;
-    private double square;
     private List<City>cityList;
     private List<District>districtList;
     private List<Region>regionList;
@@ -43,8 +41,9 @@ public class State {
     }
 
     public double getSquare() {
-        for (Region s: regionList) {
-            square += s.getSquare();
+        double square = 0;
+        for (int i = 0; i < regionList.size(); i++) {
+            square = square + regionList.get(i).getRegionSquare(districtList);
         }
         return square;
     }
@@ -59,7 +58,7 @@ public class State {
         for (City city : cityList) {
             if (city.isRegionCenter()) {
                 System.out.println(city);
-                districtIdKey = city.getUpLevelKey();
+                districtIdKey = city.getIdDistrict();
                 getDistinctCities(districtIdKey);
             }
         }
@@ -70,7 +69,7 @@ public class State {
 
         for (City s: cityList) {
 
-            if(s.getUpLevelKey() == i) {
+            if(s.getIdDistrict() == i) {
                 System.out.println("    " + s.getCityName() + ", ");
             }
         }
