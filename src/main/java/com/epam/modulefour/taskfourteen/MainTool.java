@@ -25,9 +25,9 @@ public class MainTool {
 
         getClentCommonBalanceInfo(vasjaAccounts);
         getClientSeparatedBalanceInfo(vasjaAccounts);
-        findAccountByAccountID(vasjaAccounts, ScannerUtil.integerIn("type bank account number to search it"));
         showClientAccountSortedFromUpToDown(vasjaAccounts);
         showClientAccountSortedFromDownToUp(vasjaAccounts);
+        findAccountByAccountID(vasjaAccounts, ScannerUtil.integerIn("type bank account number to search it"));
 
     }
 
