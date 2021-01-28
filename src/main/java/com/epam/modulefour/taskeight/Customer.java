@@ -12,6 +12,7 @@ import java.text.DecimalFormat;
  * a) список покупателей в алфавитном порядке;
  * b) список покупателей, у которых номер кредитной карточки находится в заданном интервале
  */
+
 public class Customer {
    private int id;
    private String surname;

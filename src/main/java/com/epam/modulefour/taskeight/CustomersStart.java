@@ -14,12 +14,12 @@ public class CustomersStart {
 
         for (int i = 0; i < customersQuantaty; i++) {
             Customer customer = new Customer(Integer.parseInt(makeArrayFromString(listOfCustomersAsStrings.get(i))[0]),
-                    makeArrayFromString(listOfCustomersAsStrings.get(i))[1],
-                    makeArrayFromString(listOfCustomersAsStrings.get(i))[2],
-                    makeArrayFromString(listOfCustomersAsStrings.get(i))[3],
-                    makeArrayFromString(listOfCustomersAsStrings.get(i))[4],
-                    Long.parseLong(makeArrayFromString(listOfCustomersAsStrings.get(i))[5]),
-                    Integer.parseInt(makeArrayFromString(listOfCustomersAsStrings.get(i))[6]));
+                                             makeArrayFromString(listOfCustomersAsStrings.get(i))[1],
+                                             makeArrayFromString(listOfCustomersAsStrings.get(i))[2],
+                                             makeArrayFromString(listOfCustomersAsStrings.get(i))[3],
+                                             makeArrayFromString(listOfCustomersAsStrings.get(i))[4],
+                                             Long.parseLong(makeArrayFromString(listOfCustomersAsStrings.get(i))[5]),
+                                             Integer.parseInt(makeArrayFromString(listOfCustomersAsStrings.get(i))[6]));
             customers.add(customer);
         }
 
