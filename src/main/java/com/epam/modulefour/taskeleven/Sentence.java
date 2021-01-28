@@ -25,7 +25,6 @@ public class Sentence {
             if(!w.getStringWord().isEmpty()) {
                 sentence = sentence + w.getStringWord() + " ";
             }
-
         }
     }
 

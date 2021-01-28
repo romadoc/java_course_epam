@@ -2,9 +2,9 @@ package com.epam.modulefour.taskeleven;
 
 public class TextStart {
     public static void main(String[] args) {
-        String[] testString = {"We", "should", "continue", "our", "work", "on", "JUnit", "regardless", "of", "how",
-                "many", "donations", "we", "receive", "-this", "text", "is", "added"};
-        String[] testString1 = {"next-", "this", "sentence", "is", "added", "to", "text"};
+        String[] testString = { "We", "should", "continue", "our", "work", "on", "JUnit", "regardless", "of", "how",
+                               "many", "donations", "we", "receive", "-this", "text", "is", "added" };
+        String[] testString1 = { "next-", "this", "sentence", "is", "added", "to", "text" };
 
         Text text = new Text();
         text.setTitleText("TITLE");
