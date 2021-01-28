@@ -1,6 +1,5 @@
 package com.epam.modulefour.taskfifteen;
 
-
 import com.epam.modulefour.taskfifteen.enumcontainer.DaysOfTravel;
 import com.epam.modulefour.taskfifteen.enumcontainer.Feed;
 import com.epam.modulefour.taskfifteen.enumcontainer.TransportType;
