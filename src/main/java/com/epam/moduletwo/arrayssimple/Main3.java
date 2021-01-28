@@ -11,12 +11,10 @@ public class Main3 {
     static int countZeroNumbers = 0;
 
     public static void main(String[] args) {
-
         answerHowMany(createArray());
     }
 
     private static double[] createArray() {
-
         int n = ScannerUtil.integerIn("Enter the dimension of the array");
         double[] array = new double[n];
         for (int i = 0; i < array.length; i++) {
@@ -27,7 +25,8 @@ public class Main3 {
         System.out.println();
         return array;
     }
-    private static void answerHowMany(double[]arrayIn){
+
+    private static void answerHowMany(double[]arrayIn) {
 
         for (int i = 0; i < arrayIn.length; i++) {
             if (arrayIn[i] == 0) {

@@ -4,26 +4,21 @@ package com.epam.moduletwo.arrayssimple;
 
 public class Main4 {
     public static void main(String[] args) {
-        int minNum;
-        int minIndex;
-        minNum = Integer.MAX_VALUE;
-        minIndex = 0;
+        int minNum = Integer.MAX_VALUE;
+        int minIndex = 0;
 
-        int maxNum;
-        int maxIndex;
-        maxIndex = 0;
-        maxNum = Integer.MIN_VALUE;
+        int maxNum = Integer.MIN_VALUE;
+        int maxIndex = 0;
 
-        int [] massive = new int[20];
+        int[] massive = new int[20];
 
         System.out.println("original massive:");
 
-        for (int i = 0; i < massive.length; i++){
+        for (int i = 0; i < massive.length; i++) {
             massive[i] = (int) (Math.random()*200 - 100);
             System.out.print(" " + massive[i] + "; ");
         }
         System.out.println();
-
         System.out.println();
 
         for (int i = 0; i < massive.length; i++){

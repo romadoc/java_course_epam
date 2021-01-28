@@ -18,7 +18,7 @@ public class Main8 {
         printData("Output digits: ", outArray);
     }
 
-    private static int[] createArray(){
+    private static int[] createArray() {
         int n = (int) (Math.random()* 20);
         int[] arrayFirst = new int[n];
         for (int i = 0; i < arrayFirst.length; i++) {
@@ -27,10 +27,9 @@ public class Main8 {
         return arrayFirst;
     }
 
-    private static int minElement(int[] inputArray){
-        int min;
-        min = inputArray[0];
-        for (int elem = 0; elem < inputArray.length; elem++){
+    private static int minElement(int[] inputArray) {
+        int min = inputArray[0];
+        for (int elem = 0; elem < inputArray.length; elem++) {
             if (min > inputArray[elem]) {
                 min = inputArray[elem];
             }
@@ -38,7 +37,7 @@ public class Main8 {
         return min;
     }
 
-    private static int countOfMin(int[] inputArray, int minDigit){
+    private static int countOfMin(int[] inputArray, int minDigit) {
         int countOfMinDigit = 0;
         for (int i = 0; i < inputArray.length; i++){
             if (inputArray[i] == minDigit) countOfMinDigit = countOfMinDigit + 1;
@@ -56,21 +55,20 @@ public class Main8 {
         return resultArray;
     }
 
-    private static void printData(String s, int[] array){
+    private static void printData(String s, int[] array) {
         System.out.print(s);
         for (int i = 0; i<array.length; i++){
             System.out.print(" " + array[i] + "; ");
         }
     }
 
-    private static void printData(String s, ArrayList<Integer>list){
+    private static void printData(String s, ArrayList<Integer>list) {
         System.out.println(s);
         System.out.println(list);
     }
 
-    private static void printData(String s, int x){
+    private static void printData(String s, int x) {
         System.out.println();
         System.out.println(s +" "+ x +" ");
-
     }
 }

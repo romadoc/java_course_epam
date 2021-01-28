@@ -36,22 +36,21 @@ public class Main9 {
         ArrayList<Integer>arrayFoundNumbers = new ArrayList<>();
         int foundDigitOfAnswer;
 
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             int checkedElementOfOriginalArray = array[i];
             int counter = 0;
 
-            for ( int j = i; j < array.length; j++){
-                if (array[j] == checkedElementOfOriginalArray){
+            for ( int j = i; j < array.length; j++) {
+                if (array[j] == checkedElementOfOriginalArray) {
                     counter++;
                 }
             }
 
             arrayOfAnyElemFrequency[i] = counter;
-            if (counter >= theMostCommonNumber && arrayOfAnyElemFrequency[i] == counter){
+            if (counter >= theMostCommonNumber && arrayOfAnyElemFrequency[i] == counter) {
                 theMostCommonNumber = counter;
                 arrayFoundNumbers.add(array[i]);
             }
-
         }
         foundDigitOfAnswer = Collections.min(arrayFoundNumbers);
         System.out.println();
