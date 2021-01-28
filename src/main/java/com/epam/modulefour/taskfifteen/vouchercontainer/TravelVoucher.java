@@ -46,8 +46,6 @@ public class TravelVoucher {
         return daysOfTravel;
     }
 
-
-
     @Override
     public String toString() {
         return "страна: " + country + "; тип путевки: " + typeOfTravelVoyage +
