@@ -12,18 +12,16 @@ public class Main7 {
         positiveQuantity = countQuantityOfPositiveElements(array);
         printResult(array, positiveQuantity);
 
-
     }
-    private static double[][] createMatrix(){
+
+    private static double[][] createMatrix() {
         int n = (int)(Math.random()*10);
         double[][]array = new double[n][n];
-        int i;
-        int j;
 
-        for (int x = 0; x < array.length; x++){
-            for(int k = 0; k < array[x].length; k++){
-                i = (int)(Math.random()*10);
-                j = (int)(Math.random()*10);
+        for (int x = 0; x < array.length; x++) {
+            for(int k = 0; k < array[x].length; k++) {
+                int i = (int)(Math.random()*10);
+                int j = (int)(Math.random()*10);
                 double elem = ((i*i - j*j)/array.length);
                 elem = Math.sin(elem);
                 array[x][k] = elem;
@@ -32,9 +30,10 @@ public class Main7 {
 
         return array;
     }
-    private static void printResult(double[][] arrayInput, int x){
+
+    private static void printResult(double[][] arrayInput, int x) {
         for (int i = 0; i < arrayInput.length; i++){
-            for (int j = 0; j < arrayInput[i].length; j++){
+            for (int j = 0; j < arrayInput[i].length; j++) {
                 System.out.print(arrayInput[i][j] + "\t");
             }
             System.out.println();
@@ -42,12 +41,13 @@ public class Main7 {
         System.out.println();
         System.out.print("quantity of positive digits: " + x);
     }
-    private static int countQuantityOfPositiveElements(double[][] arrayIn){
+
+    private static int countQuantityOfPositiveElements(double[][] arrayIn) {
         int q;
         q=0;
         System.out.println();
         for (int i = 0; i < arrayIn.length; i++){
-            for(int j = 0; j < arrayIn[i].length; j++){
+            for(int j = 0; j < arrayIn[i].length; j++) {
                 if (arrayIn[i][j] > 0) q++;
             }
         }

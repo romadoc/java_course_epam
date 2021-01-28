@@ -12,7 +12,6 @@ public class Main11 {
         array = createMatrix();
         printMatrix(array);
         desition(array);
-
     }
 
     private static int[][] createMatrix() {
@@ -35,7 +34,6 @@ public class Main11 {
     }
 
     private static void desition(int[][] arrayIn) {
-
         System.out.println();
         System.out.print("Index(es) of strings: ");
         for (int i = 0; i < arrayIn.length; i++) {

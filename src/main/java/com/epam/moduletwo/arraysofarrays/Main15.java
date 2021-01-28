@@ -40,7 +40,6 @@ public class Main15 {
         System.out.println();
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length - 1; j++) {
-
                 if (maxD < array[i][j + 1]) {
                     maxD = array[i][j + 1];
                 }

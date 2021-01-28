@@ -21,31 +21,31 @@ public class Main8 {
 
         printMatrix(transformedArray);
     }
-    private static int [][] createMatrix(){
-        int [][]array = new int[5][5];
-        for (int i = 0; i < array.length; i++){
-            for (int j = 0; j < array[i].length; j++){
+    private static int [][] createMatrix() {
+        int[][]array = new int[5][5];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int)(Math.random()*10);
             }
         }
         return array;
     }
 
-    private static void printMatrix(int[][] arrayIn){
-        for(int i = 0; i < arrayIn.length; i++){
-            for (int j = 0; j < arrayIn[i].length; j++){
+    private static void printMatrix(int[][] arrayIn) {
+        for(int i = 0; i < arrayIn.length; i++) {
+            for (int j = 0; j < arrayIn[i].length; j++) {
                 System.out.print(arrayIn[i][j] + "\t");
             }
             System.out.println();
         }
     }
 
-    private static int[][] transformMatrix(int[][] arrayIn, int x, int y){
+    private static int[][] transformMatrix(int[][] arrayIn, int x, int y) {
         int[]arrayX = new int[arrayIn.length];
         int[]arrayY = new int[arrayIn.length];
         System.out.println();
-        for (int i = 0; i < arrayIn.length; i++){
-            for (int j = 0; j < arrayIn[i].length; j++){
+        for (int i = 0; i < arrayIn.length; i++) {
+            for (int j = 0; j < arrayIn[i].length; j++) {
                 arrayX[i] = arrayIn[i][x];
                 arrayY[i] = arrayIn[i][y];
                 arrayIn[i][x] = arrayY[i];

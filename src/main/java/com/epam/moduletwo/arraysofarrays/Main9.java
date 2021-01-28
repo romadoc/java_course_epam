@@ -13,40 +13,42 @@ public class Main9 {
         determinColumnWithMaxSumOfElements(array);
 
     }
-    private static int[][] createMatrix(){
-        int n;
-        n = 5;
-        int[][]array = new int[n][n];
-        for (int i = 0; i < array.length; i++){
-            for (int j = 0; j < array[i].length; j++){
+
+    private static int[][] createMatrix() {
+
+        int[][]array = new int[5][5];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int)(Math.random()*10);
             }
         }
         return array;
     }
-    private static void printMatrix(int [][] arrayIn){
-        for (int i = 0; i < arrayIn.length; i++){
-            for (int j = 0; j < arrayIn[i].length; j++){
+
+    private static void printMatrix(int [][] arrayIn) {
+        for (int i = 0; i < arrayIn.length; i++) {
+            for (int j = 0; j < arrayIn[i].length; j++) {
                 System.out.print(arrayIn[i][j] + "\t");
             }
             System.out.println();
         }
     }
-    private static void determinColumnWithMaxSumOfElements(int[][] array){
+
+    private static void determinColumnWithMaxSumOfElements(int[][] array) {
         int[] countSum = new int[array.length];
         int maxDigit;
         int maxCol;
         maxDigit = countSum[0];
         maxCol = 0;
 
-        for (int i = 0; i < array.length; i++){
-            for (int j = 0; j < array[i].length; j++){
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
                 countSum[j] = countSum[j] + array[i][j];
             }
         }
-        for (int i = 0; i < countSum.length; i++){
+        for (int i = 0; i < countSum.length; i++) {
             System.out.print(countSum[i] + "; ");
-            if (maxDigit < countSum[i]){
+            if (maxDigit < countSum[i]) {
                 maxDigit = countSum[i];
                 maxCol = i;
             }

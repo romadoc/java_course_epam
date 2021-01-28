@@ -10,7 +10,6 @@ public class Main12 {
         printMatrix(array);
         printMatrix(sortMatrixInUpOrder(array));
         printMatrix(sortMatrixInDownOrder(array));
-
     }
 
     private static int[][] createMatrix() {
@@ -37,12 +36,10 @@ public class Main12 {
                         array[y][j] = array[y][j + 1];
                         array[y][j + 1] = tmp;
                     }
-
                 }
-
             }
-
         }
+
         System.out.println();
         System.out.println("sorted up array:");
         return array;
@@ -53,17 +50,15 @@ public class Main12 {
         for (int i = 0; i < arrayIn.length; i++) {
             for (int j = 0; j < arrayIn[i].length - 1; j++) {
                 for (int y = 0; y < array[i].length; y++) {
-
                     if (array[y][j] < array[y][j + 1] ) {
                         int tmp = array[y][j];
                         array[y][j] = array[y][j + 1];
                         array[y][j + 1] = tmp;
                     }
-
                 }
-
             }
         }
+
         System.out.println("sorted down array:");
         return array;
     }
