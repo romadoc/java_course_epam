@@ -22,15 +22,15 @@ public class TaskThreeStart {
 
     private static void printAllStudents(ArrayList<Student> list) {
         System.out.println("список всех студентов:");
-        for (int i = 0; i <list.size(); i++){
-            System.out.println(list.get(i).toString());
+        for (Student student : list) {
+            System.out.println(student.toString());
         }
     }
     private static void printExcellentStudents(ArrayList<Student> list){
         System.out.println("студенты, имеющие оценки 9 и 10:");
-        for (int i = 0; i <list.size(); i++){
-            if(list.get(i).isScoreExcellent()==true) {
-                System.out.println(list.get(i).toString());
+        for (Student student : list) {
+            if (student.isScoreExcellent()) {
+                System.out.println(student.toString());
             }
         }
     }
@@ -38,7 +38,7 @@ public class TaskThreeStart {
     private static ArrayList<String> getNames() throws FileNotFoundException {
         ArrayList<String>listOfNames = new ArrayList<>();
         File file = new File("E:\\java_course\\src\\main\\java\\com\\epam\\modulefour" +
-                "\\taskthree\\students.txt");
+                             "\\taskthree\\students.txt");
         Scanner scanner = new Scanner(file);
         while (scanner.hasNextLine()) {
           listOfNames.add(scanner.nextLine());
@@ -46,8 +46,8 @@ public class TaskThreeStart {
         return listOfNames;
     }
     private static int[] getScores() {
-        int[]studentScores = new int[4];
-        for (int i = 0; i<studentScores.length; i++) {
+        int[] studentScores = new int[4];
+        for (int i = 0; i < studentScores.length; i++) {
             studentScores[i] = 8+(int)(Math.random()*3);
         }
         return studentScores;
