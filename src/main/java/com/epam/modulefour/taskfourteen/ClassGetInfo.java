@@ -16,11 +16,11 @@ public class ClassGetInfo {
     }
 
     public static String[] separatedNegativePositiveSumReport(List<BankAccount> clientAccounts){
-        String[]separatedReport = new String[4];
+        String[] separatedReport = new String[4];
         int positiveSumma = 0;
         int negativeSumma = 0;
-        for (BankAccount ba: clientAccounts){
-            if(ba.getFinancialBalance()>0){
+        for (BankAccount ba: clientAccounts) {
+            if(ba.getFinancialBalance() > 0) {
                 positiveSumma += ba.getFinancialBalance();
             } else {
                 negativeSumma += ba.getFinancialBalance();
@@ -33,7 +33,7 @@ public class ClassGetInfo {
       return separatedReport;
     }
 
-    public static BankAccount findBankAccount(List<BankAccount> clientAccounts, int accountNumber){
+    public static BankAccount findBankAccount(List<BankAccount> clientAccounts, int accountNumber) {
         BankAccount bankAccount = null;
         for (BankAccount ba: clientAccounts) {
             if(ba.getIdAccount() == accountNumber) {
@@ -51,10 +51,10 @@ public class ClassGetInfo {
                 String s2 = Integer.toString(account2.getIdAccount());
                 int i1 = account1.getFinancialBalance();
                 int i2 = account2.getFinancialBalance();
-                if (i1 > i2){
+                if (i1 > i2) {
                     return -1;
                 }
-                if (i2>i1) {
+                if (i2 > i1) {
                     return 1;
                 }
 
@@ -71,10 +71,10 @@ public class ClassGetInfo {
                 String s2 = Integer.toString(account2.getIdAccount());
                 int i1 = account1.getFinancialBalance();
                 int i2 = account2.getFinancialBalance();
-                if (i1 > i2){
+                if (i1 > i2) {
                     return 1;
                 }
-                if (i2>i1) {
+                if (i2 > i1) {
                     return -1;
                 }
 

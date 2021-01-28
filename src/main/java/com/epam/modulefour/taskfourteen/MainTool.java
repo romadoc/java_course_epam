@@ -22,7 +22,6 @@ public class MainTool {
         vasjaAccounts.add(vasjaBankAccount1);
         vasjaAccounts.add(vasjaBankAccount2);
 
-
         getClentCommonBalanceInfo(vasjaAccounts);
         getClientSeparatedBalanceInfo(vasjaAccounts);
         showClientAccountSortedFromUpToDown(vasjaAccounts);
