@@ -18,7 +18,8 @@ public class TravelVoucher {
     private DaysOfTravel daysOfTravel;
 
 
-    public TravelVoucher(Country country, TypeOfTravel typeOfTravelVoyage, TransportType transportType, Feed feed, DaysOfTravel daysOfTravel) {
+    public TravelVoucher(Country country, TypeOfTravel typeOfTravelVoyage, TransportType transportType,
+                         Feed feed, DaysOfTravel daysOfTravel) {
         this.country = country;
         this.typeOfTravelVoyage = typeOfTravelVoyage;
         this.transportType = transportType;

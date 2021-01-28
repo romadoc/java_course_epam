@@ -27,7 +27,7 @@ public class VoucherAgregator {
     TravelVoucher voucher8 = new TravelVoucher(Country.INDIA, TypeOfTravel.EXCURTIONS,
                                               TransportType.PLANE, Feed.NONE, DaysOfTravel.FIFTEEN);
 
-    public HashSet<TravelVoucher> getVoucherSet(){
+    public HashSet<TravelVoucher> getVoucherSet() {
         voucherSet.add(voucher);
         voucherSet.add(voucher1);
         voucherSet.add(voucher2);

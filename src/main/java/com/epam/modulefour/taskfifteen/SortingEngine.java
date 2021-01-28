@@ -20,7 +20,8 @@ public class SortingEngine {
         return travelVouchers;
     }
 
-    public static HashSet<TravelVoucher> filterDays(HashSet<TravelVoucher>travelVouchers, DaysOfTravel daysOfTravel) {
+    public static HashSet<TravelVoucher> filterDays(HashSet<TravelVoucher>travelVouchers,
+                                                    DaysOfTravel daysOfTravel) {
         travelVouchers.removeIf(nextVoucher -> !nextVoucher.getDaysOfTravel().equals(daysOfTravel));
         return travelVouchers;
     }
