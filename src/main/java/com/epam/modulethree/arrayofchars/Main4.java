@@ -28,9 +28,9 @@ public class Main4 {
         System.out.println("amount of numbers : "+counter);
     }
 
-    private static boolean isCharDigit(char ch){
+    private static boolean isCharDigit(char ch) {
         boolean isDigit = false;
-        if((int)ch>47 && (int)ch < 58){
+        if((int)ch > 47 && (int)ch < 58) {
             isDigit = true;
         }
         return isDigit;

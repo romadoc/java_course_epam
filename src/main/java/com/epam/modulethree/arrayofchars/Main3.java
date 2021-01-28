@@ -16,8 +16,8 @@ public class Main3 {
     }
     private static void findAndCountDigitsInString(char[]chars){
         int counter = 0;
-        for (int i = 0; i < chars.length; i++){
-            if(chars[i] >= '0' && chars[i] <= '9'){
+        for (int i = 0; i < chars.length; i++) {
+            if(chars[i] >= '0' && chars[i] <= '9') {
                 counter++;
             }
         }

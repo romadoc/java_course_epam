@@ -14,7 +14,7 @@ public class Main1 {
 
     }
 
-    private static void printData(String s, String[]arrayIn){
+    private static void printData(String s, String[]arrayIn) {
         System.out.print(s + ": ");
         for (String elem: arrayIn) {
             System.out.print(elem + "; ");
@@ -22,35 +22,35 @@ public class Main1 {
         System.out.println();
     }
 
-    private static int searchPositionOfUpperCaseChar(String s){
+    private static int searchPositionOfUpperCaseChar(String s) {
         char[]ch = s.toCharArray();
         int postion = 0;
-        for (int i = 0; i < ch.length; i++){
-            if (Character.isUpperCase(ch[i])){
+        for (int i = 0; i < ch.length; i++) {
+            if (Character.isUpperCase(ch[i])) {
                 postion = i;
             }
         }
         return postion;
     }
 
-    private static String changeChars(String originalString){
+    private static String changeChars(String originalString) {
 
         int position = searchPositionOfUpperCaseChar(originalString);
         char[]chars = originalString.toCharArray();
         char[]chars1 = new char[originalString.length()+1];
-        for (int i = 0; i < position; i++){
+        for (int i = 0; i < position; i++) {
             chars1[i] = chars[i];
         }
 
         chars1[position] = '_';
 
-        for (int i = position+1; i< chars1.length; i++){
+        for (int i = position+1; i< chars1.length; i++) {
             chars1[i] = chars[i-1];
         }
 
         originalString = "";
 
-        for (int i = 0; i<chars1.length; i++){
+        for (int i = 0; i<chars1.length; i++) {
             originalString = originalString + chars1[i];
 
         }
@@ -60,9 +60,9 @@ public class Main1 {
         return originalString;
     }
 
-    private static String[] makeFinishedArray(String[]strings){
+    private static String[] makeFinishedArray(String[]strings) {
         String[]convertedArray = new String[strings.length];
-        for (int i = 0; i < convertedArray.length; i++){
+        for (int i = 0; i < convertedArray.length; i++) {
             convertedArray[i] = changeChars(strings[i]);
         }
         return convertedArray;

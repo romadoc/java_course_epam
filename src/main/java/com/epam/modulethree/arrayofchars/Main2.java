@@ -6,6 +6,7 @@ import java.util.Arrays;
  * Замените в строке все вхождения 'word' на 'letter'.
  * task2 : https://learn.epam.com/myLearning/program?groupGuid=df7fb55b-0efc-452b-9509-aa8160990adb
  */
+
 public class Main2 {
     public static void main(String[] args) {
         String s = "i'am writting a word and my sister reads word";
@@ -15,20 +16,19 @@ public class Main2 {
         printData(startArray,"start line");
         char[][]charForAnalisys = makeCharArraysForAnalysis(s);
         char[][]printChar = findAndShiftChars(charForAnalisys,findPattern,shiftPattern);
-        printRezult(printChar, "result");
+        printRezult(printChar);
     }
 
-    private static char[] makeStartArray(String s){
-        char[]arrayStartChar = s.toCharArray();
-        return arrayStartChar;
+    private static char[] makeStartArray(String s) {
+        return s.toCharArray();
     }
 
-    private static void printData(char[]charsIn, String s){
+    private static void printData(char[]charsIn, String s) {
         System.out.println();
         System.out.print(s + ": ");
-        String s1 = "";
+        StringBuilder s1 = new StringBuilder();
         for (char elem: charsIn) {
-            s1 = s1 + elem;
+            s1.append(elem);
 
         }
         System.out.println(s1);
@@ -64,10 +64,10 @@ public class Main2 {
         return arrayIn;
     }
 
-    private static void printRezult(char[][]chars, String s){
-        System.out.println(s + ": ");
-        for (int i = 0; i < chars.length; i++){
-            for(int j = 0; j < chars[i].length; j++){
+    private static void printRezult(char[][] chars) {
+        System.out.println("result" + ": ");
+        for (int i = 0; i < chars.length; i++) {
+            for(int j = 0; j < chars[i].length; j++) {
                 System.out.print(chars[i][j]);
             }
             System.out.print(" ");

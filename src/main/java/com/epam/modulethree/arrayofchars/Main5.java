@@ -46,7 +46,7 @@ public class Main5 {
         StringBuilder result = new StringBuilder();
         ArrayList<ArrayList>listOfList = new ArrayList<>();
 
-        for(int i = 0; i < arrayString.length; i++){
+        for(int i = 0; i < arrayString.length; i++) {
             if(removeNoChars(arrayString[i].toCharArray()).size() > 0) {
                 listOfList.add((ArrayList) removeNoChars(arrayString[i].toCharArray()));
             }
