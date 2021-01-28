@@ -31,7 +31,7 @@ public class Test1 {
     private int dеfineMaxDigit(int a, int b) {
         this.a = a;
         this.b = b;
-        return a>b?a:b;
+        return Math.max(a, b);
     }
 }
 class Test{
