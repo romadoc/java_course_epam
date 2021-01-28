@@ -10,6 +10,7 @@ import java.util.Comparator;
  * Добавьте возможность сортировки массив по пункту назначения, причем поезда с одинаковыми
  * пунктами назначения должны быть упорядочены по времени отправления.
  */
+
 public class Train {
     private String destination;
     private int numberOfTrain;

@@ -20,7 +20,7 @@ public class TrainSorter {
                 String dest1 = train2.getDestination();
                 int trainNumber1 = train1.getNumberOfTrain();
                 int trainNumber2 = train2.getNumberOfTrain();
-                if (trainNumber1>trainNumber2) {
+                if (trainNumber1 > trainNumber2) {
                     return -1;
                 }
                 if (trainNumber1<trainNumber2) {
@@ -41,10 +41,10 @@ public class TrainSorter {
                 String dest1 = train2.getDestination();
                 int trainNumber1 = train1.getNumberOfTrain();
                 int trainNumber2 = train2.getNumberOfTrain();
-                if (trainNumber1>trainNumber2){
+                if (trainNumber1 > trainNumber2){
                     return 1;
                 }
-                if (trainNumber1<trainNumber2){
+                if (trainNumber1 < trainNumber2){
                     return -1;
                 }
                 return dest.compareTo(dest1);
@@ -78,7 +78,7 @@ public class TrainSorter {
             }
 
         }
-        if (foundCount<1) {
+        if (foundCount < 1) {
             System.out.println("no this train");
         }
 

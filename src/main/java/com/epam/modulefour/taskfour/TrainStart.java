@@ -60,11 +60,11 @@ public class TrainStart {
         String destination = strings[1];
         return destination;
     }
-    static int getHour(String[]strings){
+    static int getHour(String[]strings) {
         int hour = Integer.parseInt(strings[2]);
         return hour;
     }
-    static int getMinute(String[]strings){
+    static int getMinute(String[]strings) {
         int hour = Integer.parseInt(strings[3]);
         return hour;
     }
