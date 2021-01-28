@@ -12,6 +12,7 @@ import java.time.LocalTime;
     b) список рейсов для заданного дня недели;
     c) список рейсов для заданного дня недели, время вылета для которых больше заданного.
 */
+
 public class Airline {
     private String destination;
     private int flightNumber;

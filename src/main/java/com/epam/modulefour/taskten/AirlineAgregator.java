@@ -35,23 +35,23 @@ public class AirlineAgregator {
         getPlanesByDayTime(airplanes, ScannerUtil.stringIn("type destination day of week"));
     }
 
-    private static void getPlanesByDestination(List<Airline>airplanes, String destination){
+    private static void getPlanesByDestination(List<Airline>airplanes, String destination) {
         for (Airline airline: airplanes ) {
-            if(airline.getDestination().equalsIgnoreCase(destination)){
+            if(airline.getDestination().equalsIgnoreCase(destination)) {
                 System.out.println(airline);
             }
         }
     }
 
-    private static void getPlanesByDayOfWeek(List<Airline>airplanes, String dayOfWeek){
-        for (Airline airline: airplanes){
-            if(airline.getDayOfWeek().toString().equalsIgnoreCase(dayOfWeek)){
+    private static void getPlanesByDayOfWeek(List<Airline>airplanes, String dayOfWeek) {
+        for (Airline airline: airplanes) {
+            if(airline.getDayOfWeek().toString().equalsIgnoreCase(dayOfWeek)) {
                 System.out.println(airline);
             }
         }
     }
 
-    private static void getPlanesByDayTime(List<Airline>airplanes, String dayOfWeek){
+    private static void getPlanesByDayTime(List<Airline>airplanes, String dayOfWeek) {
         int hour = ScannerUtil.integerIn("type dep. hour");
         int minute = ScannerUtil.integerIn("type dep. min");
         LocalTime time = LocalTime.of(hour,minute);
