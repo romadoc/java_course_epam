@@ -7,7 +7,7 @@ import java.util.List;
 
 public class CustomersSorter {
     List<Customer>customers;
-    CustomersSorter(List<Customer>customers){
+    CustomersSorter(List<Customer>customers) {
         this.customers = customers;
     }
 
@@ -25,7 +25,7 @@ public class CustomersSorter {
         long numberTo = ScannerUtil.longIn("to card number");
 
         for (int i = 0; i < customers.size(); i++){
-           if(customers.get(i).getCardNumber() <= numberTo&&customers.get(i).getCardNumber()>=numberFrom){
+           if(customers.get(i).getCardNumber() <= numberTo&&customers.get(i).getCardNumber()>=numberFrom) {
                System.out.println(customers.get(i));
            }
         }
