@@ -8,6 +8,7 @@ import java.util.regex.Pattern;
  * тег, закрывающий тег, содержимое тега, тег без тела).
  * Task 2 https://learn.epam.com/myLearning/program?groupGuid=df7fb55b-0efc-452b-9509-aa8160990adb
  */
+
 public class Main2 {
     public static void main(String[] args) {
         String xmlString = xmlStringOrigin();
@@ -21,7 +22,8 @@ public class Main2 {
         bodyless(xmlString);
 
     }
-    private static void notes(String stringIn, String[] tegCon){
+
+    private static void notes(String stringIn, String[] tegCon) {
         Pattern pattern = Pattern.compile("[^А-Яа-я\\s]");
         String[]strings = pattern.split(stringIn);
         System.out.println();
@@ -35,7 +37,8 @@ public class Main2 {
         }
         System.out.println("<"+tegCon[tegCon.length-1]+">");
     }
-    private static String[] inTegContent(String stringIn){
+
+    private static String[] inTegContent(String stringIn) {
 
         Pattern pattern = Pattern.compile("[<>]");
         String[]strings = pattern.split(stringIn);
@@ -44,13 +47,14 @@ public class Main2 {
         }
         return strings;
     }
+
     private static void note(String xmlStr){
 
         Pattern patternStr = Pattern.compile("<note id.*[<\\/no]te>");
         Pattern patternEndStr = Pattern.compile("\\<\\/note\\>");
         Matcher matcher = patternStr.matcher(xmlStr);
         String string = "";
-        while (matcher.find()){
+        while (matcher.find()) {
             string = string + (xmlStr.substring(matcher.start(), matcher.end()));
         }
         String[]strings = patternEndStr.split(string);
@@ -58,13 +62,14 @@ public class Main2 {
             giveAnswer(strings[i]);
         }
     }
+
     private static void to(String xmlStr){
 
         Pattern patternStr = Pattern.compile("<to>.*<\\/to>");
         Pattern patternEndStr = Pattern.compile("><");
         Matcher matcher = patternStr.matcher(xmlStr);
         String string = "";
-        while (matcher.find()){
+        while (matcher.find()) {
             string = string + (xmlStr.substring(matcher.start(), matcher.end()));
             System.out.println();
 
@@ -74,11 +79,12 @@ public class Main2 {
         System.out.println("<"+strings[strings.length-1]);
 
     }
+
     private static void from(String xmlStr){
         Pattern patternStr = Pattern.compile("<from>.*<\\/from>");
         Matcher matcherStr = patternStr.matcher(xmlStr);
         String string = "";
-        while (matcherStr.find()){
+        while (matcherStr.find()) {
             string = string + matcherStr.group();
         }
         String[]strings = string.split("><");
@@ -86,11 +92,12 @@ public class Main2 {
         System.out.println("<"+strings[strings.length-1]);
 
     }
+
     private static void heading(String xmlStr){
         Pattern patternStr = Pattern.compile("<heading>.*<\\/heading>");
         Matcher matcherStr = patternStr.matcher(xmlStr);
         String string = "";
-        while (matcherStr.find()){
+        while (matcherStr.find()) {
             string = string + matcherStr.group();
         }
         String[]strings = string.split("><");
@@ -98,21 +105,23 @@ public class Main2 {
         System.out.println("<"+strings[strings.length-1]);
 
     }
+
     private static void body(String xmlStr){
         Pattern patternStr = Pattern.compile("<body>.*");
         Matcher matcherStr = patternStr.matcher(xmlStr);
         String string = "";
-        while (matcherStr.find()){
+        while (matcherStr.find()) {
             string = string + matcherStr.group();
         }
         String[]strings = string.split("><");
         System.out.println(strings[0]+">");
     }
+
     private static void bodyless(String xmlStr){
         Pattern patternStr = Pattern.compile("<.*\\/>");
         Matcher matcherStr = patternStr.matcher(xmlStr);
         String string = "";
-        while (matcherStr.find()){
+        while (matcherStr.find()) {
             string = string + matcherStr.group();
 
         }

@@ -34,21 +34,22 @@ public class Main1 {
         stringBuilder.append("  Why is Java so popular?\n").
                 append("\u2029  One of the biggest reasons why Java is so popular is the platform iindependence.\n" +
                         "Programs can run on several different types of computer; as long as the computer has " +
-                        "a Java Runtime Environment (JRE) installed, a Java program can run on it. So that's why I like java. \n").
-                append("\u2029  Most types of computers will be compatible with a JRE including PCs running on Windows, " +
-                        "Macintosh computers, Unix or Linux computers, and large mainframe computers, " +
-                        "as well as mobile phones. \n" +
+                        "a Java Runtime Environment (JRE) installed, a Java program can run on it. So that's why" +
+                        "I like java. \n").
+                append("\u2029  Most types of computers will be compatible with a JRE including PCs" +
+                        "running on Windows, Macintosh computers, Unix or Linux computers, and large mainframe" +
+                        "computers, as well as mobile phones. \n" +
                         "Since it has been around for so long, some of the biggest organisations in the world are " +
                         "built using the language. \n" +
-                        "\u2029  Many banks, retailers, insurance companies, utilities, and manufacturers all use Java.");
+                        "\u2029  Many banks, retailers, insurance companies, utilities, and manufacturers" +
+                        "all use Java.");
 
         return stringBuilder.toString();
     }
 
     private static String[] splitByParagraphs(String text) {
 
-        String[] s1 = text.split("\u2029");
-        return s1;
+        return text.split("\u2029");
 
     }
 
@@ -120,7 +121,8 @@ public class Main1 {
         Pattern patternSentence = Pattern.compile("([.!?])([A-Z]*)");
         return patternSentence.split(stringIn);
     }
-    private static void arrayOfSentenceWordsSorter(String sentence, char ch){
+
+    private static void arrayOfSentenceWordsSorter(String sentence, char ch) {
 
         String[]wordsInSentence = sentence.split(" ");
 
@@ -134,14 +136,14 @@ public class Main1 {
             }
         }
 
-        for (int i =0; i <wordsInSentence.length; i++){
-            for(int y = 0; y < wordsInSentence.length-1; y++){
-                if(countCharsInOneWord(wordsInSentence[y], ch) == countCharsInOneWord(wordsInSentence[y+1],ch)){
+        for (int i = 0; i < wordsInSentence.length; i++) {
+            for(int y = 0; y < wordsInSentence.length-1; y++) {
+                if(countCharsInOneWord(wordsInSentence[y], ch) == countCharsInOneWord(wordsInSentence[y+1],ch)) {
                     Arrays.sort(wordsInSentence);
                 }
             }
         }
-        for (String s: wordsInSentence){
+        for (String s: wordsInSentence) {
             System.out.print(s + " ");
         }
 
