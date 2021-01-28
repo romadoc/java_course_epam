@@ -29,7 +29,7 @@ public class State {
 
     public String getCapital() {
         for (City s: cityList) {
-            if (s.isCapital()){
+            if (s.isCapital()) {
                 capital = s.getCityName();
             }
         }
@@ -77,7 +77,7 @@ public class State {
 
     }
 
-    public void printStateInfo(){
+    public void printStateInfo() {
         System.out.println("State: " + getStateName());
         System.out.println("Capital: " + getCapital());
         System.out.println("Quantity of regions: " + getQuantityOfRegions());

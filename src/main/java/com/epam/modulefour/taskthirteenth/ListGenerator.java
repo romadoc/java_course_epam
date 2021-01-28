@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListGenerator {
-    public List<City>createCitiesList(){
+    public List<City>createCitiesList() {
 
         List<City>cities = new ArrayList<>();
 
@@ -33,7 +33,7 @@ public class ListGenerator {
         return cities;
     }
 
-    public List<District>createDistinctesList(){
+    public List<District>createDistinctesList() {
         List<District>districts = new ArrayList<>();
 
         District district = new District(1,  1, 3056.2);
@@ -54,7 +54,7 @@ public class ListGenerator {
         return districts;
     }
 
-    public List<Region>createRegionsList(){
+    public List<Region>createRegionsList() {
         List<Region>regions = new ArrayList<>();
 
         Region region = new Region(1,1);
