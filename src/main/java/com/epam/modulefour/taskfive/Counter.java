@@ -6,6 +6,7 @@ package com.epam.modulefour.taskfive;
   произвольными значениями. Счетчик имеет методы увеличения и уменьшения состояния, и метод
   позволяющий получить его текущее состояние. Написать код, демонстрирующий все возможности класса
  */
+
 public class Counter {
     private int minValue;
     private int maxValue;
