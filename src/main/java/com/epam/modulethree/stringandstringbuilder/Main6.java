@@ -10,11 +10,13 @@ public class Main6 {
         String result = "";
         solveTask(s, result);
     }
-    private static void solveTask(String s, String dist){
-        char[]chars = s.toCharArray();
-        for (int i = 0; i < chars.length; i++){
-            dist = dist + chars[i] + chars[i];
+    private static void solveTask(String s, String dist) {
+        char[] chars = s.toCharArray();
+        StringBuilder distBuilder = new StringBuilder(dist);
+        for (int i = 0; i < chars.length; i++) {
+            distBuilder.append(chars[i]).append(chars[i]);
         }
+        dist = distBuilder.toString();
         System.out.println(s);
         System.out.println(dist);
     }

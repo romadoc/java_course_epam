@@ -7,6 +7,7 @@ import com.epam.utils.ScannerUtil;
  * def", то должно быть выведено "abcdef".
  * task 7 https://learn.epam.com/myLearning/program?groupGuid=df7fb55b-0efc-452b-9509-aa8160990adb
  */
+
 public class Main7 {
     public static void main(String[] args) {
         String s = ScannerUtil.stringIn("Type string with repeated chars");

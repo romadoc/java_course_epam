@@ -13,12 +13,12 @@ public class Main2 {
     private static void printString(String s){
         System.out.println(s);
     }
-    private static void solveTask(String s){
+    private static void solveTask(String s) {
         char shifted = 'a';
         char pattern = 'b';
         StringBuffer sb = new StringBuffer(s);
-        for (int i = 0; i < sb.length(); i++){
-            if(sb.charAt(i) == shifted){
+        for (int i = 0; i < sb.length(); i++) {
+            if(sb.charAt(i) == shifted) {
                 sb.insert(i+1, pattern);
             }
         }

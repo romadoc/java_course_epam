@@ -11,13 +11,13 @@ public class Main4 {
         result = solveTask(start, result);
         System.out.println(result);
     }
-    private static String solveTask(String s, String dist){
+    private static String solveTask(String s, String dist) {
 
-        char[]chars = new char[4];
+        char[] chars = new char[4];
         s.getChars(7,8,chars,0);
         s.getChars(3,5, chars, 1);
         s.getChars(7,8,chars,3);
-        for (int i = 0; i < chars.length; i++){
+        for (int i = 0; i < chars.length; i++) {
             dist = dist + chars[i];
         }
         return dist;

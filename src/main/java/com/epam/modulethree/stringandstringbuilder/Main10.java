@@ -7,6 +7,7 @@ import com.epam.utils.ScannerUtil;
  * знаком. Определить количество предложений в строке X.
  * Task 10 https://learn.epam.com/myLearning/program?groupGuid=df7fb55b-0efc-452b-9509-aa8160990adb
  */
+
 public class Main10 {
     public static void main(String[] args) {
         String s = ScannerUtil.stringIn("Type string");
@@ -14,7 +15,7 @@ public class Main10 {
     }
 
     private static void solveTask(String s){
-        char[]chars = s.toCharArray();
+        char[] chars = s.toCharArray();
         int count = 0;
         for(int i = 1; i < chars.length; i++ ){
             if ((chars[i] == '.' || chars[i] == '!' || chars[i] == '?') && (chars[i-1] !=' ')){

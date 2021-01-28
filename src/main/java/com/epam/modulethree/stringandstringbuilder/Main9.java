@@ -7,6 +7,7 @@ import com.epam.utils.ScannerUtil;
  * буквы.
  * task 9 https://learn.epam.com/myLearning/program?groupGuid=df7fb55b-0efc-452b-9509-aa8160990adb
  */
+
 public class Main9 {
     public static void main(String[] args) {
         String s = ScannerUtil.stringIn("Type string");
@@ -15,8 +16,8 @@ public class Main9 {
 
     }
 
-    private static String findlatinChar(String s){
-        char[]chars = s.toCharArray();
+    private static String findlatinChar(String s) {
+        char[] chars = s.toCharArray();
         String s1="";
         for(int i = 0; i < chars.length; i++) {
             if (chars[i] < 123){
@@ -26,15 +27,15 @@ public class Main9 {
         return s1;
     }
 
-    private static void solveTask(String s){
+    private static void solveTask(String s) {
         int lowerCase = 0;
         int upperCase = 0;
-        char[]chars = s.toCharArray();
-        for(int i = 0; i < chars.length; i++){
+        char[] chars = s.toCharArray();
+        for(int i = 0; i < chars.length; i++) {
             if(Character.isUpperCase(chars[i])){
                 upperCase++;
             }
-            if(Character.isLowerCase(chars[i])){
+            if(Character.isLowerCase(chars[i])) {
                 lowerCase++;
             }
         }

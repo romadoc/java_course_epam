@@ -9,11 +9,11 @@ public class Main5 {
         String s = "public static void main";
         solveTask(s);
     }
-    private static void solveTask(String s){
-        char[]chars = s.toCharArray();
+    private static void solveTask(String s) {
+        char[] chars = s.toCharArray();
         char pattern = 'a';
         int counter = 0;
-        for (int i = 0; i < chars.length; i++){
+        for (int i = 0; i < chars.length; i++) {
             if(chars[i] == pattern){
                 counter++;
             }
