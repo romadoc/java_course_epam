@@ -36,7 +36,6 @@ public class Main4 {
     }
 
     private static void comparer(int[] a, int[] b, int[] c) {
-
         int[] arrOfDist = new int[3];
         arrOfDist[0] = countDistance(a, b);
         arrOfDist[1] = countDistance(b, c);
@@ -68,7 +67,6 @@ public class Main4 {
         for (int point : coordinate) {
             System.out.print(point + "; ");
         }
-
     }
 
 }

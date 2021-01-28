@@ -14,22 +14,21 @@ import java.util.List;
  */
 public class Main13 {
     public static void main(String[] args) {
-        int n;
-        n = ScannerUtil.integerIn("type digit");
+        int n = ScannerUtil.integerIn("type digit");
         List<Integer>list = createList(n);
         printArray(list, "Start Array: ");
         getSolution(list, n, "solution: >");
     }
 
-    private static List<Integer> createList(int n){
+    private static List<Integer> createList(int n) {
         List<Integer>list = new ArrayList<>();
-        for(int i = 0; i < n*2; i++){
+        for(int i = 0; i < n*2; i++) {
             list.add(i+1);
         }
         return list;
     }
 
-    private static void printArray(List<Integer>listIn, String s){
+    private static void printArray(List<Integer>listIn, String s) {
         System.out.print(s);
         for (int elem: listIn) {
             System.out.print(elem + "; ");
@@ -37,7 +36,7 @@ public class Main13 {
         System.out.println();
     }
 
-    private static void getSolution(List<Integer> list, int n, String s){
+    private static void getSolution(List<Integer> list, int n, String s) {
         int startIndex = n-1;
         int endIndex = startIndex*2;
         for (int i = startIndex; i < endIndex; i++){

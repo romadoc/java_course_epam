@@ -9,18 +9,14 @@ import com.epam.utils.ScannerUtil;
  */
 public class Main9 {
     public static void main(String[] args) {
-        int x;
-        int y;
-        int z;
-        int t;
-        x = ScannerUtil.integerIn("type X");
-        y = ScannerUtil.integerIn("type Y");
-        z = ScannerUtil.integerIn("type Z");
-        t = ScannerUtil.integerIn("type K");
+        int x = ScannerUtil.integerIn("type X");
+        int y = ScannerUtil.integerIn("type Y");
+        int z = ScannerUtil.integerIn("type Z");
+        int t = ScannerUtil.integerIn("type K");
         printAnswer(getSquare(x, y, z, t));
     }
 
-    private static double getSquare(int x, int z, int y, int t){
+    private static double getSquare(int x, int z, int y, int t) {
         double diaqonal;
         diaqonal = Math.sqrt((x * x) + (y * y));
         double square1 = (x * y) / 2.0;

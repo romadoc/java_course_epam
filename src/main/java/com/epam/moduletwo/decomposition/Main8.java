@@ -20,27 +20,29 @@ public class Main8 {
         printData(sum2, "3-5");
         printData(sum3, "4-6");
     }
-    private static int[] createArray(){
-        int[]array = new int[10];
-        for (int i = 0; i < array.length; i++){
+
+    private static int[] createArray() {
+        int[] array = new int[10];
+        for (int i = 0; i < array.length; i++) {
             array[i] = (int)(Math.random()*10);
         }
         return array;
     }
 
-    private static void printData(int[]arrayIn, String s){
+    private static void printData(int[]arrayIn, String s) {
         System.out.print(s + ": ");
         for (int elem: arrayIn) {
             System.out.print(elem + "; ");
         }
     }
 
-    private static void printData(int sum, String s){
+    private static void printData(int sum, String s) {
         System.out.println();
         System.out.print("sum of elements at indexes [" + s + "]: " + sum);
 
     }
-    private static int getSumOfGaps(int[]arrayIn, int start, int end){
+
+    private static int getSumOfGaps(int[]arrayIn, int start, int end) {
         int sum = 0;
         for (int i = start; i <= end; i++) {
             sum = sum + arrayIn[i];

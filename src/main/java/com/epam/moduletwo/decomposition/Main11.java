@@ -11,17 +11,16 @@ import java.util.List;
  */
 public class Main11 {
     public static void main(String[] args) {
-        int x;
-        int y;
-        x = ScannerUtil.integerIn("type first digit");
-        y = ScannerUtil.integerIn("type second digit");
+        int x = ScannerUtil.integerIn("type first digit");
+        int y = ScannerUtil.integerIn("type second digit");
         List<Integer> list = createlist(x);
         List<Integer>list1 = createlist(y);
         compareLists(list, list1);
     }
-    private static List<Integer> createlist(int a){
+
+    private static List<Integer> createlist(int a) {
         List<Integer>list = new ArrayList<>();
-        while ( a!=0 ){
+        while ( a!=0 ) {
             list.add(a % 10);
             a /=10;
 
@@ -29,12 +28,14 @@ public class Main11 {
         return list;
     }
 
-    private static void compareLists(List<Integer>list, List<Integer>list1){
-        if (list.size()>list1.size()){
+    private static void compareLists(List<Integer>list, List<Integer>list1) {
+        if (list.size()>list1.size()) {
             System.out.print("the size of the 1-st number is greater");
         }
-        if(list1.size()>list.size()){
+        if(list1.size()>list.size()) {
             System.out.print("the size of the 2-nd number is greater");
-        }else System.out.println("sizes 1-st and 2-nd are equal");
+        } else {
+            System.out.println("sizes 1-st and 2-nd are equal");
+        }
     }
 }

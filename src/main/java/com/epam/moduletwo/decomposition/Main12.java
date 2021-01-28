@@ -12,18 +12,14 @@ import java.util.List;
  */
 public class Main12 {
     public static void main(String[] args) {
-        int k;
-        int n;
-        k = ScannerUtil.integerIn("Type K");
-        n = ScannerUtil.integerIn("Type N");
+        int k = ScannerUtil.integerIn("Type K");
+        int n = ScannerUtil.integerIn("Type N");
         List<Integer>list = createList(k, n);
         printArray(list);
-
     }
 
-    private static List<Integer> createList(int k, int n){
+    private static List<Integer> createList(int k, int n) {
         List<Integer>list = new ArrayList<>();
-
         while (getSum(list)<k) {
             getSum(list);
             list.add((int) (Math.random() * n + 1));
@@ -34,7 +30,7 @@ public class Main12 {
         return list;
     }
 
-    private static int getSum(List<Integer> listIn){
+    private static int getSum(List<Integer> listIn) {
         int counterSum = 0;
         for (int i = 0; i < listIn.size(); i++){
             counterSum = counterSum + listIn.get(i);
@@ -42,7 +38,7 @@ public class Main12 {
         return counterSum;
     }
 
-    private static void printArray(List<Integer>listIn){
+    private static void printArray(List<Integer>listIn) {
         System.out.print("array A : ");
         for (int elem: listIn) {
             System.out.print(elem + "; ");

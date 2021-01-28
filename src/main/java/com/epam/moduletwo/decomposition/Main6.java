@@ -17,7 +17,7 @@ public class Main6 {
         getResult(aDigit, bDigit, cDigit);
     }
 
-    private static int greatCommonFinder(int a, int b){
+    private static int greatCommonFinder(int a, int b) {
         int rezult = 0;
         while (a != 0 && b != 0) {
             if (a > b) {
@@ -31,9 +31,9 @@ public class Main6 {
         return rezult;
     }
 
-    private static void getResult(int a, int b, int c){
+    private static void getResult(int a, int b, int c) {
         String s = "Answer: ";
-        if (greatCommonFinder(greatCommonFinder(a, b), c) == 1){
+        if (greatCommonFinder(greatCommonFinder(a, b), c) == 1) {
             s = s + "These numbers are inter-prime";
         }else {
             s = s + "These numbers are not inter-prime";

@@ -7,16 +7,17 @@ package com.epam.moduletwo.decomposition;
  */
 public class Main3 {
     public static void main(String[] args) {
-        int a;
-        a = 10;
+        int a = 10;
         printResult(countHexagonSquare(countTriangleSquare(a)), "hexagon square");
     }
-    private static int countTriangleSquare(int a){
+
+    private static int countTriangleSquare(int a) {
         int square = 0;
         square = (int)((a*a)*Math.sqrt(a)/4);
         return square;
     }
-    private static int countHexagonSquare(int x){
+
+    private static int countHexagonSquare(int x) {
         int hexagonSquare;
         hexagonSquare = x * 6;
         return hexagonSquare;

@@ -10,10 +10,8 @@ import com.epam.utils.ScannerUtil;
  */
 public class Main14 {
     public static void main(String[] args) {
-        int k;
-        k = ScannerUtil.integerIn("Type k");
+        int k = ScannerUtil.integerIn("Type k");
         getSolution(k);
-
     }
 
     private static int countDigits(int x) {

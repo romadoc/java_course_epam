@@ -6,11 +6,10 @@ package com.epam.moduletwo.decomposition;
  */
 public class Main2 {
     public static void main(String[] args) {
-        int a, b, c, d;
-        a = 12;
-        b = 9;
-        c = 15;
-        d = 21;
+       int a = 12;
+       int b = 9;
+       int c = 15;
+       int d = 21;
         printData(a, b, c, d, "digits");
         printData(greatCommonDivFinder(a, b, c, d), "great common divider");
     }

@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class Main16 {
     public static void main(String[] args) {
-        int[]array = createArray();
+        int[] array = createArray();
         printArray(array, "start array");
         List<Integer>list = makeListOfUnevens(array);
         int sum = sumUnevenDigits(list);
@@ -19,33 +19,33 @@ public class Main16 {
         findEvens(sum);
     }
 
-    private static int[] createArray(){
-        int[]array  = new int[20];
-        for (int i = 0; i < array.length; i++){
+    private static int[] createArray() {
+        int[] array  = new int[20];
+        for (int i = 0; i < array.length; i++) {
             array[i] = (int)(Math.random()*5000);
         }
         return array;
     }
 
-    private static void printArray(int[]arrayIn, String s){
+    private static void printArray(int[]arrayIn, String s) {
         System.out.print(s + ": ");
         for (int elem: arrayIn) {
             System.out.print(elem + "; ");
         }
     }
 
-    private static List<Integer> makeListOfUnevens(int[]arrayIn){
+    private static List<Integer> makeListOfUnevens(int[]arrayIn) {
         List<Integer>list = new ArrayList<>();
         for (int i = 0; i < arrayIn.length; i++ ){
             List<Integer> subList = createArray(arrayIn[i]);
             int count = 0;
             int sum = 0;
-            for(int j = 0; j < subList.size(); j++ ){
+            for(int j = 0; j < subList.size(); j++ ) {
 
-                if (subList.get(j) % 2 > 0){
+                if (subList.get(j) % 2 > 0) {
                     count++;
                     sum = subList.get(j) + sum;
-                    if(count == subList.size()){
+                    if(count == subList.size()) {
                         list.add(sum);
                     }
                 }
@@ -69,15 +69,15 @@ public class Main16 {
         return list;
     }
 
-    private static int sumUnevenDigits(List<Integer>listIn){
+    private static int sumUnevenDigits(List<Integer>listIn) {
         int sum = 0;
-        for (int i = 0; i < listIn.size(); i++){
+        for (int i = 0; i < listIn.size(); i++) {
             sum = listIn.get(i) + sum;
         }
         return sum;
     }
 
-    private static void findEvens(int sum){
+    private static void findEvens(int sum) {
         int x = sum;
         int count = 0;
         List<Integer> list = new ArrayList<>();
@@ -85,7 +85,7 @@ public class Main16 {
             list.add(x % 10);
             x /= 10;
         }
-        for (int i = 0; i < list.size(); i++){
+        for (int i = 0; i < list.size(); i++) {
             if(list.get(i)%2 == 0){
                 count++;
             }

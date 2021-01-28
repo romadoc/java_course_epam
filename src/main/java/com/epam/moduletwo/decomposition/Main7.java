@@ -10,24 +10,24 @@ public class Main7 {
         getSumOfFactorial(array, "Factorial's sum (1...9): ");
     }
 
-    private static int[] startArrayConstructor(){
+    private static int[] startArrayConstructor() {
         int[] array = new int[9];
-        for (int i = 0; i < array.length; i ++){
+        for (int i = 0; i < array.length; i ++) {
             array[i] = i+1;
         }
         return array;
     }
 
-    private static int countFactorial(int a){
+    private static int countFactorial(int a) {
         int rezult = 1;
-        for(int i = 1; i < a; i++){
+        for(int i = 1; i < a; i++) {
             rezult = rezult * i;
         }
         return rezult;
 
-    }private static void getSumOfFactorial(int[]arrayIn, String s){
+    }private static void getSumOfFactorial(int[]arrayIn, String s) {
         int sum = 0;
-        for (int i = 0; i < arrayIn.length; i++){
+        for (int i = 0; i < arrayIn.length; i++) {
             if(arrayIn[i]%2 > 0) {
                 sum = sum + countFactorial(arrayIn[i]);
             }

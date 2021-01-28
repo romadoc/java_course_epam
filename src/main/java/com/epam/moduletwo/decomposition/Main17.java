@@ -33,20 +33,20 @@ public class Main17 {
         return list;
     }
 
-    private static int startSummator(List<Integer> list){
+    private static int startSummator(List<Integer> list) {
         int sum = 0;
-        for (int i = 0; i < list.size(); i++){
+        for (int i = 0; i < list.size(); i++) {
             sum = list.get(i) + sum;
         }
         return sum;
     }
 
-     private static void getSolution(int digitIn){
+     private static void getSolution(int digitIn) {
         int counter = 0;
         System.out.print(digitIn + "; ");
         int a = digitIn;
 
-        while (a !=0){
+        while (a !=0) {
             a = a - startSummator(startDisintegrator(a));
             System.out.print(a +"; ");
             counter++;

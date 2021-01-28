@@ -14,19 +14,20 @@ public class Main5 {
         printArray(arraySorted, "sorted array");
         getSolution(arraySorted);
     }
-    private static int[] createArray(){
+    private static int[] createArray() {
         int n = (int)(Math.random()*20);
         int[]array = new int[n];
-        for(int i = 0; i < array.length; i ++ ){
+        for(int i = 0; i < array.length; i ++ ) {
             array[i] = (int)(Math.random()*30);
         }
         return array;
     }
-    private static int[] sortArray(int[]array){
-        for (int i = 0; i < array.length; i++){
-            for (int j = 0; j < array.length-1; j++){
-                while (!(array[j]<=array[j+1])){
-                    if (array[j] > array[j+1]){
+
+    private static int[] sortArray(int[]array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length-1; j++) {
+                while (!(array[j]<=array[j+1])) {
+                    if (array[j] > array[j+1]) {
                         int temp = array[j];
                         array[j] = array[j+1];
                         array[j+1] = temp;
@@ -36,14 +37,14 @@ public class Main5 {
         }
         return array;
     }
-    private static void printArray(int[]arrayIn, String s){
+    private static void printArray(int[]arrayIn, String s) {
         System.out.println();
         System.out.print(s + ": ");
         for (int elem: arrayIn) {
             System.out.print(elem + "; ");
         }
     }
-    private static void getSolution(int[]arrayIn){
+    private static void getSolution(int[]arrayIn) {
         int a = arrayIn[arrayIn.length-2];
         System.out.println();
         System.out.print("pre-last Digit is: " + a);
