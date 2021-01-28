@@ -12,6 +12,7 @@ public class Main4 {
        printArray("Generated array: ", array);
        printArray("Sorted array: ", insertionSort(array));
     }
+
     private static int[] insertionSort(int[] arrayIn) {
         for (int left = 0; left < arrayIn.length; left++) {
             int value = arrayIn[left];
@@ -28,7 +29,8 @@ public class Main4 {
         }
         return arrayIn;
     }
-    private static int[] createArray(){
+
+    private static int[] createArray() {
         int b = (int)(10+Math.random()*20);
         int[]array = new int[b];
         for (int i = 0; i < array.length; i++) {
@@ -36,7 +38,8 @@ public class Main4 {
         }
         return array;
     }
-    private static void printArray(String s, int[]arrayIn){
+
+    private static void printArray(String s, int[]arrayIn) {
         System.out.println(s);
         for (int a: arrayIn  ) {
             System.out.print(a + "; ");

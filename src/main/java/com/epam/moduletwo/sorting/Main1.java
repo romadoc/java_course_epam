@@ -23,29 +23,29 @@ public class Main1 {
         printArray(comboArray, "result: ");
 
     }
-    private static int[] createArrayOne(){
+
+    private static int[] createArrayOne() {
         int n;
         int [] array = new int[50];
-        for(int i = 0; i < fill1Array; i++){
+        for(int i = 0; i < fill1Array; i++) {
             array[i] = i+1;
-
         }
 
         return array;
     }
-    private static int[] createArrayTwo(){
 
+    private static int[] createArrayTwo() {
         int [] array = new int[10];
-        for(int i = 0; i < array.length; i++){
+        for(int i = 0; i < array.length; i++) {
             array[i] = (i+1)*10;
-
         }
         return array;
     }
-    private static int inputK(String s, int length){
+
+    private static int inputK(String s, int length) {
         System.out.print(s);
         Scanner scanner = new Scanner(System.in);
-        int x = 0;
+        int x;
         int y = 0;
         while (!scanner.hasNextInt()){
             scanner.next();
@@ -54,34 +54,31 @@ public class Main1 {
         }
 
         x = scanner.nextInt();
-        if (x > 0 && x < length){
+        if (x > 0 && x < length) {
             y = x;
         }
 
         System.out.println("k = " + y);
         return y;
     }
-    private static void printArray(int [] arrayIn, String s){
+
+    private static void printArray(int [] arrayIn, String s) {
         System.out.print(s);
-        for (int i = 0; i < arrayIn.length; i++){
+        for (int i = 0; i < arrayIn.length; i++) {
             System.out.print(arrayIn[i] + "; ");
         }
         System.out.println();
     }
-    private static int[] createCombinedMatrix(int[]array1, int[]array2, int k){
 
+    private static int[] createCombinedMatrix(int[]array1, int[]array2, int k) {
         int coef = (fill1Array+array2.length) - (k+1);
-
         for (int j = k + 1; j < fill1Array; j++) {
             array1[coef] = array1[j];
             coef = coef + 1;
 
-        }   for (int i = 0; i < array2.length; i++){
-
+        }   for (int i = 0; i < array2.length; i++) {
             array1[(k+1)+i] = array2[i];
         }
         return array1;
-
     }
-
 }

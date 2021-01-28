@@ -12,7 +12,8 @@ public class Main3 {
         printArray(sortArray(array), "sorted array: ");
 
     }
-    private static int[] createArray(){
+
+    private static int[] createArray() {
         int b = (int)(Math.random()*10);
         int[]array = new int[b];
         for (int i = 0; i < array.length; i++) {
@@ -20,25 +21,26 @@ public class Main3 {
         }
         return array;
     }
-    private static void printArray(int[]arrayIn, String s){
+
+    private static void printArray(int[]arrayIn, String s) {
         System.out.println();
         System.out.print(s);
         for (int elem: arrayIn) {
             System.out.print(elem + "; ");
         }
     }
-    private static int[] sortArray(int[]arrayIn){
-        int count = 0;
-        for (int i = 0; i < arrayIn.length; i++){
 
-            for (int j = i+1; j < arrayIn.length; j++){
+    private static int[] sortArray(int[]arrayIn) {
+        int count = 0;
+        for (int i = 0; i < arrayIn.length; i++) {
+
+            for (int j = i+1; j < arrayIn.length; j++) {
                 if(arrayIn[i] > arrayIn[j]){
                     int temp;
                     temp = arrayIn[i];
                     arrayIn[i] = arrayIn[j];
                     arrayIn[j] = temp;
                     count++;
-
                 }
             }
         }
