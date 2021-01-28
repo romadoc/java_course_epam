@@ -6,7 +6,7 @@ public class TestBook {
     public static void main(String[] args) {
         Agregator agregator = new Agregator();
         System.out.println("List of books & authors:");
-        for (int i = 0; i < agregator.books.length; i++){
+        for (int i = 0; i < agregator.books.length; i++) {
             agregator.printList(agregator.books[i]);
         }
 
