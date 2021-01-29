@@ -1,4 +1,4 @@
-package utils;
+package com.epam.utils;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public final class ScannerUtil {
         //preventing instance creation
     }
 
-    public static int intIn(String s){
+    public static int integerIn(String s){
         s = getString(s);
         int x = 0;
         Scanner scanner = new Scanner(System.in);
@@ -44,6 +44,17 @@ public final class ScannerUtil {
             scanner.next();
         }
         x = scanner.nextFloat();
+        return x;
+    }
+    public static double doubleIn(String s){
+        getString(s);
+        double x = 0D;
+        Scanner scanner = new Scanner(System.in);
+        while (!scanner.hasNextDouble()){
+            System.out.println(s);
+            scanner.next();
+        }
+        x = scanner.nextDouble();
         return x;
     }
     public static String stringIn(String s){

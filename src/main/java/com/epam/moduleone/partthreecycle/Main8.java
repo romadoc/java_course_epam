@@ -21,11 +21,11 @@ public class Main8 {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print(message);
-        while (!scanner.hasNextInt()) {
+        while (!scanner.hasNextLong()) {
             scanner.nextLine();
             System.out.print(message);
         }
-        int digit = scanner.nextInt();
+        long digit = scanner.nextLong();
         return digit;
     }
 
