@@ -24,6 +24,7 @@ public final class ScannerUtil {
         x = scanner.nextInt();
         return x;
     }
+
     public static long longIn(String s){
         s = getString(s);
         long x = 0L;
@@ -35,6 +36,7 @@ public final class ScannerUtil {
         x = scanner.nextLong();
         return x;
     }
+
     public static float floatIn(String s){
         getString(s);
         float x = 0F;
@@ -46,6 +48,7 @@ public final class ScannerUtil {
         x = scanner.nextFloat();
         return x;
     }
+
     public static double doubleIn(String s){
         getString(s);
         double x = 0D;
@@ -57,6 +60,7 @@ public final class ScannerUtil {
         x = scanner.nextDouble();
         return x;
     }
+
     public static String stringIn(String s){
         getString(s);
         String string = "";
@@ -68,6 +72,7 @@ public final class ScannerUtil {
         string = scanner.nextLine();
         return string;
     }
+
     private static String getString(String s) {
         s = s + " >>";
         System.out.print(s);
