@@ -6,10 +6,9 @@ package com.epam.moduletwo.arraysofarrays;
  */
 public class Main10 {
     public static void main(String[] args) {
-        int[][] array;
-        int[] arrayOfDesition;
-        array = createMatrix();
-        arrayOfDesition = matrixForDesition(array);
+        int[][] array = createMatrix();;
+        int[] arrayOfDesition = matrixForDesition(array);;
+
         printMatrix(array);
         printDisition(arrayOfDesition);
     }
@@ -26,7 +25,7 @@ public class Main10 {
 
     private static int[] matrixForDesition(int [][] arrayIn) {
         int[] disition = new int[arrayIn.length];
-        for (int i = 0; i < arrayIn.length; i++){
+        for (int i = 0; i < arrayIn.length; i++) {
             for(int j = 0; j < arrayIn[i].length; j++) {
                 disition[i] = arrayIn[i][i];
             }

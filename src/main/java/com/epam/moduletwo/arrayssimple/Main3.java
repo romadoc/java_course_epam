@@ -31,11 +31,9 @@ public class Main3 {
         for (int i = 0; i < arrayIn.length; i++) {
             if (arrayIn[i] == 0) {
                 countZeroNumbers = countZeroNumbers + 1;
-            }
-            else if (arrayIn[i] > 0) {
+            } else if (arrayIn[i] > 0) {
                 countPositiveNumbers = countPositiveNumbers + 1;
-            }
-            else {
+            } else {
                 countNegativeNumbers = countNegativeNumbers + 1;
             }
         }

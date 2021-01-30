@@ -11,8 +11,8 @@ import java.util.List;
 public class Main17 {
     public static void main(String[] args) {
         int n;
-        n = (int)(Math.random()*5000);
-        List<Integer>list = startDisintegrator(n);
+        n = (int)(Math.random() * 5000);
+        List<Integer> list = startDisintegrator(n);
         int sum = startSummator(list);
 
         System.out.println("start digit: " + n);
@@ -46,9 +46,9 @@ public class Main17 {
         System.out.print(digitIn + "; ");
         int a = digitIn;
 
-        while (a !=0) {
+        while (a != 0) {
             a = a - startSummator(startDisintegrator(a));
-            System.out.print(a +"; ");
+            System.out.print(a + "; ");
             counter++;
         }
 

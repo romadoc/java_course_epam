@@ -22,7 +22,7 @@ public class Main16 {
     private static int[] createArray() {
         int[] array  = new int[20];
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int)(Math.random()*5000);
+            array[i] = (int)(Math.random() * 5000);
         }
         return array;
     }
@@ -69,7 +69,7 @@ public class Main16 {
         return list;
     }
 
-    private static int sumUnevenDigits(List<Integer>listIn) {
+    private static int sumUnevenDigits(List<Integer> listIn) {
         int sum = 0;
         for (int i = 0; i < listIn.size(); i++) {
             sum = listIn.get(i) + sum;
@@ -86,7 +86,7 @@ public class Main16 {
             x /= 10;
         }
         for (int i = 0; i < list.size(); i++) {
-            if(list.get(i)%2 == 0){
+            if(list.get(i) % 2 == 0){
                 count++;
             }
         }

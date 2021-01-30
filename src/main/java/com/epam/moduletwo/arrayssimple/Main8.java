@@ -6,8 +6,7 @@ import java.util.ArrayList;
 public class Main8 {
     public static void main(String[] args) {
         int[] workingArray = createArray();
-        int minElement;
-        minElement = minElement(workingArray);
+        int minElement = minElement(workingArray);
         printData("workindArray - изначальный массив: ", workingArray);
         printData("min - минимальное значение: ", minElement);
         int minQuantity;
@@ -39,7 +38,7 @@ public class Main8 {
 
     private static int countOfMin(int[] inputArray, int minDigit) {
         int countOfMinDigit = 0;
-        for (int i = 0; i < inputArray.length; i++){
+        for (int i = 0; i < inputArray.length; i++) {
             if (inputArray[i] == minDigit) countOfMinDigit = countOfMinDigit + 1;
         }
         return countOfMinDigit;
@@ -47,8 +46,8 @@ public class Main8 {
 
     private static ArrayList<Integer> newArrayCreator(int []inputArray, int minDigit ) {
         ArrayList<Integer>resultArray=new ArrayList<>();
-        for (int i = 0; i < inputArray.length; i++){
-            if(inputArray[i]!=minDigit){
+        for (int i = 0; i < inputArray.length; i++) {
+            if (inputArray[i]!=minDigit){
                 resultArray.add(inputArray[i]);
             }
         }
@@ -57,7 +56,7 @@ public class Main8 {
 
     private static void printData(String s, int[] array) {
         System.out.print(s);
-        for (int i = 0; i<array.length; i++){
+        for (int i = 0; i<array.length; i++) {
             System.out.print(" " + array[i] + "; ");
         }
     }

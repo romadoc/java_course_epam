@@ -8,15 +8,15 @@ package com.epam.moduletwo.decomposition;
  */
 public class Main5 {
     public static void main(String[] args) {
-        int[]array = createArray();
+        int[] array = createArray();
         printArray(array, "start array");
-        int[]arraySorted = sortArray(array);
+        int[] arraySorted = sortArray(array);
         printArray(arraySorted, "sorted array");
         getSolution(arraySorted);
     }
     private static int[] createArray() {
         int n = (int)(Math.random()*20);
-        int[]array = new int[n];
+        int[] array = new int[n];
         for(int i = 0; i < array.length; i ++ ) {
             array[i] = (int)(Math.random()*30);
         }
@@ -37,14 +37,14 @@ public class Main5 {
         }
         return array;
     }
-    private static void printArray(int[]arrayIn, String s) {
+    private static void printArray(int[] arrayIn, String s) {
         System.out.println();
         System.out.print(s + ": ");
         for (int elem: arrayIn) {
             System.out.print(elem + "; ");
         }
     }
-    private static void getSolution(int[]arrayIn) {
+    private static void getSolution(int[] arrayIn) {
         int a = arrayIn[arrayIn.length-2];
         System.out.println();
         System.out.print("pre-last Digit is: " + a);

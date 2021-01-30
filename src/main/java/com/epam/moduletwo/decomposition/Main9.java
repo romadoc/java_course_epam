@@ -21,11 +21,13 @@ public class Main9 {
         diaqonal = Math.sqrt((x * x) + (y * y));
         double square1 = (x * y) / 2.0;
         double pSemiPerimetr = (diaqonal + z + t)/2.0;
-        double square2 = Math.sqrt((pSemiPerimetr - z)*(pSemiPerimetr - diaqonal)*(pSemiPerimetr - t));
+        double square2 = Math.sqrt((pSemiPerimetr - z)
+                                  * (pSemiPerimetr - diaqonal)
+                                  * (pSemiPerimetr - t));
         square1 = square1 + square2;
-
         return square1;
     }
+
     private static void printAnswer(double square){
         System.out.println();
         System.out.println("square is " + square);

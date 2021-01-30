@@ -17,14 +17,14 @@ public class Main6 {
 
         System.out.println();
         for (int i = 0; i < massive.length; i++) {
-            if ( i % 2 == 0 && i != 2 ){
+            if ( i % 2 == 0 && i != 2 ) {
                 massive[i] = 0;
             }
         }
 
 
         for (int i1 = 0; i1 < massive.length; i1++) {
-            if (i1 % 3 == 0 && i1 != 3 || i1 == 1){
+            if (i1 % 3 == 0 && i1 != 3 || i1 == 1) {
                 massive[i1] = 0;
             }
         }

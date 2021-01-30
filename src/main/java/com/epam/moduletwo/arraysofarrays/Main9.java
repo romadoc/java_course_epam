@@ -16,7 +16,7 @@ public class Main9 {
 
     private static int[][] createMatrix() {
 
-        int[][]array = new int[5][5];
+        int[][] array = new int[5][5];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int)(Math.random()*10);
@@ -25,7 +25,7 @@ public class Main9 {
         return array;
     }
 
-    private static void printMatrix(int [][] arrayIn) {
+    private static void printMatrix(int[][] arrayIn) {
         for (int i = 0; i < arrayIn.length; i++) {
             for (int j = 0; j < arrayIn[i].length; j++) {
                 System.out.print(arrayIn[i][j] + "\t");

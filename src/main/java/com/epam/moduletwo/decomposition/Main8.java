@@ -8,7 +8,7 @@ package com.epam.moduletwo.decomposition;
  */
 public class Main8 {
     public static void main(String[] args) {
-        int[]array = createArray();
+        int[] array = createArray();
         printData(array, "starting array");
         int sum1;
         int sum2;
@@ -29,7 +29,7 @@ public class Main8 {
         return array;
     }
 
-    private static void printData(int[]arrayIn, String s) {
+    private static void printData(int[] arrayIn, String s) {
         System.out.print(s + ": ");
         for (int elem: arrayIn) {
             System.out.print(elem + "; ");
@@ -42,7 +42,7 @@ public class Main8 {
 
     }
 
-    private static int getSumOfGaps(int[]arrayIn, int start, int end) {
+    private static int getSumOfGaps(int[] arrayIn, int start, int end) {
         int sum = 0;
         for (int i = start; i <= end; i++) {
             sum = sum + arrayIn[i];

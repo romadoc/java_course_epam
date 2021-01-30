@@ -13,10 +13,10 @@ public class Main5 {
     }
 
     private static int[] createArray() {
-        int i = (int)(Math.random()*10);
+        int i = (int)(Math.random() * 10);
         int[] array = new int[i];
         for(int j = 0; j < array.length; j++) {
-            array[j] = (int)(Math.random()*20);
+            array[j] = (int)(Math.random() * 20);
         }
         return array;
     }
@@ -42,7 +42,7 @@ public class Main5 {
                     j--;
                 }
             }
-            n = n/2;
+            n = n / 2;
         }
 
         return arrayIn;

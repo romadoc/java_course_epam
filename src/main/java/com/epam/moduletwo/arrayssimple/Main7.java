@@ -38,7 +38,6 @@ public class Main7 {
             arrayForCount[pSumIndex] = pairSum;
             pSumIndex ++;
         }
-
         System.out.print("final array: ");
         Arrays.sort(arrayForCount);
         System.out.println(Arrays.toString(arrayForCount));

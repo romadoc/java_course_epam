@@ -6,15 +6,14 @@ package com.epam.moduletwo.sorting;
  */
 public class Main3 {
     public static void main(String[] args) {
-        int[]array;
-        array = createArray();
+        int[] array = createArray();
         printArray(array, "start array: ");
         printArray(sortArray(array), "sorted array: ");
 
     }
 
     private static int[] createArray() {
-        int b = (int)(Math.random()*10);
+        int b = (int)(Math.random() * 10);
         int[]array = new int[b];
         for (int i = 0; i < array.length; i++) {
             array[i] = (int)(Math.random()*20);
@@ -22,7 +21,7 @@ public class Main3 {
         return array;
     }
 
-    private static void printArray(int[]arrayIn, String s) {
+    private static void printArray(int[] arrayIn, String s) {
         System.out.println();
         System.out.print(s);
         for (int elem: arrayIn) {
@@ -30,11 +29,11 @@ public class Main3 {
         }
     }
 
-    private static int[] sortArray(int[]arrayIn) {
+    private static int[] sortArray(int[] arrayIn) {
         int count = 0;
         for (int i = 0; i < arrayIn.length; i++) {
 
-            for (int j = i+1; j < arrayIn.length; j++) {
+            for (int j = i + 1; j < arrayIn.length; j++) {
                 if(arrayIn[i] > arrayIn[j]){
                     int temp;
                     temp = arrayIn[i];

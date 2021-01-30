@@ -46,12 +46,11 @@ public class Main7 {
         int q;
         q=0;
         System.out.println();
-        for (int i = 0; i < arrayIn.length; i++){
+        for (int i = 0; i < arrayIn.length; i++) {
             for(int j = 0; j < arrayIn[i].length; j++) {
                 if (arrayIn[i][j] > 0) q++;
             }
         }
-
         return q;
     }
 }

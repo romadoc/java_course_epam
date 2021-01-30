@@ -14,13 +14,13 @@ public class Main12 {
     public static void main(String[] args) {
         int k = ScannerUtil.integerIn("Type K");
         int n = ScannerUtil.integerIn("Type N");
-        List<Integer>list = createList(k, n);
+        List<Integer> list = createList(k, n);
         printArray(list);
     }
 
     private static List<Integer> createList(int k, int n) {
         List<Integer>list = new ArrayList<>();
-        while (getSum(list)<k) {
+        while (getSum(list) < k) {
             getSum(list);
             list.add((int) (Math.random() * n + 1));
             if (getSum(list) == k) {
@@ -38,7 +38,7 @@ public class Main12 {
         return counterSum;
     }
 
-    private static void printArray(List<Integer>listIn) {
+    private static void printArray(List<Integer> listIn) {
         System.out.print("array A : ");
         for (int elem: listIn) {
             System.out.print(elem + "; ");

@@ -11,10 +11,8 @@ public class Main14 {
         printMatrix(array);
     }
     private static int[][] createMatrix() {
-        int m;
-        int n;
-        m = (int)(3+Math.random()*6);
-        n = (int)(2+Math.random()*6);
+        int m = (int)(3+Math.random()*6);
+        int n = (int)(2+Math.random()*6);
 
         int[][] array = new int[m][n];
         for (int i = 0; i < array.length; i++) {
@@ -28,7 +26,7 @@ public class Main14 {
     }
 
     private static void printMatrix(int[][] arrayIn) {
-        for (int i = 0; i < arrayIn.length; i++){
+        for (int i = 0; i < arrayIn.length; i++) {
             for(int j = 0; j < arrayIn[i].length; j++) {
                 System.out.print(arrayIn[i][j] + "\t");
             }

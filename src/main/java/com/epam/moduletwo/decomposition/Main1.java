@@ -20,7 +20,7 @@ public class Main1 {
 
     private static int countGreatCommonDev(int a, int b) {
         int d = 0;
-        while (a != 0 && b !=0){
+        while (a != 0 && b !=0) {
             if(a>b) {
                 a = a % b;
             } else {
@@ -33,9 +33,7 @@ public class Main1 {
     }
 
     private static int countLeastCommonMultiple(int a, int b, int grComDiv) {
-        int x;
-        x = (a*b)/grComDiv;
-        return x;
+        return (a*b)/grComDiv;
     }
 
     private static void printResult(String s, int a) {

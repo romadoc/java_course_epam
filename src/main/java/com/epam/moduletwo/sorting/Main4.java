@@ -8,7 +8,7 @@ import java.util.Arrays;
  */
 public class Main4 {
     public static void main(String[] args) {
-       int[]array = createArray();
+       int[] array = createArray();
        printArray("Generated array: ", array);
        printArray("Sorted array: ", insertionSort(array));
     }
@@ -31,15 +31,15 @@ public class Main4 {
     }
 
     private static int[] createArray() {
-        int b = (int)(10+Math.random()*20);
+        int b = (int)(10+Math.random() * 20);
         int[]array = new int[b];
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int)(Math.random()*100);
+            array[i] = (int)(Math.random() * 100);
         }
         return array;
     }
 
-    private static void printArray(String s, int[]arrayIn) {
+    private static void printArray(String s, int[] arrayIn) {
         System.out.println(s);
         for (int a: arrayIn  ) {
             System.out.print(a + "; ");

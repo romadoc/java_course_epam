@@ -12,9 +12,7 @@ public class Main3 {
     }
 
     private static int countTriangleSquare(int a) {
-        int square = 0;
-        square = (int)((a*a)*Math.sqrt(a)/4);
-        return square;
+        return (int)((a*a)*Math.sqrt(a)/4);
     }
 
     private static int countHexagonSquare(int x) {

@@ -23,8 +23,7 @@ public class Main12 {
         return array;
     }
 
-    private static int[][] sortMatrixInUpOrder(int[][] arrayIn) {
-        int[][] array = arrayIn;
+    private static int[][] sortMatrixInUpOrder(int[][] array) {
 
         for (int i = 0; i < array.length; i++) {
 

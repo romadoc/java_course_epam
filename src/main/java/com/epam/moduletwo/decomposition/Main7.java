@@ -25,7 +25,7 @@ public class Main7 {
         }
         return rezult;
 
-    }private static void getSumOfFactorial(int[]arrayIn, String s) {
+    }private static void getSumOfFactorial(int[] arrayIn, String s) {
         int sum = 0;
         for (int i = 0; i < arrayIn.length; i++) {
             if(arrayIn[i]%2 > 0) {

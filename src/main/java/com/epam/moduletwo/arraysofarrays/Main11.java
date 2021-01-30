@@ -8,8 +8,7 @@ package com.epam.moduletwo.arraysofarrays;
 public class Main11 {
     final static int FIVE = 5;
     public static void main(String[] args) {
-        int[][] array;
-        array = createMatrix();
+        int[][] array = createMatrix();;
         printMatrix(array);
         desition(array);
     }

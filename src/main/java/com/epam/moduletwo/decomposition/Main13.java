@@ -15,15 +15,15 @@ import java.util.List;
 public class Main13 {
     public static void main(String[] args) {
         int n = ScannerUtil.integerIn("type digit");
-        List<Integer>list = createList(n);
+        List<Integer> list = createList(n);
         printArray(list, "Start Array: ");
         getSolution(list, n, "solution: >");
     }
 
     private static List<Integer> createList(int n) {
-        List<Integer>list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         for(int i = 0; i < n*2; i++) {
-            list.add(i+1);
+            list.add(i + 1);
         }
         return list;
     }
@@ -37,8 +37,8 @@ public class Main13 {
     }
 
     private static void getSolution(List<Integer> list, int n, String s) {
-        int startIndex = n-1;
-        int endIndex = startIndex*2;
+        int startIndex = n - 1;
+        int endIndex = startIndex * 2;
         for (int i = startIndex; i < endIndex; i++){
             System.out.print(list.get(i) + "-" + list.get(i+2) + "; ");
         }

@@ -21,7 +21,7 @@ public class Main2 {
         answerGeneration(array, ScannerUtil.floatIn("Type real number (range: -100 up to +100)"));
     }
 
-    private static void answerGeneration(float[]array, float a) {
+    private static void answerGeneration(float[] array, float a) {
         System.out.println("output array: ");
         int countOfChanges = 0;
         for (int i = 0; i < array.length; i ++) {

@@ -14,7 +14,7 @@ public class Main10 {
         int[] array = new int[10];
         System.out.print("created array: ");
         for (int i = 0; i < array.length; i++) {
-            int elem = (int)(Math.random()*20);
+            int elem = (int)(Math.random() * 20);
             array[i] = elem;
             System.out.print(array[i] + "; ");
         }
@@ -22,7 +22,7 @@ public class Main10 {
         return array;
     }
     private static int[] compressOfArray(int[]inputArray) {
-        for(int i = 0; i <inputArray.length/2; i++){
+        for(int i = 0; i < inputArray.length/2; i++){
             inputArray[i] = inputArray[i*2];
         }
         for (int i = inputArray.length/2; i<inputArray.length; i++ ) {

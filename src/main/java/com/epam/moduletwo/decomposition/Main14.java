@@ -43,7 +43,7 @@ public class Main14 {
             for (int j = 0; j < arraySubTemp.length; j++) {
                 sum =  (Math.pow(arraySubTemp[j], countDigits(i))) + sum;
             }
-            if(sum == i){
+            if(sum == i) {
                 System.out.print(i + "; ");
             }
         }

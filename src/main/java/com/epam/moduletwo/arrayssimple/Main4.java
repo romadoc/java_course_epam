@@ -41,7 +41,7 @@ public class Main4 {
         massive[maxIndex] = minNum;
         System.out.println();
         System.out.println("transformed massive. elements [max] & [min] are changed: ");
-        for (int i = 0; i < massive.length; i++){
+        for (int i = 0; i < massive.length; i++) {
             System.out.print(" " + massive[i] + "; ");
         }
     }

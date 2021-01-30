@@ -14,15 +14,15 @@ public class Main11 {
         int x = ScannerUtil.integerIn("type first digit");
         int y = ScannerUtil.integerIn("type second digit");
         List<Integer> list = createlist(x);
-        List<Integer>list1 = createlist(y);
+        List<Integer> list1 = createlist(y);
         compareLists(list, list1);
     }
 
     private static List<Integer> createlist(int a) {
         List<Integer>list = new ArrayList<>();
-        while ( a!=0 ) {
+        while ( a != 0 ) {
             list.add(a % 10);
-            a /=10;
+            a /= 10;
 
         }
         return list;

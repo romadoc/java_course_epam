@@ -13,25 +13,24 @@ import java.util.List;
 public class Main10 {
     final static String RESULT = "result array: ";
     public static void main(String[] args) {
-        int x;
-        x = ScannerUtil.integerIn("type multiple-digit number");
+        int x = ScannerUtil.integerIn("type multiple-digit number");
         List<Integer> list = createArray(x);
         printArray(list);
     }
 
     private static List<Integer> createArray(int x) {
 
-        List<Integer>list = new ArrayList<>();
-        while ( x!=0 ) {
+        List<Integer> list = new ArrayList<>();
+        while ( x != 0 ) {
             list.add(x % 10);
-            x /=10;
+            x /= 10;
         }
         return list;
     }
 
     private static void printArray(List<Integer> list) {
         System.out.print(Main10.RESULT);
-        for (int i = list.size()-1; i >= 0; i--) {
+        for (int i = list.size() - 1; i >= 0; i--) {
             System.out.print(list.get(i) + "; ");
         }
     }

@@ -12,7 +12,7 @@ public class Main3 {
         printOutLine(lineNumber, columnNumber, array);
     }
 
-    private static int[][] createMatrix(){
+    private static int[][] createMatrix() {
         int n;
         n = (int)(Math.random()*10);
         int[][] array = new int[n][n];

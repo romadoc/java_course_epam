@@ -10,9 +10,8 @@ import com.epam.utils.ScannerUtil;
  */
 public class Main8 {
     public static void main(String[] args) {
-        int[][] array;
+        int[][] array = createMatrix();;
         int[][] transformedArray;
-        array = createMatrix();
         printMatrix(array);
 
         int columnNumberOne = ScannerUtil.integerIn("enter the number of one column");

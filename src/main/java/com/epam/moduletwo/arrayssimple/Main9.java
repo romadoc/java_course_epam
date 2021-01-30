@@ -34,7 +34,6 @@ public class Main9 {
         int theMostCommonNumber = 0;
         int[] arrayOfAnyElemFrequency = new int[array.length];
         ArrayList<Integer>arrayFoundNumbers = new ArrayList<>();
-        int foundDigitOfAnswer;
 
         for (int i = 0; i < array.length; i++) {
             int checkedElementOfOriginalArray = array[i];
@@ -52,7 +51,7 @@ public class Main9 {
                 arrayFoundNumbers.add(array[i]);
             }
         }
-        foundDigitOfAnswer = Collections.min(arrayFoundNumbers);
+        int foundDigitOfAnswer = Collections.min(arrayFoundNumbers);
         System.out.println();
         System.out.println("most common and min number is " + foundDigitOfAnswer);
     }

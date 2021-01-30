@@ -28,7 +28,7 @@ public class Main1 {
         int n;
         int [] array = new int[50];
         for(int i = 0; i < fill1Array; i++) {
-            array[i] = i+1;
+            array[i] = i + 1;
         }
 
         return array;
@@ -37,7 +37,7 @@ public class Main1 {
     private static int[] createArrayTwo() {
         int [] array = new int[10];
         for(int i = 0; i < array.length; i++) {
-            array[i] = (i+1)*10;
+            array[i] = (i + 1) * 10;
         }
         return array;
     }
@@ -45,7 +45,6 @@ public class Main1 {
     private static int inputK(String s, int length) {
         System.out.print(s);
         Scanner scanner = new Scanner(System.in);
-        int x;
         int y = 0;
         while (!scanner.hasNextInt()){
             scanner.next();
@@ -53,7 +52,7 @@ public class Main1 {
             System.out.print(s);
         }
 
-        x = scanner.nextInt();
+        int x = scanner.nextInt();
         if (x > 0 && x < length) {
             y = x;
         }
@@ -71,13 +70,13 @@ public class Main1 {
     }
 
     private static int[] createCombinedMatrix(int[]array1, int[]array2, int k) {
-        int coef = (fill1Array+array2.length) - (k+1);
+        int coef = (fill1Array+array2.length) - (k + 1);
         for (int j = k + 1; j < fill1Array; j++) {
             array1[coef] = array1[j];
             coef = coef + 1;
 
         }   for (int i = 0; i < array2.length; i++) {
-            array1[(k+1)+i] = array2[i];
+            array1[(k+1) + i] = array2[i];
         }
         return array1;
     }
