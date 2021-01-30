@@ -23,7 +23,7 @@ public class Main1 {
     }
 
     private static int searchPositionOfUpperCaseChar(String s) {
-        char[]ch = s.toCharArray();
+        char[] ch = s.toCharArray();
         int postion = 0;
         for (int i = 0; i < ch.length; i++) {
             if (Character.isUpperCase(ch[i])) {
@@ -36,8 +36,8 @@ public class Main1 {
     private static String changeChars(String originalString) {
 
         int position = searchPositionOfUpperCaseChar(originalString);
-        char[]chars = originalString.toCharArray();
-        char[]chars1 = new char[originalString.length()+1];
+        char[] chars = originalString.toCharArray();
+        char[] chars1 = new char[originalString.length() + 1];
         for (int i = 0; i < position; i++) {
             chars1[i] = chars[i];
         }
@@ -50,7 +50,7 @@ public class Main1 {
 
         originalString = "";
 
-        for (int i = 0; i<chars1.length; i++) {
+        for (int i = 0; i < chars1.length; i++) {
             originalString = originalString + chars1[i];
 
         }
@@ -60,8 +60,8 @@ public class Main1 {
         return originalString;
     }
 
-    private static String[] makeFinishedArray(String[]strings) {
-        String[]convertedArray = new String[strings.length];
+    private static String[] makeFinishedArray(String[] strings) {
+        String[] convertedArray = new String[strings.length];
         for (int i = 0; i < convertedArray.length; i++) {
             convertedArray[i] = changeChars(strings[i]);
         }

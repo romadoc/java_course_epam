@@ -14,7 +14,7 @@ public class Main1 {
     }
 
     private static void solveTask(String s) {
-        char[]chars = s.toCharArray();
+        char[] chars = s.toCharArray();
         int max;
         max = 0;
         int pointer;

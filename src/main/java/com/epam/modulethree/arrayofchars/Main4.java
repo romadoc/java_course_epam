@@ -7,7 +7,7 @@ package com.epam.modulethree.arrayofchars;
 public class Main4 {
     public static void main(String[] args) {
         String testString = "in this 22 string 5 there 88 are 4 digits 33";
-        String[]creator = createArray(testString);
+        String[] creator = createArray(testString);
         System.out.println("string for counting: " + testString);
         findAndCountNumbers(creator);
     }

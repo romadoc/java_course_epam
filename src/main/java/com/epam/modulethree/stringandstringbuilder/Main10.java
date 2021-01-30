@@ -18,7 +18,7 @@ public class Main10 {
         char[] chars = s.toCharArray();
         int count = 0;
         for(int i = 1; i < chars.length; i++ ){
-            if ((chars[i] == '.' || chars[i] == '!' || chars[i] == '?') && (chars[i-1] !=' ')){
+            if ((chars[i] == '.' || chars[i] == '!' || chars[i] == '?') && (chars[i-1] != ' ')){
                 count++;
             }
         }

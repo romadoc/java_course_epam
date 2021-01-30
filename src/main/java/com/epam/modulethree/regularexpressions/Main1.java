@@ -31,18 +31,19 @@ public class Main1 {
 
     private static String makeString() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("  Why is Java so popular?\n").
-                append("\u2029  One of the biggest reasons why Java is so popular is the platform iindependence.\n" +
-                        "Programs can run on several different types of computer; as long as the computer has " +
-                        "a Java Runtime Environment (JRE) installed, a Java program can run on it. So that's why" +
-                        "I like java. \n").
-                append("\u2029  Most types of computers will be compatible with a JRE including PCs" +
-                        "running on Windows, Macintosh computers, Unix or Linux computers, and large mainframe" +
-                        "computers, as well as mobile phones. \n" +
-                        "Since it has been around for so long, some of the biggest organisations in the world are " +
-                        "built using the language. \n" +
-                        "\u2029  Many banks, retailers, insurance companies, utilities, and manufacturers" +
-                        "all use Java.");
+        stringBuilder.append("  Why is Java so popular?\n")
+                     .append("\u2029  One of the biggest reasons why Java is so popular is the platform "
+                             +"iindependence.\n Programs can run on several different types of computer;"
+                             + " as long as the computer has "
+                             + "a Java Runtime Environment (JRE) installed, a Java program can run on it. "
+                             + "So that's why I like java. \n")
+                     .append("\u2029  Most types of computers will be compatible with a JRE including PCs"
+                             + "running on Windows, Macintosh computers, Unix or Linux computers, and large "
+                             + "mainframe computers, as well as mobile phones. \n"
+                             + "Since it has been around for so long, some of the biggest organisations "
+                             + "in the world are built using the language. \n"
+                             + "\u2029  Many banks, retailers, insurance companies, utilities, and manufacturers"
+                             + "all use Java.");
 
         return stringBuilder.toString();
     }
@@ -146,9 +147,9 @@ public class Main1 {
         for (String s: wordsInSentence) {
             System.out.print(s + " ");
         }
-
     }
-    private static int countCharsInOneWord(String word, char ch){
+
+    private static int countCharsInOneWord(String word, char ch) {
         String pattern = "";
         pattern = pattern + ch;
         int countCharInWord = 0;

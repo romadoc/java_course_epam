@@ -12,10 +12,10 @@ public class Main2 {
         String s = "i'am writting a word and my sister reads word";
         String findPattern = "word";
         String shiftPattern = "letter";
-        char[]startArray = makeStartArray(s);
+        char[] startArray = makeStartArray(s);
         printData(startArray,"start line");
-        char[][]charForAnalisys = makeCharArraysForAnalysis(s);
-        char[][]printChar = findAndShiftChars(charForAnalisys,findPattern,shiftPattern);
+        char[][] charForAnalisys = makeCharArraysForAnalysis(s);
+        char[][] printChar = findAndShiftChars(charForAnalisys,findPattern,shiftPattern);
         printRezult(printChar);
     }
 
@@ -23,7 +23,7 @@ public class Main2 {
         return s.toCharArray();
     }
 
-    private static void printData(char[]charsIn, String s) {
+    private static void printData(char[] charsIn, String s) {
         System.out.println();
         System.out.print(s + ": ");
         StringBuilder s1 = new StringBuilder();
@@ -37,8 +37,8 @@ public class Main2 {
     private static char[][] makeCharArraysForAnalysis(String start){
 
         String[]arrayStrings = start.split(" ");
-        char[][]arraysChars = new char[arrayStrings.length][1];
-        for(int i = 0; i <arrayStrings.length; i++){
+        char[][]  arraysChars = new char[arrayStrings.length][1];
+        for(int i = 0; i < arrayStrings.length; i++){
             for (int j = 0; j < arraysChars[i].length; j++){
                 arraysChars[i] = arrayStrings[i].toCharArray();
             }
@@ -47,9 +47,9 @@ public class Main2 {
         return arraysChars;
     }
 
-    private static char[][] findAndShiftChars(char[][]arrayIn, String foundStr, String pattern){
-        char[]foundChars = foundStr.toCharArray();
-        char[]patternChars = pattern.toCharArray();
+    private static char[][] findAndShiftChars(char[][] arrayIn, String foundStr, String pattern) {
+        char[] foundChars = foundStr.toCharArray();
+        char[] patternChars = pattern.toCharArray();
         boolean isShifted = false;
         while (!isShifted) {
             isShifted = true;

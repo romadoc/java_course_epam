@@ -18,7 +18,7 @@ public class Main9 {
 
     private static String findlatinChar(String s) {
         char[] chars = s.toCharArray();
-        String s1="";
+        String s1 = "";
         for(int i = 0; i < chars.length; i++) {
             if (chars[i] < 123){
                 s1 = s1 + chars[i];

@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public class Main2 {
     public static void main(String[] args) {
         String xmlString = xmlStringOrigin();
-        String[]tegsContent = inTegContent(xmlString);
+        String[] tegsContent = inTegContent(xmlString);
         notes(xmlString, tegsContent);
         note(xmlString);
         to(xmlString);
@@ -39,11 +39,9 @@ public class Main2 {
     }
 
     private static String[] inTegContent(String stringIn) {
-
         Pattern pattern = Pattern.compile("[<>]");
         String[]strings = pattern.split(stringIn);
         for (int i = 1; i < strings.length; i ++) {
-
         }
         return strings;
     }
@@ -64,7 +62,6 @@ public class Main2 {
     }
 
     private static void to(String xmlStr){
-
         Pattern patternStr = Pattern.compile("<to>.*<\\/to>");
         Pattern patternEndStr = Pattern.compile("><");
         Matcher matcher = patternStr.matcher(xmlStr);
@@ -74,8 +71,8 @@ public class Main2 {
             System.out.println();
 
         }
-        String[]strings = patternEndStr.split(string);
-        System.out.println(strings[0]+">");
+        String[] strings = patternEndStr.split(string);
+        System.out.println(strings[0] + ">");
         System.out.println("<"+strings[strings.length-1]);
 
     }
@@ -88,9 +85,8 @@ public class Main2 {
             string = string + matcherStr.group();
         }
         String[]strings = string.split("><");
-        System.out.println(strings[0]+">");
+        System.out.println(strings[0] + ">");
         System.out.println("<"+strings[strings.length-1]);
-
     }
 
     private static void heading(String xmlStr){
@@ -103,10 +99,9 @@ public class Main2 {
         String[]strings = string.split("><");
         System.out.println(strings[0]+">");
         System.out.println("<"+strings[strings.length-1]);
-
     }
 
-    private static void body(String xmlStr){
+    private static void body(String xmlStr) {
         Pattern patternStr = Pattern.compile("<body>.*");
         Matcher matcherStr = patternStr.matcher(xmlStr);
         String string = "";
@@ -117,7 +112,7 @@ public class Main2 {
         System.out.println(strings[0]+">");
     }
 
-    private static void bodyless(String xmlStr){
+    private static void bodyless(String xmlStr) {
         Pattern patternStr = Pattern.compile("<.*\\/>");
         Matcher matcherStr = patternStr.matcher(xmlStr);
         String string = "";
@@ -130,7 +125,7 @@ public class Main2 {
 
     }
 
-    private static void giveAnswer(String stringIn){
+    private static void giveAnswer(String stringIn) {
         System.out.println();
         Pattern patternCont = Pattern.compile("[А-Яа-я]");
         Pattern patternSpl = Pattern.compile("[><]");
@@ -139,32 +134,31 @@ public class Main2 {
         System.out.print("<"+strings[1]+">");
 
         Matcher matcherCont = patternCont.matcher(stringIn);
-        while (matcherCont.find()){
+        while (matcherCont.find()) {
             System.out.print(stringIn.substring(matcherCont.start(), matcherCont.end()));
         }
         Matcher matcher = patternForLastTag.matcher(strings[1]);
-        while (matcher.find()){
-            System.out.print("</"+strings[1].substring(matcher.start(),matcher.end())+">");
+        while (matcher.find()) {
+            System.out.print("</" + strings[1].substring(matcher.start(),matcher.end()) + ">");
         }
 
     }
 
     private static String xmlStringOrigin(){
-        String string =
-                "<notes>" +
-                        "<note id = \"1\">" +
-                        "<to>Вася</to>" +
-                        "<from>Света</from>" +
-                        "<heading>Напоминание</heading>" +
-                        "<body>Позвони мне завтра!</body>" +
-                        "</note>" +
-                        "<note id = \"2\">" +
-                        "<to>Петя</to>" +
-                        "<from>Маша</from>" +
-                        "<heading>Важное напоминание</heading>" +
-                        "<body/>" +
-                        "</note>" +
-                        "</notes>";
+        String string = "<notes>"
+                                 + "<note id = \"1\">"
+                                 + "<to>Вася</to>"
+                                 + "<from>Света</from>"
+                                 + "<heading>Напоминание</heading>"
+                                 + "<body>Позвони мне завтра!</body>"
+                                 + "</note>"
+                                 + "<note id = \"2\">"
+                                 + "<to>Петя</to>"
+                                 + "<from>Маша</from>"
+                                 + "<heading>Важное напоминание</heading>"
+                                 + "<body/>"
+                                 + "</note>"
+                                 + "</notes>";
         return string;
     }
 }

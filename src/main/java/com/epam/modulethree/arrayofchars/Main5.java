@@ -18,8 +18,8 @@ public class Main5 {
 
     }
 
-    private static List<Character> removeNoChars(char[]charsIn) {
-        List<Character>list = new ArrayList<>();
+    private static List<Character> removeNoChars(char[] charsIn) {
+        List<Character> list = new ArrayList<>();
         for (int i = 0; i < charsIn.length; i++) {
             if (!isCharSpace(charsIn[i])) {
                 list.add(charsIn[i]);
@@ -44,7 +44,7 @@ public class Main5 {
     private static void solveTask(String s){
         String[]arrayString = s.split(" ");
         StringBuilder result = new StringBuilder();
-        ArrayList<ArrayList>listOfList = new ArrayList<>();
+        ArrayList<ArrayList> listOfList = new ArrayList<>();
 
         for(int i = 0; i < arrayString.length; i++) {
             if(removeNoChars(arrayString[i].toCharArray()).size() > 0) {
@@ -60,7 +60,7 @@ public class Main5 {
             }
             result.append(" ");
         }
-        result.deleteCharAt(result.length()-1);
+        result.deleteCharAt(result.length() - 1);
         System.out.print("result: >>" + result);
     }
 }
