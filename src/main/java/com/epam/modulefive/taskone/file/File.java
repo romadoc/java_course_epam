@@ -49,6 +49,7 @@ public class File {
             System.out.println("The file " + "\"" + nameOfFile + "\""
                                            + " is successfully renamed to "
                                            + "\"" + newFileName + "\"");
+            nameOfFile = newFileName;
         } else {
             System.out.println("no such " + "\"" + nameOfFile + "\"" + " file!");
         }
@@ -87,6 +88,7 @@ public class File {
                 string = scanner.nextLine();
                 System.out.println(string + "\n");
             }
+            scanner.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
