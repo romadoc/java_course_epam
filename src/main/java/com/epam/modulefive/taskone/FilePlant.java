@@ -26,7 +26,6 @@ public class FilePlant {
     }
 
     public TextFile setTextFile() throws IOException {
-
         pathToFileDirectory = pathToDirectory + "\\" + nameDirectory;
         nameOfFile = ScannerUtil.stringIn("type the name of file with txt ext.");
         TextFile textFile = new TextFile(nameOfFile, pathToFileDirectory);
