@@ -8,15 +8,13 @@ public class Main2 {
     }
 
     private static int[][] createMatrix() {
-        int x;
-        x = (int) (Math.random()*10);
-        int[][] array = new int[x][x];
+        int[][] array = new int[4][4];
 
         System.out.println("Generated Matrix: ");
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                int element = (int) (Math.random() * 20);
+                int element = (int) (Math.random() * 10);
                 array[i][j] = element;
                 System.out.print(array[i][j] + "\t");
             }
@@ -27,14 +25,16 @@ public class Main2 {
     }
 
     private static void typeDiagonal(int[][] arrayInput) {
-        System.out.print("Digits on diagonal: ");
-        int n = 0;
+        System.out.print("Digits on diagonal(main): ");
+
         for (int i = 0; i < arrayInput.length; i++) {
-            for (int j = 0; j < arrayInput[i].length; j++) {
-                System.out.print(arrayInput[i + n][j] + "; ");
-                n++;
-            }
-            if (n == arrayInput.length) break;
+            System.out.print(arrayInput[i][i] + "; ");
+        }
+        System.out.println();
+        System.out.print("Digits of secondary diagonal: ");
+
+        for (int i = 0; i < arrayInput.length; i++ ) {
+             System.out.print(arrayInput[i][arrayInput.length - 1 - i] + "; ");
 
         }
     }
