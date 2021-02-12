@@ -29,7 +29,7 @@ public class Main4 {
     }
 
     private static void printMatrix(int[][] arrayIn ) {
-        for (int i = 0; i < arrayIn.length; i++){
+        for (int i = 0; i < arrayIn.length; i++) {
             for (int j = 0; j < arrayIn[i].length; j++) {
                 System.out.print(arrayIn[i][j] + "\t");
             }

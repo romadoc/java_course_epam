@@ -10,7 +10,7 @@ import com.epam.utils.ScannerUtil;
  */
 public class Main8 {
     public static void main(String[] args) {
-        int[][] array = createMatrix();;
+        int[][] array = createMatrix();
         int[][] transformedArray;
         printMatrix(array);
 
@@ -21,10 +21,10 @@ public class Main8 {
         printMatrix(transformedArray);
     }
     private static int [][] createMatrix() {
-        int[][]array = new int[5][5];
+        int[][] array = new int[5][5];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = (int)(Math.random()*10);
+                array[i][j] = (int)(Math.random() * 10);
             }
         }
         return array;
@@ -40,8 +40,8 @@ public class Main8 {
     }
 
     private static int[][] transformMatrix(int[][] arrayIn, int x, int y) {
-        int[]arrayX = new int[arrayIn.length];
-        int[]arrayY = new int[arrayIn.length];
+        int[] arrayX = new int[arrayIn.length];
+        int[] arrayY = new int[arrayIn.length];
         System.out.println();
         for (int i = 0; i < arrayIn.length; i++) {
             for (int j = 0; j < arrayIn[i].length; j++) {

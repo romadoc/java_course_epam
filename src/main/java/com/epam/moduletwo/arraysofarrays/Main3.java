@@ -15,7 +15,7 @@ public class Main3 {
 
     private static int[][] createMatrix(int n, int m) {
 
-        int [][] array = new int[n][m];
+        int[][] array = new int[n][m];
         System.out.println("Generated Matrix");
         for (int i = 0; i < array.length; i++){
 

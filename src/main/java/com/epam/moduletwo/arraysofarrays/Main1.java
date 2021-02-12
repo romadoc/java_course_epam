@@ -6,7 +6,7 @@ public class Main1 {
     public static void main(String[] args) {
         decideTask(arrayCreation());
     }
-    private static int[][] arrayCreation(){
+    private static int[][] arrayCreation() {
         int[][] array = {
                         {9, 2, 3, 4, 5},
                         {3, 4, 6, 7, 8 },
@@ -16,7 +16,7 @@ public class Main1 {
                         };
         return array;
     }
-    private static void decideTask(int[][] arrayIn){
+    private static void decideTask(int[][] arrayIn) {
         for (int i = 0; i < arrayIn.length; i++) {
             for (int j = 0; j<arrayIn[i].length; j += 2) {
                 if (arrayIn[0][j] > arrayIn[arrayIn.length-1][j] ) {

@@ -16,8 +16,7 @@ public class Main5 {
     }
 
     private static int[][] createMatrix() {
-        int n;
-        n = 6;
+        int n = 6;
 
         int [][]array = new int[n][n];
         for (int i = 0; i < array.length; i++) {
