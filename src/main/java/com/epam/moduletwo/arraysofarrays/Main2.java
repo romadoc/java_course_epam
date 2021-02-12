@@ -4,7 +4,7 @@ package com.epam.moduletwo.arraysofarrays;
 
 public class Main2 {
     public static void main(String[] args) {
-        typeDiagonal(createMatrix());
+        typeDiagonals(createMatrix());
     }
 
     private static int[][] createMatrix() {
@@ -24,7 +24,7 @@ public class Main2 {
         return array;
     }
 
-    private static void typeDiagonal(int[][] arrayInput) {
+    private static void typeDiagonals(int[][] arrayInput) {
         System.out.print("Digits on diagonal(main): ");
 
         for (int i = 0; i < arrayInput.length; i++) {
