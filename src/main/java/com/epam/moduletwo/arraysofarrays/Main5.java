@@ -21,7 +21,7 @@ public class Main5 {
 
         int [][]array = new int[n][n];
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length-i; j++) {
+            for (int j = 0; j < array[i].length - i; j++) {
                 array[i][j] = i + 1;
             }
 
