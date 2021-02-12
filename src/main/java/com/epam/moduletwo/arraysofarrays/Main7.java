@@ -8,21 +8,21 @@ package com.epam.moduletwo.arraysofarrays;
 public class Main7 {
     public static void main(String[] args) {
         int positiveQuantity;
-        double[][]array = createMatrix();
+        double[][] array = createMatrix();
         positiveQuantity = countQuantityOfPositiveElements(array);
         printResult(array, positiveQuantity);
 
     }
 
     private static double[][] createMatrix() {
-        int n = (int)(Math.random()*10);
-        double[][]array = new double[n][n];
+        int n = (int)(Math.random() * 10);
+        double[][] array = new double[n][n];
 
         for (int x = 0; x < array.length; x++) {
             for(int k = 0; k < array[x].length; k++) {
-                int i = (int)(Math.random()*10);
-                int j = (int)(Math.random()*10);
-                double elem = ((i*i - j*j)/array.length);
+                int i = (int)(Math.random() * 10);
+                int j = (int)(Math.random() * 10);
+                double elem = (((i * i) - (j * j)) / array.length);
                 elem = Math.sin(elem);
                 array[x][k] = elem;
             }
