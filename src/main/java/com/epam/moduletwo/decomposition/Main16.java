@@ -34,7 +34,7 @@ public class Main16 {
         }
     }
 
-    private static List<Integer> makeListOfUnevens(int[]arrayIn) {
+    private static List<Integer> makeListOfUnevens(int[] arrayIn) {
         List<Integer>list = new ArrayList<>();
         for (int i = 0; i < arrayIn.length; i++ ){
             List<Integer> subList = createArray(arrayIn[i]);
