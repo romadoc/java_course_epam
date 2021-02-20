@@ -20,7 +20,7 @@ public class Main9 {
         double diaqonal;
         diaqonal = Math.sqrt((x * x) + (y * y));
         double square1 = (x * y) / 2.0;
-        double pSemiPerimetr = (diaqonal + z + t)/2.0;
+        double pSemiPerimetr = (diaqonal + z + t) / 2.0;
         double square2 = Math.sqrt((pSemiPerimetr - z)
                                   * (pSemiPerimetr - diaqonal)
                                   * (pSemiPerimetr - t));
