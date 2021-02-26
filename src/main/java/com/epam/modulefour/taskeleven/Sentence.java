@@ -11,7 +11,7 @@ public class Sentence {
 
     }
 
-    public void makeWordClass(String string){
+    public void makeWordClass(String string) {
         Word wordClassObject = new Word();
         wordClassObject.setStringWord(string);
         word = wordClassObject;
