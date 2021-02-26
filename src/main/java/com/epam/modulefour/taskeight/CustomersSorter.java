@@ -11,7 +11,7 @@ public class CustomersSorter {
         this.customers = customers;
     }
 
-   public void sortCustomersBySurnames(){
+   public void sortCustomersBySurnames() {
         Collections.sort(customers, new Comparator<Customer>() {
             @Override
             public int compare(Customer customer1, Customer customer2) {
@@ -20,7 +20,7 @@ public class CustomersSorter {
         });
    }
 
-    public void sortCustomersFromNumToNum(){
+    public void sortCustomersFromNumToNum() {
         long numberFrom = ScannerUtil.longIn("from card number");
         long numberTo = ScannerUtil.longIn("to card number");
 
