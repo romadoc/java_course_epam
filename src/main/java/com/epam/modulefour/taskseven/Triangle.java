@@ -44,18 +44,18 @@ public class Triangle {
         return sideOne + sideTwo + sideThree;
     }
 
-    public double getSquareOfTriangle(){
-        double semiPerimeter = getPerimeterOfTriangle()/2;
+    public double getSquareOfTriangle() {
+        double semiPerimeter = getPerimeterOfTriangle() / 2;
         return Math.sqrt(semiPerimeter *
-                        (semiPerimeter - sideOne)*
-                        (semiPerimeter - sideTwo)*
+                        (semiPerimeter - sideOne) *
+                        (semiPerimeter - sideTwo) *
                         (semiPerimeter - sideThree)
         );
     }
 
-    public double[] getCrossingPointOfMedian(double[] pointOne, double[] pointTwo, double[] pointThree){
-        double x = (pointOne[0] + pointTwo[0] + pointThree[0])/3;
-        double y = (pointOne[1] + pointTwo[1] + pointThree[1])/3;
+    public double[] getCrossingPointOfMedian(double[] pointOne, double[] pointTwo, double[] pointThree) {
+        double x = (pointOne[0] + pointTwo[0] + pointThree[0]) / 3;
+        double y = (pointOne[1] + pointTwo[1] + pointThree[1]) / 3;
         return new double[]{x,y};
     }
 }
