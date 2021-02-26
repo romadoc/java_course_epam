@@ -26,7 +26,7 @@ public class TaskThreeStart {
             System.out.println(student.toString());
         }
     }
-    private static void printExcellentStudents(ArrayList<Student> list){
+    private static void printExcellentStudents(ArrayList<Student> list) {
         System.out.println("студенты, имеющие оценки 9 и 10:");
         for (Student student : list) {
             if (student.isScoreExcellent()) {
@@ -48,12 +48,12 @@ public class TaskThreeStart {
     private static int[] getScores() {
         int[] studentScores = new int[4];
         for (int i = 0; i < studentScores.length; i++) {
-            studentScores[i] = 8+(int)(Math.random()*3);
+            studentScores[i] = 8+(int)(Math.random() * 3);
         }
         return studentScores;
     }
     private static int getGroupNumber() {
-        return 1+(int)(Math.random()*5);
+        return 1 + (int)(Math.random() * 5);
     }
 
 }
