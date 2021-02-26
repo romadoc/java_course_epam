@@ -28,7 +28,7 @@ public class Test1 {
     private int sumAandB(int a, int b) {
         this.a = a;
         this.b = b;
-        return a+b;
+        return a + b;
     }
 
     private int dеfineMaxDigit(int a, int b) {
