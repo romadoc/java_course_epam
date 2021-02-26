@@ -12,7 +12,7 @@ public class TrainStart {
         ArrayList<Train>trains = new ArrayList<>();
         ArrayList<String>stringsOfTrainData = loadTrainInfoFromFileToList();
 
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < 5; i++) {
             Train train = new Train(getTrainNumer(makeArrayFromString(stringsOfTrainData.get(i))),
                                     getDestination(makeArrayFromString(stringsOfTrainData.get(i))),
                                     getHour(makeArrayFromString(stringsOfTrainData.get(i))),
