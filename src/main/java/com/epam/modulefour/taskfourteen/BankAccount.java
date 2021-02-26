@@ -43,7 +43,7 @@ public class BankAccount {
     }
 
     public void setFinancialBalance(int financialBalance) {
-        if(isBlocked){
+        if(isBlocked) {
             System.out.println("account is blocked!");
         } else {
             this.financialBalance = financialBalance;

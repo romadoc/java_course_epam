@@ -15,7 +15,7 @@ public class ClassGetInfo {
         return "total " + summa+ " cent's";
     }
 
-    public static String[] separatedNegativePositiveSumReport(List<BankAccount> clientAccounts){
+    public static String[] separatedNegativePositiveSumReport(List<BankAccount> clientAccounts) {
         String[] separatedReport = new String[4];
         int positiveSumma = 0;
         int negativeSumma = 0;
