@@ -69,7 +69,7 @@ public class TrainSorter {
         int foundCount = 0;
         for (int i = 0; i < trains.size(); i++){
 
-            if (trainNumber == trains.get(i).getNumberOfTrain()){
+            if (trainNumber == trains.get(i).getNumberOfTrain()) {
                 System.out.println("number: " + trains.get(i).getNumberOfTrain() + " destination: " +
                                    trains.get(i).getDestination() + " " +
                                    trains.get(i).getHour() + "hh " +
