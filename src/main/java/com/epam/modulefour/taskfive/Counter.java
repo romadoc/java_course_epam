@@ -32,7 +32,7 @@ public class Counter {
             }
             System.out.println("default counter is finished!");
         }
-        if(direction.equals("-")){
+        if(direction.equals("-")) {
             System.out.println("default counter is started! " + "\"" + direction + "\"");
             for (int i = maxValue; i >= minValue; i--) {
                 getPrintln(i);
@@ -44,7 +44,7 @@ public class Counter {
 
     public void startCounter(String direction, int maxValue, int minValue) throws InterruptedException {
         System.out.println("min Value: " + minValue + " max Value: " + maxValue);
-        if (minValue >= maxValue){
+        if (minValue >= maxValue) {
             System.out.println("incorrect values! try again!");
         } else {
             if (direction.equals("+")) {

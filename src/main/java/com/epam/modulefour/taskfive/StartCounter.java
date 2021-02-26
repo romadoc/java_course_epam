@@ -16,7 +16,7 @@ public class StartCounter {
 
 
 
-    public static String inputDirectionOfCount(){
+    public static String inputDirectionOfCount() {
         String string = "type \"+\" for UpCounting or \"-\" for DownCounting >>";
         System.out.print(string);
         String flag;
