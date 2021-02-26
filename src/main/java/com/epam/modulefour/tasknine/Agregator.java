@@ -51,11 +51,11 @@ public class Agregator {
     private void bookPrint(Book bookObj) {
         double price = bookObj.getPriceCent();
         price = price/100;                                       //перевод в формат дробного представления цены
-        System.out.println("id: "+ bookObj.getId()+ "; \"" + bookObj.getTitle() +
+        System.out.println("id: "+ bookObj.getId() + "; \"" + bookObj.getTitle() +
                           "\", by "+ bookObj.getAuthor() +
-                          ", publishing house: " + bookObj.getPublisher()+
-                          "; year of publishing: " + bookObj.getYearOfPubl()+
-                          ", pages: " + bookObj.getPages()+", type of cover: "+bookObj.getCover() +
+                          ", publishing house: " + bookObj.getPublisher() +
+                          "; year of publishing: " + bookObj.getYearOfPubl() +
+                          ", pages: " + bookObj.getPages() + ", type of cover: "+bookObj.getCover() +
                           ", price: " + price + " $" );
 
     }
