@@ -45,8 +45,7 @@ public class Calendar {
                 System.out.println("today is an ordinary day");
             }
         }
-        NoteToDate noteToDate = new NoteToDate() {
-        };
+        NoteToDate noteToDate = new NoteToDate();
         noteToDate.isWeekend();
     }
 
