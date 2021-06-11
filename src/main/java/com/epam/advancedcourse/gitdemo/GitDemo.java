@@ -7,6 +7,7 @@ public class GitDemo {
 
    public void printGreeting() {
        System.out.println("Hello, " + userName);
+       System.out.println("Nice to meet you!");
    }
 
    public String getNameFromConsole() {
